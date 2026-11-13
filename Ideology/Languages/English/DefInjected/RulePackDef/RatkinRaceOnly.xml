@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.0>god(p=3)-&gt;God of Honor</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.0>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.1>god(p=3, gender==Female)-&gt;Goddess of Honor</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.1>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.2>god(p=2)-&gt;God of Chivalry</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.2>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.3>god(p=2, gender==Female)-&gt;Goddess of Chivalry</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.3>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.4>god(p=2)-&gt;God of Valor</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.4>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.5>god(p=2, gender==Female)-&gt;Goddess of Valor</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.5>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.6>god(p=1)-&gt;God of Nobility</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.6>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.7>god(p=1, gender==Female)-&gt;Goddess of Nobility</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.7>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.0>memeLeaderNoun(priority=1)-&gt;[cultureLeaderNoun]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.0>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.1>cultureLeaderTitle-&gt;[cultureLeaderAdjective] [cultureLeaderNoun]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.1>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.10>cultureLeaderNoun(p=8)-&gt;King</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.10>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.11>cultureLeaderNoun(p=6)-&gt;Queen</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.11>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.12>cultureLeaderNoun(p=5)-&gt;Duke</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.12>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.13>cultureLeaderNoun(p=5)-&gt;Duchess</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.13>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.14>cultureLeaderNoun(p=4)-&gt;Count</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.14>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.15>cultureLeaderNoun(p=4)-&gt;Countess</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.15>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.16>cultureLeaderNoun(p=3)-&gt;Baron</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.16>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.17>cultureLeaderNoun(p=3)-&gt;Baroness</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.17>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.18>cultureLeaderNoun(p=2)-&gt;Knight</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.18>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.19>cultureLeaderNoun(p=2)-&gt;Lord</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.19>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.2>cultureLeaderTitle(p=3)-&gt;[cultureLeaderNoun]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.2>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.20>cultureLeaderNoun(p=2)-&gt;Lady</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.20>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.21>cultureLeaderNoun(p=1)-&gt;Earl</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.21>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.22>cultureLeaderNoun(p=1)-&gt;Marquis</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.22>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.3>cultureLeaderAdjective-&gt;high</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.3>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.4>cultureLeaderAdjective-&gt;great</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.4>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.5>cultureLeaderAdjective-&gt;noble</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.5>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.6>cultureLeaderAdjective-&gt;royal</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.6>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.7>cultureLeaderAdjective-&gt;grand</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.7>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.8>cultureLeaderAdjective-&gt;first</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.8>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.9>cultureLeaderAdjective-&gt;prime</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.9>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.0>name-&gt;[syl][end]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.1>name-&gt;[syl][syl][end]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.10>syl-&gt;cour</NamerDeity_RatkinKingdom.rulePack.rulesStrings.10>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.11>syl-&gt;chiv</NamerDeity_RatkinKingdom.rulePack.rulesStrings.11>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.12>end-&gt;al</NamerDeity_RatkinKingdom.rulePack.rulesStrings.12>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.13>end-&gt;ar</NamerDeity_RatkinKingdom.rulePack.rulesStrings.13>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.14>end-&gt;us</NamerDeity_RatkinKingdom.rulePack.rulesStrings.14>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.15>end-&gt;ius</NamerDeity_RatkinKingdom.rulePack.rulesStrings.15>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.16>end-&gt;on</NamerDeity_RatkinKingdom.rulePack.rulesStrings.16>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.17>end-&gt;or</NamerDeity_RatkinKingdom.rulePack.rulesStrings.17>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.18>end-&gt;an</NamerDeity_RatkinKingdom.rulePack.rulesStrings.18>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.19>end-&gt;en</NamerDeity_RatkinKingdom.rulePack.rulesStrings.19>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.2>name-&gt;[syl]-[syl][end]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.20>end-&gt;in</NamerDeity_RatkinKingdom.rulePack.rulesStrings.20>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.3>syl-&gt;[SylG]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.4>syl-&gt;hon</NamerDeity_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.5>syl-&gt;val</NamerDeity_RatkinKingdom.rulePack.rulesStrings.5>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.6>syl-&gt;roy</NamerDeity_RatkinKingdom.rulePack.rulesStrings.6>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.7>syl-&gt;knight</NamerDeity_RatkinKingdom.rulePack.rulesStrings.7>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.8>syl-&gt;lord</NamerDeity_RatkinKingdom.rulePack.rulesStrings.8>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.9>syl-&gt;nob</NamerDeity_RatkinKingdom.rulePack.rulesStrings.9>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.0>festivalName(p=3)-&gt;[chivalryFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.1>festivalName(p=2)-&gt;[royalFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.10>royalFestival-&gt;Court Fair</NamerFestival_RatkinKingdom.rulePack.rulesStrings.10>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.11>knightFestival-&gt;Knight's Tournament</NamerFestival_RatkinKingdom.rulePack.rulesStrings.11>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.12>knightFestival-&gt;Knight Festival</NamerFestival_RatkinKingdom.rulePack.rulesStrings.12>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.13>knightFestival-&gt;Tournament Celebration</NamerFestival_RatkinKingdom.rulePack.rulesStrings.13>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.14>knightFestival-&gt;Jousting Fair</NamerFestival_RatkinKingdom.rulePack.rulesStrings.14>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.2>festivalName(p=1)-&gt;[knightFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.3>chivalryFestival-&gt;Festival of Chivalry</NamerFestival_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.4>chivalryFestival-&gt;Chivalry Celebration</NamerFestival_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.5>chivalryFestival-&gt;Honor Festival</NamerFestival_RatkinKingdom.rulePack.rulesStrings.5>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.6>chivalryFestival-&gt;Valor Jubilee</NamerFestival_RatkinKingdom.rulePack.rulesStrings.6>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.7>royalFestival-&gt;Royal Festival</NamerFestival_RatkinKingdom.rulePack.rulesStrings.7>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.8>royalFestival-&gt;Crown Celebration</NamerFestival_RatkinKingdom.rulePack.rulesStrings.8>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.9>royalFestival-&gt;Noble Fiesta</NamerFestival_RatkinKingdom.rulePack.rulesStrings.9>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.0>globalAdjective(p=10)-&gt;Chivalrous</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.1>globalAdjective(p=8)-&gt;Feudal</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.2>globalAdjective(p=6)-&gt;Noble</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.3>globalAdjective(p=5)-&gt;Royal</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.4>globalAdjective(p=4)-&gt;Knightly</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.5>globalAdjective(p=3)-&gt;Honorable</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.5>
+</LanguageData>

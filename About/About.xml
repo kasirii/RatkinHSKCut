@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>NewRatkinMinus</name>
+	<author>Kasiri</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Kasiri.ratkin.raceonly</packageId>
+	<description>
+		Race-only patch for Workshop NewRatkinPlus 1.6.
+		Keeps the race and RatkinColonist. 
+		Removes racial equipment, buildings, food, factions, scenarios, storytellers, traders and other original pawn kinds.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Solaris.RatkinRaceMod</packageId>
+			<displayName>NewRatkinPlus</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=1578693166</steamWorkshopUrl>
+		</li>		
+	</modDependencies>
+	<loadAfter>
+		<li>Solaris.RatkinRaceModHSK</li>
+	</loadAfter>
+</ModMetaData>

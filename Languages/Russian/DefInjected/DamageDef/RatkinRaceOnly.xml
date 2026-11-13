@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <DemoBomb.deathMessage>{0} погибает при взрыве волшебной палочки.</DemoBomb.deathMessage>
+  <DemoBomb.label>взрыв</DemoBomb.label>
+  <RK_Damage_BonusCut.label>порез</RK_Damage_BonusCut.label>
+  <RK_Damage_BurnTorn.deathMessage>{0} погибает от рваных ран и ожогов.</RK_Damage_BurnTorn.deathMessage>
+  <RK_Damage_BurnTorn.label>ожог с разрывом</RK_Damage_BurnTorn.label>
+  <RK_Damage_PickaxeStab.deathMessage>{0} погибает от глубоких колотых ран.</RK_Damage_PickaxeStab.deathMessage>
+  <RK_Damage_PickaxeStab.label>колотая рана</RK_Damage_PickaxeStab.label>
+  <RK_Damage_Torn.deathMessage>{0} погибает от рваных ран.</RK_Damage_Torn.deathMessage>
+  <RK_Damage_Torn.label>разрыв</RK_Damage_Torn.label>
+  <RK_EMP.deathMessage>{0} погибает от электромагнитного импульса.</RK_EMP.deathMessage>
+  <RK_EMP.label>ЭМИ</RK_EMP.label>
+  <ShockWaveHeavy.deathMessage>{0} погибает от сильной ударной волны.</ShockWaveHeavy.deathMessage>
+  <ShockWaveHeavy.label>ударная волна</ShockWaveHeavy.label>
+  <ShockWaveLight.deathMessage>{0} погибает от слабой ударной волны.</ShockWaveLight.deathMessage>
+  <ShockWaveLight.label>ударная волна</ShockWaveLight.label>
+</LanguageData>

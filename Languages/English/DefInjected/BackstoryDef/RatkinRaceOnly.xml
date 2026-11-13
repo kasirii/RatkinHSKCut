@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Backstory_RefugeeSlave.description>[PAWN_nameDef] was a slave who barely managed to escape. [PAWN_pronoun] survived by enduring years of grueling labor.</RK_Backstory_RefugeeSlave.description>
+  <RK_Backstory_RefugeeSlave.title>Ratkin refugee slave</RK_Backstory_RefugeeSlave.title>
+  <RK_Backstory_RefugeeSlave.titleShort>refugee slave</RK_Backstory_RefugeeSlave.titleShort>
+  <RK_Unique_Kira_Adulthood.description>[PAWN_nameDef] is a legendary warrior known as the Grey Claw. [PAWN_pronoun] earned that name by repelling countless raids alone, inspiring both fear and respect among [PAWN_possessive] kin.</RK_Unique_Kira_Adulthood.description>
+  <RK_Unique_Kira_Adulthood.title>grey claw</RK_Unique_Kira_Adulthood.title>
+  <RK_Unique_Kira_Adulthood.titleShort>grey claw</RK_Unique_Kira_Adulthood.titleShort>
+  <RK_Unique_Kira_Childhood.description>[PAWN_nameDef] was the only orphan to survive a tunnel collapse. Alone in the darkness, [PAWN_pronoun] learned to find a way and developed an instinctive sense for danger.</RK_Unique_Kira_Childhood.description>
+  <RK_Unique_Kira_Childhood.title>orphan of the grey tunnels</RK_Unique_Kira_Childhood.title>
+  <RK_Unique_Kira_Childhood.titleShort>tunnel orphan</RK_Unique_Kira_Childhood.titleShort>
+</LanguageData>

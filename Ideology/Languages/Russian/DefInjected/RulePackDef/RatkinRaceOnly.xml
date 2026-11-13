@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.0>god(p=3)-&gt;бог чести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.0>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.1>god(p=3, gender==Female)-&gt;богиня чести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.1>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.2>god(p=2)-&gt;бог рыцарства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.2>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.3>god(p=2, gender==Female)-&gt;богиня рыцарства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.3>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.4>god(p=2)-&gt;бог доблести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.4>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.5>god(p=2, gender==Female)-&gt;богиня доблести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.5>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.6>god(p=1)-&gt;бог благородства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.6>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.7>god(p=1, gender==Female)-&gt;богиня благородства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.7>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.0>memeLeaderNoun(priority=1)-&gt;[cultureLeaderNoun]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.0>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.1>cultureLeaderTitle-&gt;[cultureLeaderNoun] [cultureLeaderAdjective]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.1>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.10>cultureLeaderNoun(p=8)-&gt;король</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.10>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.11>cultureLeaderNoun(p=6)-&gt;королева</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.11>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.12>cultureLeaderNoun(p=5)-&gt;герцог</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.12>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.13>cultureLeaderNoun(p=5)-&gt;герцогиня</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.13>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.14>cultureLeaderNoun(p=4)-&gt;граф</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.14>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.15>cultureLeaderNoun(p=4)-&gt;графиня</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.15>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.16>cultureLeaderNoun(p=3)-&gt;барон</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.16>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.17>cultureLeaderNoun(p=3)-&gt;баронесса</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.17>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.18>cultureLeaderNoun(p=2)-&gt;рыцарь</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.18>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.19>cultureLeaderNoun(p=2)-&gt;лорд</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.19>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.2>cultureLeaderTitle(p=3)-&gt;[cultureLeaderNoun]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.2>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.20>cultureLeaderNoun(p=2)-&gt;леди</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.20>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.21>cultureLeaderNoun(p=1)-&gt;эрл</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.21>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.22>cultureLeaderNoun(p=1)-&gt;маркиз</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.22>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.3>cultureLeaderAdjective-&gt;высшего круга</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.3>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.4>cultureLeaderAdjective-&gt;великой державы</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.4>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.5>cultureLeaderAdjective-&gt;благородного дома</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.5>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.6>cultureLeaderAdjective-&gt;королевского рода</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.6>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.7>cultureLeaderAdjective-&gt;великого круга</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.7>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.8>cultureLeaderAdjective-&gt;первого круга</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.8>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.9>cultureLeaderAdjective-&gt;первого совета</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.9>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.0>name-&gt;[syl][end]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.1>name-&gt;[syl][syl][end]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.10>syl-&gt;кур</NamerDeity_RatkinKingdom.rulePack.rulesStrings.10>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.11>syl-&gt;шив</NamerDeity_RatkinKingdom.rulePack.rulesStrings.11>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.12>end-&gt;ал</NamerDeity_RatkinKingdom.rulePack.rulesStrings.12>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.13>end-&gt;ар</NamerDeity_RatkinKingdom.rulePack.rulesStrings.13>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.14>end-&gt;ус</NamerDeity_RatkinKingdom.rulePack.rulesStrings.14>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.15>end-&gt;иус</NamerDeity_RatkinKingdom.rulePack.rulesStrings.15>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.16>end-&gt;он</NamerDeity_RatkinKingdom.rulePack.rulesStrings.16>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.17>end-&gt;ор</NamerDeity_RatkinKingdom.rulePack.rulesStrings.17>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.18>end-&gt;ан</NamerDeity_RatkinKingdom.rulePack.rulesStrings.18>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.19>end-&gt;эн</NamerDeity_RatkinKingdom.rulePack.rulesStrings.19>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.2>name-&gt;[syl]-[syl][end]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.20>end-&gt;ин</NamerDeity_RatkinKingdom.rulePack.rulesStrings.20>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.3>syl-&gt;[SylG]</NamerDeity_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.4>syl-&gt;хон</NamerDeity_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.5>syl-&gt;вал</NamerDeity_RatkinKingdom.rulePack.rulesStrings.5>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.6>syl-&gt;рой</NamerDeity_RatkinKingdom.rulePack.rulesStrings.6>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.7>syl-&gt;найт</NamerDeity_RatkinKingdom.rulePack.rulesStrings.7>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.8>syl-&gt;лорд</NamerDeity_RatkinKingdom.rulePack.rulesStrings.8>
+  <NamerDeity_RatkinKingdom.rulePack.rulesStrings.9>syl-&gt;ноб</NamerDeity_RatkinKingdom.rulePack.rulesStrings.9>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.0>festivalName(p=3)-&gt;[chivalryFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.1>festivalName(p=2)-&gt;[royalFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.10>royalFestival-&gt;придворная ярмарка</NamerFestival_RatkinKingdom.rulePack.rulesStrings.10>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.11>knightFestival-&gt;рыцарский турнир</NamerFestival_RatkinKingdom.rulePack.rulesStrings.11>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.12>knightFestival-&gt;рыцарский праздник</NamerFestival_RatkinKingdom.rulePack.rulesStrings.12>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.13>knightFestival-&gt;турнирное торжество</NamerFestival_RatkinKingdom.rulePack.rulesStrings.13>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.14>knightFestival-&gt;ярмарка рыцарских поединков</NamerFestival_RatkinKingdom.rulePack.rulesStrings.14>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.2>festivalName(p=1)-&gt;[knightFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.3>chivalryFestival-&gt;праздник рыцарства</NamerFestival_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.4>chivalryFestival-&gt;торжество рыцарства</NamerFestival_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.5>chivalryFestival-&gt;праздник чести</NamerFestival_RatkinKingdom.rulePack.rulesStrings.5>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.6>chivalryFestival-&gt;юбилей доблести</NamerFestival_RatkinKingdom.rulePack.rulesStrings.6>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.7>royalFestival-&gt;королевский праздник</NamerFestival_RatkinKingdom.rulePack.rulesStrings.7>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.8>royalFestival-&gt;торжество короны</NamerFestival_RatkinKingdom.rulePack.rulesStrings.8>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.9>royalFestival-&gt;дворянское гулянье</NamerFestival_RatkinKingdom.rulePack.rulesStrings.9>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.0>globalAdjective(p=10)-&gt;рыцарский</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.1>globalAdjective(p=8)-&gt;феодальный</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.2>globalAdjective(p=6)-&gt;благородный</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.3>globalAdjective(p=5)-&gt;королевский</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.4>globalAdjective(p=4)-&gt;рыцарственный</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerIdeo_RatkinKingdom.rulePack.rulesStrings.5>globalAdjective(p=3)-&gt;достопочтенный</NamerIdeo_RatkinKingdom.rulePack.rulesStrings.5>
+</LanguageData>

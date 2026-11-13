@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/RulePackDef[defName="RK_RaceOnly_NameUtility"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RulePackDef>
+              <defName>RK_RaceOnly_NameUtility</defName>
+              <rulePack>
+                <rulesStrings>
+                  <li>RK_FirstName-&gt;[RK_Noun_Prefix_Flower]</li>
+                  <li>RK_FirstName-&gt;[RK_First_ElfStyle]</li>
+                  <li>RK_LastName(p=3)-&gt;[RK_Noun_Prefix_Nut]</li>
+                  <li>RK_LastName(p=2)-&gt;[RK_Noun_Prefix_Iron][RK_Noun_Postfix_Ironlike]</li>
+                  <li>RK_LastName-&gt;[RK_NamePrefix_Royal][RK_Noun_Postfix_BodyPart]</li>
+                  <li>RK_LastName-&gt;[RK_NamePrefix_Wild][RK_Noun_Postfix_BodyPart]</li>
+                  <li>RK_LastName-&gt;[RK_Noun_Prefix_Nature][RK_Noun_Postfix_Mover]</li>
+                  <li>RK_LastName-&gt;[RK_Last_Single]</li>
+                </rulesStrings>
+                <rulesFiles>
+                  <li>RK_Noun_Prefix_Action-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Action</li>
+                  <li>RK_Noun_Prefix_Actor-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Actor</li>
+                  <li>RK_Noun_Prefix_BodyPart-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_BodyPart</li>
+                  <li>RK_Noun_Prefix_Color-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Color</li>
+                  <li>RK_Noun_Prefix_Flower-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Flower</li>
+                  <li>RK_Noun_Prefix_Herb-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Herb</li>
+                  <li>RK_Noun_Prefix_Iron-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Iron</li>
+                  <li>RK_Noun_Prefix_Mover-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Mover</li>
+                  <li>RK_Noun_Prefix_Nature-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Nature</li>
+                  <li>RK_Noun_Prefix_Personality-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Personality</li>
+                  <li>RK_Noun_Prefix_Star-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Star</li>
+                  <li>RK_Noun_Prefix_Taker-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Taker</li>
+                  <li>RK_Noun_Prefix_Weapon-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Weapon</li>
+                  <li>RK_Noun_Prefix_Nut-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Prefix_Nut</li>
+                  <li>RK_Noun_Postfix_Action-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Action</li>
+                  <li>RK_Noun_Postfix_Actor-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Actor</li>
+                  <li>RK_Noun_Postfix_BodyPart-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_BodyPart</li>
+                  <li>RK_Noun_Postfix_Color-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Color</li>
+                  <li>RK_Noun_Postfix_Flower-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Flower</li>
+                  <li>RK_Noun_Postfix_Herb-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Herb</li>
+                  <li>RK_Noun_Postfix_Iron-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Iron</li>
+                  <li>RK_Noun_Postfix_Mover-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Mover</li>
+                  <li>RK_Noun_Postfix_Nature-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Nature</li>
+                  <li>RK_Noun_Postfix_Personality-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Personality</li>
+                  <li>RK_Noun_Postfix_Ironlike-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Ironlike</li>
+                  <li>RK_Noun_Postfix_Star-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Star</li>
+                  <li>RK_Noun_Postfix_Taker-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Taker</li>
+                  <li>RK_Noun_Postfix_Weapon-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Weapon</li>
+                  <li>RK_Noun_Postfix_Nut-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Nut</li>
+                  <li>RK_Noun_Postfix_Bloom-&gt;Names/RatkinRaceOnly/Noun/RK_Noun_Postfix_Bloom</li>
+                  <li>RK_First_ElfStyle-&gt;Names/RatkinRaceOnly/RK_FirstName_ElfStyle</li>
+                  <li>RK_Last_Single-&gt;Names/RatkinRaceOnly/RK_Last_Single</li>
+                  <li>RK_NamePrefix_Royal-&gt;Names/RatkinRaceOnly/RK_NamePrefix_Royal</li>
+                  <li>RK_NamePrefix_Wild-&gt;Names/RatkinRaceOnly/RK_NamePrefix_Wild</li>
+                  <li>RK_NameSuffix_Tea-&gt;Names/RatkinRaceOnly/RK_NameSuffix_Tea</li>
+                </rulesFiles>
+              </rulePack>
+            </RulePackDef>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/RulePackDef[defName="RK_RaceOnly_PersonNamer"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RulePackDef>
+              <defName>RK_RaceOnly_PersonNamer</defName>
+              <include>
+                <li>RK_RaceOnly_NameUtility</li>
+              </include>
+              <rulePack>
+                <rulesStrings>
+                  <li>r_name(p=4)-&gt;[RK_FirstName] [RK_LastName]</li>
+                  <li>r_name(p=2)-&gt;[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</li>
+                  <li>r_name(p=1)-&gt;[RK_First_ElfStyle] [RK_Noun_Prefix_Flower][RK_NameSuffix_Tea]</li>
+                </rulesStrings>
+              </rulePack>
+            </RulePackDef>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGenerator[text()="NamerPerson_RatkinKingdom"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGenerator[text()="NamerPerson_RatkinKingdom"]</xpath>
+          <value>
+            <nameGenerator>RK_RaceOnly_PersonNamer</nameGenerator>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGeneratorFemale[text()="NamerPerson_RatkinKingdom"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGeneratorFemale[text()="NamerPerson_RatkinKingdom"]</xpath>
+          <value>
+            <nameGeneratorFemale>RK_RaceOnly_PersonNamer</nameGeneratorFemale>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/CultureDef[defName="RK_Culture_Virtuard"]/pawnNameMaker[text()="NamerPerson_RatkinKingdom"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/CultureDef[defName="RK_Culture_Virtuard"]/pawnNameMaker[text()="NamerPerson_RatkinKingdom"]</xpath>
+          <value>
+            <pawnNameMaker>RK_RaceOnly_PersonNamer</pawnNameMaker>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/CultureDef[defName="RK_Culture_Virtuard"]/pawnNameMakerFemale[text()="NamerPerson_RatkinKingdom"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/CultureDef[defName="RK_Culture_Virtuard"]/pawnNameMakerFemale[text()="NamerPerson_RatkinKingdom"]</xpath>
+          <value>
+            <pawnNameMakerFemale>RK_RaceOnly_PersonNamer</pawnNameMakerFemale>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.AlienBackstoryDef/nameMaker[text()="NamerPerson_RatkinKingdom"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/AlienRace.AlienBackstoryDef/nameMaker[text()="NamerPerson_RatkinKingdom"]</xpath>
+          <value>
+            <nameMaker>RK_RaceOnly_PersonNamer</nameMaker>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/BackstoryDef/nameMaker[text()="NamerPerson_RatkinKingdom"]</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/BackstoryDef/nameMaker[text()="NamerPerson_RatkinKingdom"]</xpath>
+          <value>
+            <nameMaker>RK_RaceOnly_PersonNamer</nameMaker>
+          </value>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

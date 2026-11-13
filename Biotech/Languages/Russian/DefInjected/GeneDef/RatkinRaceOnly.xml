@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Gene_CuteFace.description>Носители этого гена обладают миловидными чертами лица. Это помогает налаживать отношения, но мешает производить серьёзное и внушительное впечатление на переговорах.</RK_Gene_CuteFace.description>
+  <RK_Gene_CuteFace.label>миловидное лицо</RK_Gene_CuteFace.label>
+  <RK_Gene_CuteFace.labelShortAdj>миловидный</RK_Gene_CuteFace.labelShortAdj>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>мил</RK_Gene_CuteFace.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>слад</RK_Gene_CuteFace.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>чар</RK_Gene_CuteFace.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>чар</RK_Gene_CuteFace.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>мил</RK_Gene_CuteFace.symbolPack.suffixSymbols.1.symbol>
+  <RK_Gene_FragilePain.description>У носителей этого гена понижен порог болевого шока: ранения легче выводят их из строя.</RK_Gene_FragilePain.description>
+  <RK_Gene_FragilePain.label>чувствительность к боли</RK_Gene_FragilePain.label>
+  <RK_Gene_FragilePain.labelShortAdj>чувствительный</RK_Gene_FragilePain.labelShortAdj>
+  <RK_Gene_GoodGardening.description>Носители этого гена лучше собирают урожай.</RK_Gene_GoodGardening.description>
+  <RK_Gene_GoodGardening.label>способности к садоводству</RK_Gene_GoodGardening.label>
+  <RK_Gene_GoodGardening.labelShortAdj>искусный садовод</RK_Gene_GoodGardening.labelShortAdj>
+  <RK_Gene_LargeEars.description>У носителей этого гена растут большие круглые уши, характерные для раткинов.</RK_Gene_LargeEars.description>
+  <RK_Gene_LargeEars.label>большие круглые уши</RK_Gene_LargeEars.label>
+  <RK_Gene_LargeEars.labelShortAdj>большеухий</RK_Gene_LargeEars.labelShortAdj>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>крыс</RK_Gene_LargeEars.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>писк</RK_Gene_LargeEars.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>ус</RK_Gene_LargeEars.symbolPack.prefixSymbols.2.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>крыс</RK_Gene_LargeEars.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>ух</RK_Gene_LargeEars.symbolPack.suffixSymbols.1.symbol>
+  <RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>писк</RK_Gene_LargeEars.symbolPack.suffixSymbols.2.symbol>
+  <RK_Gene_Nimble.description>Обострённые чувства позволяют носителям этого гена быстрее замечать опасность и эффективнее уклоняться от атак в ближнем бою.</RK_Gene_Nimble.description>
+  <RK_Gene_Nimble.label>проворный</RK_Gene_Nimble.label>
+  <RK_Gene_Nimble.labelShortAdj>проворный</RK_Gene_Nimble.labelShortAdj>
+  <RK_Gene_PoorEyesight.description>У носителей этого гена плохое зрение. Они дольше целятся и менее точно стреляют.</RK_Gene_PoorEyesight.description>
+  <RK_Gene_PoorEyesight.label>плохое зрение</RK_Gene_PoorEyesight.label>
+  <RK_Gene_PoorEyesight.labelShortAdj>подслеповатый</RK_Gene_PoorEyesight.labelShortAdj>
+  <RK_Gene_SmallBody.description>Носители этого гена имеют небольшое тело, из-за чего могут переносить меньший вес.</RK_Gene_SmallBody.description>
+  <RK_Gene_SmallBody.label>небольшое тело</RK_Gene_SmallBody.label>
+  <RK_Gene_SmallBody.labelShortAdj>малорослый</RK_Gene_SmallBody.labelShortAdj>
+  <RK_Gene_ThinTail.description>У носителей этого гена растёт длинный тонкий хвост без шерсти. Он помогает сохранять равновесие и служит одной из характерных черт раткинов.</RK_Gene_ThinTail.description>
+  <RK_Gene_ThinTail.label>тонкий хвост</RK_Gene_ThinTail.label>
+  <RK_Gene_ThinTail.labelShortAdj>тонкохвостый</RK_Gene_ThinTail.labelShortAdj>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>хвост</RK_Gene_ThinTail.symbolPack.prefixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>крыс</RK_Gene_ThinTail.symbolPack.prefixSymbols.1.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>хвост</RK_Gene_ThinTail.symbolPack.suffixSymbols.0.symbol>
+  <RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>крыс</RK_Gene_ThinTail.symbolPack.suffixSymbols.1.symbol>
+  <RK_Skin_PureWhite.description>Носители этого гена имеют характерную для раткинов белоснежную кожу.</RK_Skin_PureWhite.description>
+  <RK_Skin_PureWhite.label>белоснежная кожа</RK_Skin_PureWhite.label>
+  <RK_Skin_PureWhite.labelShortAdj>белоснежный</RK_Skin_PureWhite.labelShortAdj>
+</LanguageData>

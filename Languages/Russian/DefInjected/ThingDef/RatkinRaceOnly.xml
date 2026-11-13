@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Thing_ArchotechTail.description>Искусственный хвост раткина, созданный архотеком. Он отслеживает положение тела и мельчайшие движения, поддерживая безупречное равновесие. На ощупь напоминает живую плоть, а повредить его труднее, чем пласталь. Повреждения со временем восстанавливаются. Принцип его работы остаётся загадкой.</RK_Thing_ArchotechTail.description>
+  <RK_Thing_ArchotechTail.label>архотек хвост раткина</RK_Thing_ArchotechTail.label>
+  <RK_Thing_BionicTail.description>Совершенный искусственный хвост раткина. Небольшой ИИ отслеживает движения владельца и управляет хвостом, помогая сохранять равновесие лучше, чем его биологический аналог.</RK_Thing_BionicTail.description>
+  <RK_Thing_BionicTail.label>бионический хвост раткина</RK_Thing_BionicTail.label>
+  <Ratkin.description>Человекоподобные существа с чертами грызунов. Их происхождение неизвестно. Общество раткинов традиционно опирается на монархию и земледелие. Женщин среди них больше, чем мужчин, а различить пол по внешности бывает непросто.</Ratkin.description>
+  <Ratkin.label>раткин</Ratkin.label>
+  <Ratkin.tools.0.label>зубы</Ratkin.tools.0.label>
+  <Ratkin.tools.1.label>левый кулак</Ratkin.tools.1.label>
+  <Ratkin.tools.2.label>правый кулак</Ratkin.tools.2.label>
+</LanguageData>

@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!--1. Make the single retained PawnKind independent of the removed Ratkin faction and pawn-kind templates-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="RatkinColonist"]</xpath>
+        <value>
+          <PawnKindDef ParentName="BasePlayerPawnKind">
+            <defName>RatkinColonist</defName>
+            <label>ratkin colonist</label>
+            <race>Ratkin</race>
+            <defaultFactionType>PlayerColony</defaultFactionType>
+            <combatPower>20</combatPower>
+            <minGenerationAge>13</minGenerationAge>
+            <maxGenerationAge>35</maxGenerationAge>
+            <backstoryFiltersOverride Inherit="false">
+              <li>
+                <categories>
+                  <li>RatkinStory</li>
+                </categories>
+              </li>
+            </backstoryFiltersOverride>
+            <apparelTags Inherit="false">
+              <li>IndustrialBasic</li>
+              <li>Outlander</li>
+            </apparelTags>
+            <apparelRequired Inherit="false"/>
+            <apparelMoney>120</apparelMoney>
+            <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+            <weaponTags Inherit="false"/>
+            <invFoodDef>GrilledCheese</invFoodDef>
+            <invNutrition>2</invNutrition>
+            <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+            <initialResistanceRange>0~10</initialResistanceRange>
+            <initialWillRange>5~10</initialWillRange>
+            <xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
+              <xenotypeChances>
+                <RK_XenoType_Ratkin>99999</RK_XenoType_Ratkin>
+                <Baseliner>0</Baseliner>
+                <Sanguophage>0</Sanguophage>
+              </xenotypeChances>
+            </xenotypeSet>
+            <useFactionXenotypes>false</useFactionXenotypes>
+          </PawnKindDef>
+        </value>
+      </li>
+      <!--2. Remove equipment whitelists-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/*[self::apparelList or self::weaponList]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/*[self::apparelList or self::weaponList]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath>
+          <value>
+            <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
+          <value>
+            <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/onlyUseRaceRestrictedWeapons</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/onlyUseRaceRestrictedWeapons</xpath>
+          <value>
+            <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
+          <value>
+            <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+          </value>
+        </nomatch>
+      </li>
+      <!--3. Replace HAR pawn-kind pools. Keep racial body addons-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/pawnKindSettings</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]/pawnKindSettings</xpath>
+          <value>
+            <pawnKindSettings>
+              <startingColonists>
+                <li>
+                  <pawnKindEntries>
+                    <li>
+                      <kindDefs>
+                        <li>RatkinColonist</li>
+                      </kindDefs>
+                      <chance>8</chance>
+                    </li>
+                  </pawnKindEntries>
+                  <factionDefs>
+                    <li>PlayerColony</li>
+                    <li>PlayerTribe</li>
+                  </factionDefs>
+                </li>
+              </startingColonists>
+            </pawnKindSettings>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/AlienRace.RaceSettings[defName="RK_Race_Setting"]</xpath>
+          <value>
+            <pawnKindSettings>
+              <startingColonists>
+                <li>
+                  <pawnKindEntries>
+                    <li>
+                      <kindDefs>
+                        <li>RatkinColonist</li>
+                      </kindDefs>
+                      <chance>8</chance>
+                    </li>
+                  </pawnKindEntries>
+                  <factionDefs>
+                    <li>PlayerColony</li>
+                    <li>PlayerTribe</li>
+                  </factionDefs>
+                </li>
+              </startingColonists>
+            </pawnKindSettings>
+          </value>
+        </nomatch>
+      </li>
+      <!--4. Remove Workshop content and its activating systems.-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[contains("|Bolt_RK_AutoCrossBow|Bolt_RK_Crossbow|Bullet_BFR_AP|Bullet_BFR_HE|Bullet_RK_PrototypePulseRifleHeavy|Bullet_RK_PrototypePulseRifleLight|Bullet_RK_Rifle|Bullet_RK_SniperRifle|GunlanceAfterIgnition|GunlancePreIgnition|MinifiedEMP|Mote_CountDown|Mote_ShockWave|RK_Ammo_BallistaBoltAP|RK_Ammo_BallistaBoltNormal|RK_Ammo_CannonBall|RK_Ammo_WyvernFire|RK_Apparel_Banner|RK_Apparel_Banner_Unique|RK_Apparel_ChildrenCardigan|RK_Apparel_ChildrenSummerDress|RK_Apparel_ChildrenWinterRobe|RK_Apparel_SpaceArmor|RK_Apparel_SpaceArmorHelmet|RK_Apparel_SpaceArmorHelmet_Unique|RK_Apparel_SpaceArmor_Unique|RK_Apparel_Vacsuit|RK_Apparel_VacsuitChildren|RK_Apparel_VacsuitHelmet|RK_ApronSkirt|RK_ApronSkirtChildren|RK_AutoCrossBow|RK_AutoCrossBow_Unique|RK_Axe|RK_Backpack|RK_BattleSuit|RK_Building_Ballista|RK_Building_Cannon|RK_Building_CannonTurret|RK_BulletProofHelmet|RK_Bullet_Bolter|RK_Bullet_RatHolicGun|RK_Bullet_SawedOff|RK_Cardigan|RK_ChefHat|RK_ChefSuit|RK_Cleaver|RK_Coif|RK_CrossBack|RK_Crossbow|RK_Crossbow_Unique|RK_Dagger|RK_ElectricSmithy|RK_ElectricTailoringBench|RK_EmpBomb|RK_ExplorerHat|RK_ExplorerWear|RK_Filth_BeerFoam|RK_FlatColorCoat|RK_FlechetteRifle_Unique|RK_FlechetteSniperRifle_Unique|RK_Food_Hardtack|RK_Fork|RK_FrillOnepiece|RK_FueledSmithy|RK_GaurdenUniform|RK_GuerrillaTunnel|RK_GuerrillaTunnelSpawner|RK_HairCorsage|RK_Halberd|RK_Halberd_Unique|RK_HamsterWheelGenerator|RK_HandTailoringBench|RK_HeadBand|RK_HeavyLance|RK_HeavyLance_Unique|RK_HeavyShield|RK_HeavyShield_Unique|RK_Hockey|RK_KingHamster|RK_Leather_KingHamster|RK_LightLance|RK_LongSword|RK_LongSword_Unique|RK_Mace|RK_Mace_Unique|RK_MagicWand|RK_Mask|RK_MaskB|RK_Mote_IncineratorBurst|RK_Mote_MoraleBooster|RK_Muffler|RK_OneHanded|RK_OrderUniform|RK_OutdoorBackpack|RK_PawnFlyer_LanceCharge|RK_Pickaxe|RK_Plate|RK_PlateHelmA|RK_PlateHelmA_Unique|RK_PlateHelmB|RK_PlateHelmB_Unique|RK_PlateHelmC|RK_PlateHelmC_Unique|RK_PlateHelm_Unique|RK_Plate_Unique|RK_Projectile_Arbalest|RK_Projectile_BallistaBoltAP|RK_Projectile_BallistaBoltNormal|RK_Projectile_CannonBall|RK_PrototypePulseRifle|RK_PrototypePulseRifle_Unique|RK_Pulpit|RK_ResearchGlasses|RK_ResearchGown|RK_RibbonHairBand|RK_Rifle|RK_Rifle_Unique|RK_Rifle_line_Unique|RK_RoyalCrown|RK_RoyalRobe|RK_Sack|RK_SantaHat|RK_SantaRobe|RK_SantaSack|RK_SistersDerss|RK_SistersVeil|RK_SniperRifle|RK_SniperRifle_Unique|RK_Spear|RK_Spear_Unique|RK_StrawHat|RK_StrawberryBeer|RK_StrawberryBeer_Bullet|RK_SummerDress|RK_TowerShield|RK_TowerShield_Unique|RK_TwoHanded|RK_TwoHanded_Unique|RK_Weapon_Arbalest|RK_Weapon_Arbalest_Unique|RK_Weapon_BFR|RK_Weapon_BFR_Unique|RK_Weapon_Ballista|RK_Weapon_Bolter|RK_Weapon_Bolter_Unique|RK_Weapon_EMPChainSword_Unique|RK_Weapon_FlameChainSword_Unique|RK_Weapon_Gunlance|RK_Weapon_Gunlance_Unique|RK_Weapon_Maul|RK_Weapon_ProtoChainSword|RK_Weapon_ProtoFlameChainSword|RK_Weapon_RatHolicGun|RK_Weapon_RatHolicGun_Unique|RK_Weapon_SawedOff|RK_WhiteCoat|RK_WinterRobe|RK_WoodenShield|RK_WoodenShield_Unique|RK_Wool_KingHamster|RK_WoolenHat|RK_WorkerWear|", concat("|", defName, "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[contains("|Bolt_RK_AutoCrossBow|Bolt_RK_Crossbow|Bullet_BFR_AP|Bullet_BFR_HE|Bullet_RK_PrototypePulseRifleHeavy|Bullet_RK_PrototypePulseRifleLight|Bullet_RK_Rifle|Bullet_RK_SniperRifle|GunlanceAfterIgnition|GunlancePreIgnition|MinifiedEMP|Mote_CountDown|Mote_ShockWave|RK_Ammo_BallistaBoltAP|RK_Ammo_BallistaBoltNormal|RK_Ammo_CannonBall|RK_Ammo_WyvernFire|RK_Apparel_Banner|RK_Apparel_Banner_Unique|RK_Apparel_ChildrenCardigan|RK_Apparel_ChildrenSummerDress|RK_Apparel_ChildrenWinterRobe|RK_Apparel_SpaceArmor|RK_Apparel_SpaceArmorHelmet|RK_Apparel_SpaceArmorHelmet_Unique|RK_Apparel_SpaceArmor_Unique|RK_Apparel_Vacsuit|RK_Apparel_VacsuitChildren|RK_Apparel_VacsuitHelmet|RK_ApronSkirt|RK_ApronSkirtChildren|RK_AutoCrossBow|RK_AutoCrossBow_Unique|RK_Axe|RK_Backpack|RK_BattleSuit|RK_Building_Ballista|RK_Building_Cannon|RK_Building_CannonTurret|RK_BulletProofHelmet|RK_Bullet_Bolter|RK_Bullet_RatHolicGun|RK_Bullet_SawedOff|RK_Cardigan|RK_ChefHat|RK_ChefSuit|RK_Cleaver|RK_Coif|RK_CrossBack|RK_Crossbow|RK_Crossbow_Unique|RK_Dagger|RK_ElectricSmithy|RK_ElectricTailoringBench|RK_EmpBomb|RK_ExplorerHat|RK_ExplorerWear|RK_Filth_BeerFoam|RK_FlatColorCoat|RK_FlechetteRifle_Unique|RK_FlechetteSniperRifle_Unique|RK_Food_Hardtack|RK_Fork|RK_FrillOnepiece|RK_FueledSmithy|RK_GaurdenUniform|RK_GuerrillaTunnel|RK_GuerrillaTunnelSpawner|RK_HairCorsage|RK_Halberd|RK_Halberd_Unique|RK_HamsterWheelGenerator|RK_HandTailoringBench|RK_HeadBand|RK_HeavyLance|RK_HeavyLance_Unique|RK_HeavyShield|RK_HeavyShield_Unique|RK_Hockey|RK_KingHamster|RK_Leather_KingHamster|RK_LightLance|RK_LongSword|RK_LongSword_Unique|RK_Mace|RK_Mace_Unique|RK_MagicWand|RK_Mask|RK_MaskB|RK_Mote_IncineratorBurst|RK_Mote_MoraleBooster|RK_Muffler|RK_OneHanded|RK_OrderUniform|RK_OutdoorBackpack|RK_PawnFlyer_LanceCharge|RK_Pickaxe|RK_Plate|RK_PlateHelmA|RK_PlateHelmA_Unique|RK_PlateHelmB|RK_PlateHelmB_Unique|RK_PlateHelmC|RK_PlateHelmC_Unique|RK_PlateHelm_Unique|RK_Plate_Unique|RK_Projectile_Arbalest|RK_Projectile_BallistaBoltAP|RK_Projectile_BallistaBoltNormal|RK_Projectile_CannonBall|RK_PrototypePulseRifle|RK_PrototypePulseRifle_Unique|RK_Pulpit|RK_ResearchGlasses|RK_ResearchGown|RK_RibbonHairBand|RK_Rifle|RK_Rifle_Unique|RK_Rifle_line_Unique|RK_RoyalCrown|RK_RoyalRobe|RK_Sack|RK_SantaHat|RK_SantaRobe|RK_SantaSack|RK_SistersDerss|RK_SistersVeil|RK_SniperRifle|RK_SniperRifle_Unique|RK_Spear|RK_Spear_Unique|RK_StrawHat|RK_StrawberryBeer|RK_StrawberryBeer_Bullet|RK_SummerDress|RK_TowerShield|RK_TowerShield_Unique|RK_TwoHanded|RK_TwoHanded_Unique|RK_Weapon_Arbalest|RK_Weapon_Arbalest_Unique|RK_Weapon_BFR|RK_Weapon_BFR_Unique|RK_Weapon_Ballista|RK_Weapon_Bolter|RK_Weapon_Bolter_Unique|RK_Weapon_EMPChainSword_Unique|RK_Weapon_FlameChainSword_Unique|RK_Weapon_Gunlance|RK_Weapon_Gunlance_Unique|RK_Weapon_Maul|RK_Weapon_ProtoChainSword|RK_Weapon_ProtoFlameChainSword|RK_Weapon_RatHolicGun|RK_Weapon_RatHolicGun_Unique|RK_Weapon_SawedOff|RK_WhiteCoat|RK_WinterRobe|RK_WoodenShield|RK_WoodenShield_Unique|RK_Wool_KingHamster|RK_WoolenHat|RK_WorkerWear|", concat("|", defName, "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="RK_Faction_Caravan" or defName="RK_Faction_Pilgrims" or defName="RK_PlayerFaction" or defName="Rakinia"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/FactionDef[defName="RK_Faction_Caravan" or defName="RK_Faction_Pilgrims" or defName="RK_PlayerFaction" or defName="Rakinia"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/StorytellerDef[defName="RK_Storyteller_RottyMilden"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/StorytellerDef[defName="RK_Storyteller_RottyMilden"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/TraderKindDef[contains("|RK_TraderKind_KingdomBulkGoods|RK_TraderKind_KingdomCombatSupplier|RK_TraderKind_KingdomDressMerchant|RK_TraderKind_KingdomExotic|RK_TraderKind_KingdomFoodMerchant|RK_TraderKind_KingdomTextileMerchant|RK_TraderKind_Standard|RK_TraderKind_WanderingTrader|", concat("|", defName, "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/TraderKindDef[contains("|RK_TraderKind_KingdomBulkGoods|RK_TraderKind_KingdomCombatSupplier|RK_TraderKind_KingdomDressMerchant|RK_TraderKind_KingdomExotic|RK_TraderKind_KingdomFoodMerchant|RK_TraderKind_KingdomTextileMerchant|RK_TraderKind_Standard|RK_TraderKind_WanderingTrader|", concat("|", defName, "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ScenarioDef[defName="RK_Scenario_Settler"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ScenarioDef[defName="RK_Scenario_Settler"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/IncidentDef[contains("|GiveQuest_ReliquaryPilgrims_Ratkin|RK_Incident_PriestJoin|RK_Incident_VagabondJoin|RK_Incident_WanderingTrader|RatkinFollowUpTroops|RatkinTunnel_Guerrilla|", concat("|", defName, "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/IncidentDef[contains("|GiveQuest_ReliquaryPilgrims_Ratkin|RK_Incident_PriestJoin|RK_Incident_VagabondJoin|RK_Incident_WanderingTrader|RatkinFollowUpTroops|RatkinTunnel_Guerrilla|", concat("|", defName, "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/QuestScriptDef[defName="RK_QuestScript_PriestJoin" or defName="ReliquaryPilgrims_Ratkin"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/QuestScriptDef[defName="RK_QuestScript_PriestJoin" or defName="ReliquaryPilgrims_Ratkin"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/JobDef[contains("|RK_Job_DismissCaravanLeader|RK_Job_HamsterWheel|RK_Job_PrayerService|RK_Job_ShieldFaceDirection|RK_Job_SpectatePray|RK_Job_TalkToCaravanLeader|", concat("|", defName, "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/JobDef[contains("|RK_Job_DismissCaravanLeader|RK_Job_HamsterWheel|RK_Job_PrayerService|RK_Job_ShieldFaceDirection|RK_Job_SpectatePray|RK_Job_TalkToCaravanLeader|", concat("|", defName, "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/DutyDef[defName="RK_JoinPrayerService" or defName="RK_OrganizePrayerService" or defName="RK_SpectatePrayerService"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/DutyDef[defName="RK_JoinPrayerService" or defName="RK_OrganizePrayerService" or defName="RK_SpectatePrayerService"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/WorkGiverDef[defName="RK_Work_HamsterWheel"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/WorkGiverDef[defName="RK_Work_HamsterWheel"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/WorkTypeDef[defName="RK_WorkType_GeneratePower"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/WorkTypeDef[defName="RK_WorkType_GeneratePower"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/AbilityDef[defName="RK_Ability_LanceCharge" or defName="RK_Ability_MeleeMoraleBooster" or defName="RK_PrayerService" or defName="RK_WyvernFire_Ability"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/AbilityDef[defName="RK_Ability_LanceCharge" or defName="RK_Ability_MeleeMoraleBooster" or defName="RK_PrayerService" or defName="RK_WyvernFire_Ability"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/InteractionDef[defName="RK_PriestPray"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/InteractionDef[defName="RK_PriestPray"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="RK_AttendPrayerMeetingMood" or defName="RK_PriestPray" or defName="RK_PriestPrayMood"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThoughtDef[defName="RK_AttendPrayerMeetingMood" or defName="RK_PriestPray" or defName="RK_PriestPrayMood"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[contains("|RK_Research_AdvancedApparel|RK_Research_Agriculture|RK_Research_AngryRatProject|RK_Research_Carpentry|RK_Research_CrusaderArmor|RK_Research_DragonFlame|RK_Research_FoodPreservation|RK_Research_Fortification|RK_Research_FunctionalApparel|RK_Research_GearMechanics|RK_Research_Metallurgy|RK_Research_NobleApparel|RK_Research_ObservationAndSurveying|RK_Research_OrbitalEquipment|RK_Research_RatkinEngineering|RK_Research_Sample|RK_Research_SeparationMechanics|RK_Research_Smithing|RK_Research_SwordAndShield|RK_Research_Tailoring|", concat("|", defName, "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[contains("|RK_Research_AdvancedApparel|RK_Research_Agriculture|RK_Research_AngryRatProject|RK_Research_Carpentry|RK_Research_CrusaderArmor|RK_Research_DragonFlame|RK_Research_FoodPreservation|RK_Research_Fortification|RK_Research_FunctionalApparel|RK_Research_GearMechanics|RK_Research_Metallurgy|RK_Research_NobleApparel|RK_Research_ObservationAndSurveying|RK_Research_OrbitalEquipment|RK_Research_RatkinEngineering|RK_Research_Sample|RK_Research_SeparationMechanics|RK_Research_Smithing|RK_Research_SwordAndShield|RK_Research_Tailoring|", concat("|", defName, "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ResearchTabDef[defName="RK_ResearchTab_Default"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ResearchTabDef[defName="RK_ResearchTab_Default"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectTagDef[defName="RK_ResearchTag_IndustrialBasic" or defName="RK_ResearchTag_MedievalBasic"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectTagDef[defName="RK_ResearchTag_IndustrialBasic" or defName="RK_ResearchTag_MedievalBasic"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[contains("|RK_PawnKind_CaravanGuard|RK_PawnKind_CaravanLeader|RK_PawnKind_NoblePilgrim|RK_PawnKind_Nomad|RK_PawnKind_Pilgrim|RK_PawnKind_Priest|RK_PawnKind_StandardBearer|RK_PawnKind_Wanderer|RK_Unique_Kira|RatkinCombatant|RatkinDefender|RatkinDemonMan|RatkinEliteDefender|RatkinEliteGuardener|RatkinEliteSoldier|RatkinKnight|RatkinKnightCommander|RatkinMercenary|RatkinMercenaryLight|RatkinMerchant|RatkinMurderer|RatkinNoble|RatkinPettyThief|RatkinPriest|RatkinServant|RatkinSoldier|RatkinVagabond|RatkinVanguard|Ratkin_KingHamster|", concat("|", defName, "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/PawnKindDef[contains("|RK_PawnKind_CaravanGuard|RK_PawnKind_CaravanLeader|RK_PawnKind_NoblePilgrim|RK_PawnKind_Nomad|RK_PawnKind_Pilgrim|RK_PawnKind_Priest|RK_PawnKind_StandardBearer|RK_PawnKind_Wanderer|RK_Unique_Kira|RatkinCombatant|RatkinDefender|RatkinDemonMan|RatkinEliteDefender|RatkinEliteGuardener|RatkinEliteSoldier|RatkinKnight|RatkinKnightCommander|RatkinMercenary|RatkinMercenaryLight|RatkinMerchant|RatkinMurderer|RatkinNoble|RatkinPettyThief|RatkinPriest|RatkinServant|RatkinSoldier|RatkinVagabond|RatkinVanguard|Ratkin_KingHamster|", concat("|", defName, "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/RecipeDef[contains("|Make_RK_Ammo_CannonBall|Make_RK_StrawberryBeer|Make_RK_StrawberryBeer_Bulk|RK_Recipe_Hardtack|RK_Recipe_HardtackBulk|", concat("|", defName, "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[contains("|Make_RK_Ammo_CannonBall|Make_RK_StrawberryBeer|Make_RK_StrawberryBeer_Bulk|RK_Recipe_Hardtack|RK_Recipe_HardtackBulk|", concat("|", defName, "|"))]</xpath>
+        </match>
+      </li>
+      <!--5. Remove faction/pawn-kind-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[@Name="RK_PlayerFactionBase" or @Name="RatkinFactionBase"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/FactionDef[@Name="RK_PlayerFactionBase" or @Name="RatkinFactionBase"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="KingHamster" or @Name="RKBasePawnKind" or @Name="RKCombatantBase" or @Name="RK_PawnKindAttr_PilgrimBase"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/PawnKindDef[@Name="KingHamster" or @Name="RKBasePawnKind" or @Name="RKCombatantBase" or @Name="RK_PawnKindAttr_PilgrimBase"]</xpath>
+        </match>
+      </li>
+      <!--6. Undo injections into vanilla or other mods: workbenches, bill workgivers, research tags and ideology apparel-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/*//recipes/li[contains("|Make_Bolt_RK_AutoCrossBow|Make_Bolt_RK_Crossbow|Make_Bullet_BFR_AP|Make_Bullet_BFR_HE|Make_Bullet_RK_PrototypePulseRifleHeavy|Make_Bullet_RK_PrototypePulseRifleLight|Make_Bullet_RK_Rifle|Make_Bullet_RK_SniperRifle|Make_GunlanceAfterIgnition|Make_GunlancePreIgnition|Make_MinifiedEMP|Make_Mote_CountDown|Make_Mote_ShockWave|Make_RK_Ammo_BallistaBoltAP|Make_RK_Ammo_BallistaBoltNormal|Make_RK_Ammo_CannonBall|Make_RK_Ammo_WyvernFire|Make_RK_Apparel_Banner|Make_RK_Apparel_Banner_Unique|Make_RK_Apparel_ChildrenCardigan|Make_RK_Apparel_ChildrenSummerDress|Make_RK_Apparel_ChildrenWinterRobe|Make_RK_Apparel_SpaceArmor|Make_RK_Apparel_SpaceArmorHelmet|Make_RK_Apparel_SpaceArmorHelmet_Unique|Make_RK_Apparel_SpaceArmor_Unique|Make_RK_Apparel_Vacsuit|Make_RK_Apparel_VacsuitChildren|Make_RK_Apparel_VacsuitHelmet|Make_RK_ApronSkirt|Make_RK_ApronSkirtChildren|Make_RK_AutoCrossBow|Make_RK_AutoCrossBow_Unique|Make_RK_Axe|Make_RK_Backpack|Make_RK_BattleSuit|Make_RK_Building_Ballista|Make_RK_Building_Cannon|Make_RK_Building_CannonTurret|Make_RK_BulletProofHelmet|Make_RK_Bullet_Bolter|Make_RK_Bullet_RatHolicGun|Make_RK_Bullet_SawedOff|Make_RK_Cardigan|Make_RK_ChefHat|Make_RK_ChefSuit|Make_RK_Cleaver|Make_RK_Coif|Make_RK_CrossBack|Make_RK_Crossbow|Make_RK_Crossbow_Unique|Make_RK_Dagger|Make_RK_ElectricSmithy|Make_RK_ElectricTailoringBench|Make_RK_EmpBomb|Make_RK_ExplorerHat|Make_RK_ExplorerWear|Make_RK_Filth_BeerFoam|Make_RK_FlatColorCoat|Make_RK_FlechetteRifle_Unique|Make_RK_FlechetteSniperRifle_Unique|Make_RK_Food_Hardtack|Make_RK_Fork|Make_RK_FrillOnepiece|Make_RK_FueledSmithy|Make_RK_GaurdenUniform|Make_RK_GuerrillaTunnel|Make_RK_GuerrillaTunnelSpawner|Make_RK_HairCorsage|Make_RK_Halberd|Make_RK_Halberd_Unique|Make_RK_HamsterWheelGenerator|Make_RK_HandTailoringBench|Make_RK_HeadBand|Make_RK_HeavyLance|Make_RK_HeavyLance_Unique|Make_RK_HeavyShield|Make_RK_HeavyShield_Unique|Make_RK_Hockey|Make_RK_KingHamster|Make_RK_Leather_KingHamster|Make_RK_LightLance|Make_RK_LongSword|Make_RK_LongSword_Unique|Make_RK_Mace|Make_RK_Mace_Unique|Make_RK_MagicWand|Make_RK_Mask|Make_RK_MaskB|Make_RK_Mote_IncineratorBurst|Make_RK_Mote_MoraleBooster|Make_RK_Muffler|Make_RK_OneHanded|Make_RK_OrderUniform|Make_RK_OutdoorBackpack|Make_RK_PawnFlyer_LanceCharge|Make_RK_Pickaxe|Make_RK_Plate|Make_RK_PlateHelmA|Make_RK_PlateHelmA_Unique|Make_RK_PlateHelmB|Make_RK_PlateHelmB_Unique|Make_RK_PlateHelmC|Make_RK_PlateHelmC_Unique|Make_RK_PlateHelm_Unique|Make_RK_Plate_Unique|Make_RK_Projectile_Arbalest|Make_RK_Projectile_BallistaBoltAP|Make_RK_Projectile_BallistaBoltNormal|Make_RK_Projectile_CannonBall|Make_RK_PrototypePulseRifle|Make_RK_PrototypePulseRifle_Unique|Make_RK_Pulpit|Make_RK_ResearchGlasses|Make_RK_ResearchGown|Make_RK_RibbonHairBand|Make_RK_Rifle|Make_RK_Rifle_Unique|Make_RK_Rifle_line_Unique|Make_RK_RoyalCrown|Make_RK_RoyalRobe|Make_RK_Sack|Make_RK_SantaHat|Make_RK_SantaRobe|Make_RK_SantaSack|Make_RK_SistersDerss|Make_RK_SistersVeil|Make_RK_SniperRifle|Make_RK_SniperRifle_Unique|Make_RK_Spear|Make_RK_Spear_Unique|Make_RK_StrawHat|Make_RK_StrawberryBeer|Make_RK_StrawberryBeer_Bulk|Make_RK_StrawberryBeer_Bullet|Make_RK_SummerDress|Make_RK_TowerShield|Make_RK_TowerShield_Unique|Make_RK_TwoHanded|Make_RK_TwoHanded_Unique|Make_RK_Weapon_Arbalest|Make_RK_Weapon_Arbalest_Unique|Make_RK_Weapon_BFR|Make_RK_Weapon_BFR_Unique|Make_RK_Weapon_Ballista|Make_RK_Weapon_Bolter|Make_RK_Weapon_Bolter_Unique|Make_RK_Weapon_EMPChainSword_Unique|Make_RK_Weapon_FlameChainSword_Unique|Make_RK_Weapon_Gunlance|Make_RK_Weapon_Gunlance_Unique|Make_RK_Weapon_Maul|Make_RK_Weapon_ProtoChainSword|Make_RK_Weapon_ProtoFlameChainSword|Make_RK_Weapon_RatHolicGun|Make_RK_Weapon_RatHolicGun_Unique|Make_RK_Weapon_SawedOff|Make_RK_WhiteCoat|Make_RK_WinterRobe|Make_RK_WoodenShield|Make_RK_WoodenShield_Unique|Make_RK_Wool_KingHamster|Make_RK_WoolenHat|Make_RK_WorkerWear|RK_Recipe_Hardtack|RK_Recipe_HardtackBulk|", concat("|", normalize-space(.), "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/*//recipes/li[contains("|Make_Bolt_RK_AutoCrossBow|Make_Bolt_RK_Crossbow|Make_Bullet_BFR_AP|Make_Bullet_BFR_HE|Make_Bullet_RK_PrototypePulseRifleHeavy|Make_Bullet_RK_PrototypePulseRifleLight|Make_Bullet_RK_Rifle|Make_Bullet_RK_SniperRifle|Make_GunlanceAfterIgnition|Make_GunlancePreIgnition|Make_MinifiedEMP|Make_Mote_CountDown|Make_Mote_ShockWave|Make_RK_Ammo_BallistaBoltAP|Make_RK_Ammo_BallistaBoltNormal|Make_RK_Ammo_CannonBall|Make_RK_Ammo_WyvernFire|Make_RK_Apparel_Banner|Make_RK_Apparel_Banner_Unique|Make_RK_Apparel_ChildrenCardigan|Make_RK_Apparel_ChildrenSummerDress|Make_RK_Apparel_ChildrenWinterRobe|Make_RK_Apparel_SpaceArmor|Make_RK_Apparel_SpaceArmorHelmet|Make_RK_Apparel_SpaceArmorHelmet_Unique|Make_RK_Apparel_SpaceArmor_Unique|Make_RK_Apparel_Vacsuit|Make_RK_Apparel_VacsuitChildren|Make_RK_Apparel_VacsuitHelmet|Make_RK_ApronSkirt|Make_RK_ApronSkirtChildren|Make_RK_AutoCrossBow|Make_RK_AutoCrossBow_Unique|Make_RK_Axe|Make_RK_Backpack|Make_RK_BattleSuit|Make_RK_Building_Ballista|Make_RK_Building_Cannon|Make_RK_Building_CannonTurret|Make_RK_BulletProofHelmet|Make_RK_Bullet_Bolter|Make_RK_Bullet_RatHolicGun|Make_RK_Bullet_SawedOff|Make_RK_Cardigan|Make_RK_ChefHat|Make_RK_ChefSuit|Make_RK_Cleaver|Make_RK_Coif|Make_RK_CrossBack|Make_RK_Crossbow|Make_RK_Crossbow_Unique|Make_RK_Dagger|Make_RK_ElectricSmithy|Make_RK_ElectricTailoringBench|Make_RK_EmpBomb|Make_RK_ExplorerHat|Make_RK_ExplorerWear|Make_RK_Filth_BeerFoam|Make_RK_FlatColorCoat|Make_RK_FlechetteRifle_Unique|Make_RK_FlechetteSniperRifle_Unique|Make_RK_Food_Hardtack|Make_RK_Fork|Make_RK_FrillOnepiece|Make_RK_FueledSmithy|Make_RK_GaurdenUniform|Make_RK_GuerrillaTunnel|Make_RK_GuerrillaTunnelSpawner|Make_RK_HairCorsage|Make_RK_Halberd|Make_RK_Halberd_Unique|Make_RK_HamsterWheelGenerator|Make_RK_HandTailoringBench|Make_RK_HeadBand|Make_RK_HeavyLance|Make_RK_HeavyLance_Unique|Make_RK_HeavyShield|Make_RK_HeavyShield_Unique|Make_RK_Hockey|Make_RK_KingHamster|Make_RK_Leather_KingHamster|Make_RK_LightLance|Make_RK_LongSword|Make_RK_LongSword_Unique|Make_RK_Mace|Make_RK_Mace_Unique|Make_RK_MagicWand|Make_RK_Mask|Make_RK_MaskB|Make_RK_Mote_IncineratorBurst|Make_RK_Mote_MoraleBooster|Make_RK_Muffler|Make_RK_OneHanded|Make_RK_OrderUniform|Make_RK_OutdoorBackpack|Make_RK_PawnFlyer_LanceCharge|Make_RK_Pickaxe|Make_RK_Plate|Make_RK_PlateHelmA|Make_RK_PlateHelmA_Unique|Make_RK_PlateHelmB|Make_RK_PlateHelmB_Unique|Make_RK_PlateHelmC|Make_RK_PlateHelmC_Unique|Make_RK_PlateHelm_Unique|Make_RK_Plate_Unique|Make_RK_Projectile_Arbalest|Make_RK_Projectile_BallistaBoltAP|Make_RK_Projectile_BallistaBoltNormal|Make_RK_Projectile_CannonBall|Make_RK_PrototypePulseRifle|Make_RK_PrototypePulseRifle_Unique|Make_RK_Pulpit|Make_RK_ResearchGlasses|Make_RK_ResearchGown|Make_RK_RibbonHairBand|Make_RK_Rifle|Make_RK_Rifle_Unique|Make_RK_Rifle_line_Unique|Make_RK_RoyalCrown|Make_RK_RoyalRobe|Make_RK_Sack|Make_RK_SantaHat|Make_RK_SantaRobe|Make_RK_SantaSack|Make_RK_SistersDerss|Make_RK_SistersVeil|Make_RK_SniperRifle|Make_RK_SniperRifle_Unique|Make_RK_Spear|Make_RK_Spear_Unique|Make_RK_StrawHat|Make_RK_StrawberryBeer|Make_RK_StrawberryBeer_Bulk|Make_RK_StrawberryBeer_Bullet|Make_RK_SummerDress|Make_RK_TowerShield|Make_RK_TowerShield_Unique|Make_RK_TwoHanded|Make_RK_TwoHanded_Unique|Make_RK_Weapon_Arbalest|Make_RK_Weapon_Arbalest_Unique|Make_RK_Weapon_BFR|Make_RK_Weapon_BFR_Unique|Make_RK_Weapon_Ballista|Make_RK_Weapon_Bolter|Make_RK_Weapon_Bolter_Unique|Make_RK_Weapon_EMPChainSword_Unique|Make_RK_Weapon_FlameChainSword_Unique|Make_RK_Weapon_Gunlance|Make_RK_Weapon_Gunlance_Unique|Make_RK_Weapon_Maul|Make_RK_Weapon_ProtoChainSword|Make_RK_Weapon_ProtoFlameChainSword|Make_RK_Weapon_RatHolicGun|Make_RK_Weapon_RatHolicGun_Unique|Make_RK_Weapon_SawedOff|Make_RK_WhiteCoat|Make_RK_WinterRobe|Make_RK_WoodenShield|Make_RK_WoodenShield_Unique|Make_RK_Wool_KingHamster|Make_RK_WoolenHat|Make_RK_WorkerWear|RK_Recipe_Hardtack|RK_Recipe_HardtackBulk|", concat("|", normalize-space(.), "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef/roleApparelRequirements/li[requirement/requiredDefs/li[contains("|RK_FlatColorCoat|RK_FrillOnepiece|RK_HairCorsage|RK_RibbonHairBand|RK_RoyalCrown|RK_RoyalRobe|RK_SistersDerss|RK_SistersVeil|RK_WhiteCoat|", concat("|", normalize-space(.), "|"))] and not(requirement/requiredDefs/li[not(contains("|RK_FlatColorCoat|RK_FrillOnepiece|RK_HairCorsage|RK_RibbonHairBand|RK_RoyalCrown|RK_RoyalRobe|RK_SistersDerss|RK_SistersVeil|RK_WhiteCoat|", concat("|", normalize-space(.), "|")))])]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/PreceptDef/roleApparelRequirements/li[requirement/requiredDefs/li[contains("|RK_FlatColorCoat|RK_FrillOnepiece|RK_HairCorsage|RK_RibbonHairBand|RK_RoyalCrown|RK_RoyalRobe|RK_SistersDerss|RK_SistersVeil|RK_WhiteCoat|", concat("|", normalize-space(.), "|"))] and not(requirement/requiredDefs/li[not(contains("|RK_FlatColorCoat|RK_FrillOnepiece|RK_HairCorsage|RK_RibbonHairBand|RK_RoyalCrown|RK_RoyalRobe|RK_SistersDerss|RK_SistersVeil|RK_WhiteCoat|", concat("|", normalize-space(.), "|")))])]</xpath>
+        </match>
+      </li>
+      <!--7. Stop the wheel-prisoner AI and storyteller scheduling of removed Ratkin incidents.-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThinkTreeDef//li[@Class="NewRatkin.JobGiver_RunningWheelPrisoner"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThinkTreeDef//li[@Class="NewRatkin.JobGiver_RunningWheelPrisoner"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/StorytellerDef/comps/li[contains("|GiveQuest_ReliquaryPilgrims_Ratkin|RK_Incident_PriestJoin|RK_Incident_VagabondJoin|RK_Incident_WanderingTrader|RatkinFollowUpTroops|RatkinTunnel_Guerrilla|", concat("|", incident, "|")) or @Class="StorytellerCompProperties_RK_PriestJoin" or @Class="NewRatkin.StorytellerCompProperties_WanderingCaravan"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/StorytellerDef/comps/li[contains("|GiveQuest_ReliquaryPilgrims_Ratkin|RK_Incident_PriestJoin|RK_Incident_VagabondJoin|RK_Incident_WanderingTrader|RatkinFollowUpTroops|RatkinTunnel_Guerrilla|", concat("|", incident, "|")) or @Class="StorytellerCompProperties_RK_PriestJoin" or @Class="NewRatkin.StorytellerCompProperties_WanderingCaravan"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/BiomeDef/allowedPackAnimals/li[text()="RK_KingHamster"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/BiomeDef/allowedPackAnimals/li[text()="RK_KingHamster"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/BiomeDef/wildAnimals/Ratkin_KingHamster</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/BiomeDef/wildAnimals/Ratkin_KingHamster</xpath>
+        </match>
+      </li>
+      <!--8. Remove typed references to the deleted defs-->
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/*//*[self::permanentEnemyToEveryoneExcept or self::factionDefs or self::allowedFactionDefs]/li[text()="RK_Faction_Caravan" or text()="RK_Faction_Pilgrims" or text()="RK_PlayerFaction" or text()="Rakinia"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/*//*[self::permanentEnemyToEveryoneExcept or self::factionDefs or self::allowedFactionDefs]/li[text()="RK_Faction_Caravan" or text()="RK_Faction_Pilgrims" or text()="RK_PlayerFaction" or text()="Rakinia"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/*//*[self::kindDefs or self::allowedPawnKinds or self::pawnKinds]/li[contains("|RK_PawnKind_CaravanGuard|RK_PawnKind_CaravanLeader|RK_PawnKind_NoblePilgrim|RK_PawnKind_Nomad|RK_PawnKind_Pilgrim|RK_PawnKind_Priest|RK_PawnKind_StandardBearer|RK_PawnKind_Wanderer|RK_Unique_Kira|RatkinCombatant|RatkinDefender|RatkinDemonMan|RatkinEliteDefender|RatkinEliteGuardener|RatkinEliteSoldier|RatkinKnight|RatkinKnightCommander|RatkinMercenary|RatkinMercenaryLight|RatkinMerchant|RatkinMurderer|RatkinNoble|RatkinPettyThief|RatkinPriest|RatkinServant|RatkinSoldier|RatkinVagabond|RatkinVanguard|Ratkin_KingHamster|", concat("|", normalize-space(.), "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/*//*[self::kindDefs or self::allowedPawnKinds or self::pawnKinds]/li[contains("|RK_PawnKind_CaravanGuard|RK_PawnKind_CaravanLeader|RK_PawnKind_NoblePilgrim|RK_PawnKind_Nomad|RK_PawnKind_Pilgrim|RK_PawnKind_Priest|RK_PawnKind_StandardBearer|RK_PawnKind_Wanderer|RK_Unique_Kira|RatkinCombatant|RatkinDefender|RatkinDemonMan|RatkinEliteDefender|RatkinEliteGuardener|RatkinEliteSoldier|RatkinKnight|RatkinKnightCommander|RatkinMercenary|RatkinMercenaryLight|RatkinMerchant|RatkinMurderer|RatkinNoble|RatkinPettyThief|RatkinPriest|RatkinServant|RatkinSoldier|RatkinVagabond|RatkinVanguard|Ratkin_KingHamster|", concat("|", normalize-space(.), "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>(/Defs/*//*[self::fixedBillGiverDefs or self::recipeUsers or self::apparelList or self::whiteApparelList or self::weaponList or self::whiteWeaponList or self::buildingList or self::foodList or self::whiteFoodList or self::apparelRequired or self::requiredDefs]/li | /Defs/*//invFoodDef | /Defs/*/descriptionHyperlinks/ThingDef)[contains("|Bolt_RK_AutoCrossBow|Bolt_RK_Crossbow|Bullet_BFR_AP|Bullet_BFR_HE|Bullet_RK_PrototypePulseRifleHeavy|Bullet_RK_PrototypePulseRifleLight|Bullet_RK_Rifle|Bullet_RK_SniperRifle|GunlanceAfterIgnition|GunlancePreIgnition|MinifiedEMP|Mote_CountDown|Mote_ShockWave|RK_Ammo_BallistaBoltAP|RK_Ammo_BallistaBoltNormal|RK_Ammo_CannonBall|RK_Ammo_WyvernFire|RK_Apparel_Banner|RK_Apparel_Banner_Unique|RK_Apparel_ChildrenCardigan|RK_Apparel_ChildrenSummerDress|RK_Apparel_ChildrenWinterRobe|RK_Apparel_SpaceArmor|RK_Apparel_SpaceArmorHelmet|RK_Apparel_SpaceArmorHelmet_Unique|RK_Apparel_SpaceArmor_Unique|RK_Apparel_Vacsuit|RK_Apparel_VacsuitChildren|RK_Apparel_VacsuitHelmet|RK_ApronSkirt|RK_ApronSkirtChildren|RK_AutoCrossBow|RK_AutoCrossBow_Unique|RK_Axe|RK_Backpack|RK_BattleSuit|RK_Building_Ballista|RK_Building_Cannon|RK_Building_CannonTurret|RK_BulletProofHelmet|RK_Bullet_Bolter|RK_Bullet_RatHolicGun|RK_Bullet_SawedOff|RK_Cardigan|RK_ChefHat|RK_ChefSuit|RK_Cleaver|RK_Coif|RK_CrossBack|RK_Crossbow|RK_Crossbow_Unique|RK_Dagger|RK_ElectricSmithy|RK_ElectricTailoringBench|RK_EmpBomb|RK_ExplorerHat|RK_ExplorerWear|RK_Filth_BeerFoam|RK_FlatColorCoat|RK_FlechetteRifle_Unique|RK_FlechetteSniperRifle_Unique|RK_Food_Hardtack|RK_Fork|RK_FrillOnepiece|RK_FueledSmithy|RK_GaurdenUniform|RK_GuerrillaTunnel|RK_GuerrillaTunnelSpawner|RK_HairCorsage|RK_Halberd|RK_Halberd_Unique|RK_HamsterWheelGenerator|RK_HandTailoringBench|RK_HeadBand|RK_HeavyLance|RK_HeavyLance_Unique|RK_HeavyShield|RK_HeavyShield_Unique|RK_Hockey|RK_KingHamster|RK_Leather_KingHamster|RK_LightLance|RK_LongSword|RK_LongSword_Unique|RK_Mace|RK_Mace_Unique|RK_MagicWand|RK_Mask|RK_MaskB|RK_Mote_IncineratorBurst|RK_Mote_MoraleBooster|RK_Muffler|RK_OneHanded|RK_OrderUniform|RK_OutdoorBackpack|RK_PawnFlyer_LanceCharge|RK_Pickaxe|RK_Plate|RK_PlateHelmA|RK_PlateHelmA_Unique|RK_PlateHelmB|RK_PlateHelmB_Unique|RK_PlateHelmC|RK_PlateHelmC_Unique|RK_PlateHelm_Unique|RK_Plate_Unique|RK_Projectile_Arbalest|RK_Projectile_BallistaBoltAP|RK_Projectile_BallistaBoltNormal|RK_Projectile_CannonBall|RK_PrototypePulseRifle|RK_PrototypePulseRifle_Unique|RK_Pulpit|RK_ResearchGlasses|RK_ResearchGown|RK_RibbonHairBand|RK_Rifle|RK_Rifle_Unique|RK_Rifle_line_Unique|RK_RoyalCrown|RK_RoyalRobe|RK_Sack|RK_SantaHat|RK_SantaRobe|RK_SantaSack|RK_SistersDerss|RK_SistersVeil|RK_SniperRifle|RK_SniperRifle_Unique|RK_Spear|RK_Spear_Unique|RK_StrawHat|RK_StrawberryBeer|RK_StrawberryBeer_Bullet|RK_SummerDress|RK_TowerShield|RK_TowerShield_Unique|RK_TwoHanded|RK_TwoHanded_Unique|RK_Weapon_Arbalest|RK_Weapon_Arbalest_Unique|RK_Weapon_BFR|RK_Weapon_BFR_Unique|RK_Weapon_Ballista|RK_Weapon_Bolter|RK_Weapon_Bolter_Unique|RK_Weapon_EMPChainSword_Unique|RK_Weapon_FlameChainSword_Unique|RK_Weapon_Gunlance|RK_Weapon_Gunlance_Unique|RK_Weapon_Maul|RK_Weapon_ProtoChainSword|RK_Weapon_ProtoFlameChainSword|RK_Weapon_RatHolicGun|RK_Weapon_RatHolicGun_Unique|RK_Weapon_SawedOff|RK_WhiteCoat|RK_WinterRobe|RK_WoodenShield|RK_WoodenShield_Unique|RK_Wool_KingHamster|RK_WoolenHat|RK_WorkerWear|", concat("|", normalize-space(.), "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>(/Defs/*//*[self::fixedBillGiverDefs or self::recipeUsers or self::apparelList or self::whiteApparelList or self::weaponList or self::whiteWeaponList or self::buildingList or self::foodList or self::whiteFoodList or self::apparelRequired or self::requiredDefs]/li | /Defs/*//invFoodDef | /Defs/*/descriptionHyperlinks/ThingDef)[contains("|Bolt_RK_AutoCrossBow|Bolt_RK_Crossbow|Bullet_BFR_AP|Bullet_BFR_HE|Bullet_RK_PrototypePulseRifleHeavy|Bullet_RK_PrototypePulseRifleLight|Bullet_RK_Rifle|Bullet_RK_SniperRifle|GunlanceAfterIgnition|GunlancePreIgnition|MinifiedEMP|Mote_CountDown|Mote_ShockWave|RK_Ammo_BallistaBoltAP|RK_Ammo_BallistaBoltNormal|RK_Ammo_CannonBall|RK_Ammo_WyvernFire|RK_Apparel_Banner|RK_Apparel_Banner_Unique|RK_Apparel_ChildrenCardigan|RK_Apparel_ChildrenSummerDress|RK_Apparel_ChildrenWinterRobe|RK_Apparel_SpaceArmor|RK_Apparel_SpaceArmorHelmet|RK_Apparel_SpaceArmorHelmet_Unique|RK_Apparel_SpaceArmor_Unique|RK_Apparel_Vacsuit|RK_Apparel_VacsuitChildren|RK_Apparel_VacsuitHelmet|RK_ApronSkirt|RK_ApronSkirtChildren|RK_AutoCrossBow|RK_AutoCrossBow_Unique|RK_Axe|RK_Backpack|RK_BattleSuit|RK_Building_Ballista|RK_Building_Cannon|RK_Building_CannonTurret|RK_BulletProofHelmet|RK_Bullet_Bolter|RK_Bullet_RatHolicGun|RK_Bullet_SawedOff|RK_Cardigan|RK_ChefHat|RK_ChefSuit|RK_Cleaver|RK_Coif|RK_CrossBack|RK_Crossbow|RK_Crossbow_Unique|RK_Dagger|RK_ElectricSmithy|RK_ElectricTailoringBench|RK_EmpBomb|RK_ExplorerHat|RK_ExplorerWear|RK_Filth_BeerFoam|RK_FlatColorCoat|RK_FlechetteRifle_Unique|RK_FlechetteSniperRifle_Unique|RK_Food_Hardtack|RK_Fork|RK_FrillOnepiece|RK_FueledSmithy|RK_GaurdenUniform|RK_GuerrillaTunnel|RK_GuerrillaTunnelSpawner|RK_HairCorsage|RK_Halberd|RK_Halberd_Unique|RK_HamsterWheelGenerator|RK_HandTailoringBench|RK_HeadBand|RK_HeavyLance|RK_HeavyLance_Unique|RK_HeavyShield|RK_HeavyShield_Unique|RK_Hockey|RK_KingHamster|RK_Leather_KingHamster|RK_LightLance|RK_LongSword|RK_LongSword_Unique|RK_Mace|RK_Mace_Unique|RK_MagicWand|RK_Mask|RK_MaskB|RK_Mote_IncineratorBurst|RK_Mote_MoraleBooster|RK_Muffler|RK_OneHanded|RK_OrderUniform|RK_OutdoorBackpack|RK_PawnFlyer_LanceCharge|RK_Pickaxe|RK_Plate|RK_PlateHelmA|RK_PlateHelmA_Unique|RK_PlateHelmB|RK_PlateHelmB_Unique|RK_PlateHelmC|RK_PlateHelmC_Unique|RK_PlateHelm_Unique|RK_Plate_Unique|RK_Projectile_Arbalest|RK_Projectile_BallistaBoltAP|RK_Projectile_BallistaBoltNormal|RK_Projectile_CannonBall|RK_PrototypePulseRifle|RK_PrototypePulseRifle_Unique|RK_Pulpit|RK_ResearchGlasses|RK_ResearchGown|RK_RibbonHairBand|RK_Rifle|RK_Rifle_Unique|RK_Rifle_line_Unique|RK_RoyalCrown|RK_RoyalRobe|RK_Sack|RK_SantaHat|RK_SantaRobe|RK_SantaSack|RK_SistersDerss|RK_SistersVeil|RK_SniperRifle|RK_SniperRifle_Unique|RK_Spear|RK_Spear_Unique|RK_StrawHat|RK_StrawberryBeer|RK_StrawberryBeer_Bullet|RK_SummerDress|RK_TowerShield|RK_TowerShield_Unique|RK_TwoHanded|RK_TwoHanded_Unique|RK_Weapon_Arbalest|RK_Weapon_Arbalest_Unique|RK_Weapon_BFR|RK_Weapon_BFR_Unique|RK_Weapon_Ballista|RK_Weapon_Bolter|RK_Weapon_Bolter_Unique|RK_Weapon_EMPChainSword_Unique|RK_Weapon_FlameChainSword_Unique|RK_Weapon_Gunlance|RK_Weapon_Gunlance_Unique|RK_Weapon_Maul|RK_Weapon_ProtoChainSword|RK_Weapon_ProtoFlameChainSword|RK_Weapon_RatHolicGun|RK_Weapon_RatHolicGun_Unique|RK_Weapon_SawedOff|RK_WhiteCoat|RK_WinterRobe|RK_WoodenShield|RK_WoodenShield_Unique|RK_Wool_KingHamster|RK_WoolenHat|RK_WorkerWear|", concat("|", normalize-space(.), "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>(/Defs/*//*[self::researchList or self::researchPrerequisites or self::prerequisites]/li | /Defs/*//researchPrerequisite | /Defs/*/descriptionHyperlinks/ResearchProjectDef)[contains("|RK_Research_AdvancedApparel|RK_Research_Agriculture|RK_Research_AngryRatProject|RK_Research_Carpentry|RK_Research_CrusaderArmor|RK_Research_DragonFlame|RK_Research_FoodPreservation|RK_Research_Fortification|RK_Research_FunctionalApparel|RK_Research_GearMechanics|RK_Research_Metallurgy|RK_Research_NobleApparel|RK_Research_ObservationAndSurveying|RK_Research_OrbitalEquipment|RK_Research_RatkinEngineering|RK_Research_Sample|RK_Research_SeparationMechanics|RK_Research_Smithing|RK_Research_SwordAndShield|RK_Research_Tailoring|", concat("|", normalize-space(.), "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>(/Defs/*//*[self::researchList or self::researchPrerequisites or self::prerequisites]/li | /Defs/*//researchPrerequisite | /Defs/*/descriptionHyperlinks/ResearchProjectDef)[contains("|RK_Research_AdvancedApparel|RK_Research_Agriculture|RK_Research_AngryRatProject|RK_Research_Carpentry|RK_Research_CrusaderArmor|RK_Research_DragonFlame|RK_Research_FoodPreservation|RK_Research_Fortification|RK_Research_FunctionalApparel|RK_Research_GearMechanics|RK_Research_Metallurgy|RK_Research_NobleApparel|RK_Research_ObservationAndSurveying|RK_Research_OrbitalEquipment|RK_Research_RatkinEngineering|RK_Research_Sample|RK_Research_SeparationMechanics|RK_Research_Smithing|RK_Research_SwordAndShield|RK_Research_Tailoring|", concat("|", normalize-space(.), "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>(/Defs/ResearchProjectDef/tags/li | /Defs/FactionDef/startingResearchTags/li | /Defs/FactionDef/startingTechprintsResearchTags/li)[text()="RK_ResearchTag_IndustrialBasic" or text()="RK_ResearchTag_MedievalBasic"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>(/Defs/ResearchProjectDef/tags/li | /Defs/FactionDef/startingResearchTags/li | /Defs/FactionDef/startingTechprintsResearchTags/li)[text()="RK_ResearchTag_IndustrialBasic" or text()="RK_ResearchTag_MedievalBasic"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/*/descriptionHyperlinks/RecipeDef[contains("|Make_RK_Ammo_CannonBall|Make_RK_StrawberryBeer|Make_RK_StrawberryBeer_Bulk|RK_Recipe_Hardtack|RK_Recipe_HardtackBulk|", concat("|", normalize-space(.), "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/*/descriptionHyperlinks/RecipeDef[contains("|Make_RK_Ammo_CannonBall|Make_RK_StrawberryBeer|Make_RK_StrawberryBeer_Bulk|RK_Recipe_Hardtack|RK_Recipe_HardtackBulk|", concat("|", normalize-space(.), "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/*/descriptionHyperlinks/PawnKindDef[contains("|RK_PawnKind_CaravanGuard|RK_PawnKind_CaravanLeader|RK_PawnKind_NoblePilgrim|RK_PawnKind_Nomad|RK_PawnKind_Pilgrim|RK_PawnKind_Priest|RK_PawnKind_StandardBearer|RK_PawnKind_Wanderer|RK_Unique_Kira|RatkinCombatant|RatkinDefender|RatkinDemonMan|RatkinEliteDefender|RatkinEliteGuardener|RatkinEliteSoldier|RatkinKnight|RatkinKnightCommander|RatkinMercenary|RatkinMercenaryLight|RatkinMerchant|RatkinMurderer|RatkinNoble|RatkinPettyThief|RatkinPriest|RatkinServant|RatkinSoldier|RatkinVagabond|RatkinVanguard|Ratkin_KingHamster|", concat("|", normalize-space(.), "|"))]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/*/descriptionHyperlinks/PawnKindDef[contains("|RK_PawnKind_CaravanGuard|RK_PawnKind_CaravanLeader|RK_PawnKind_NoblePilgrim|RK_PawnKind_Nomad|RK_PawnKind_Pilgrim|RK_PawnKind_Priest|RK_PawnKind_StandardBearer|RK_PawnKind_Wanderer|RK_Unique_Kira|RatkinCombatant|RatkinDefender|RatkinDemonMan|RatkinEliteDefender|RatkinEliteGuardener|RatkinEliteSoldier|RatkinKnight|RatkinKnightCommander|RatkinMercenary|RatkinMercenaryLight|RatkinMerchant|RatkinMurderer|RatkinNoble|RatkinPettyThief|RatkinPriest|RatkinServant|RatkinSoldier|RatkinVagabond|RatkinVanguard|Ratkin_KingHamster|", concat("|", normalize-space(.), "|"))]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/*/descriptionHyperlinks/FactionDef[text()="RK_Faction_Caravan" or text()="RK_Faction_Pilgrims" or text()="RK_PlayerFaction" or text()="Rakinia"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/*/descriptionHyperlinks/FactionDef[text()="RK_Faction_Caravan" or text()="RK_Faction_Pilgrims" or text()="RK_PlayerFaction" or text()="Rakinia"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/*/descriptionHyperlinks/AbilityDef[text()="RK_Ability_LanceCharge" or text()="RK_Ability_MeleeMoraleBooster" or text()="RK_PrayerService" or text()="RK_WyvernFire_Ability"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/*/descriptionHyperlinks/AbilityDef[text()="RK_Ability_LanceCharge" or text()="RK_Ability_MeleeMoraleBooster" or text()="RK_PrayerService" or text()="RK_WyvernFire_Ability"]</xpath>
+        </match>
+      </li>
+      <!--9. Remove passive combat defs and visual ThingDefs-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/HediffDef[defName="RK_Hediff_MoraleBoosterCaster"]/comps/li[mote="RK_Mote_MoraleBooster"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/HediffDef[defName="RK_Hediff_MoraleBoosterCaster"]/comps/li[mote="RK_Mote_MoraleBooster"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/DamageDef[defName="ShockWaveLight" or defName="ShockWaveHeavy"]/explosionCellMote[text()="Mote_ShockWave"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/DamageDef[defName="ShockWaveLight" or defName="ShockWaveHeavy"]/explosionCellMote[text()="Mote_ShockWave"]</xpath>
+        </match>
+      </li>
+      <!--10. Undo the original mod weapon-grip and trader-buy-tag integrations-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[contains("|Bow_Great_Unique|Gun_AssaultRifle_Unique|Gun_Autopistol|Gun_BeamRepeater_Unique|Gun_BoltActionRifle_Unique|Gun_ChainShotgun_Unique|Gun_ChargeLance_Unique|Gun_ChargeRifle_Unique|Gun_HeavySMG_Unique|Gun_HellcatRifle_Unique|Gun_LMG_Unique|Gun_MachinePistol|Gun_Minigun_Unique|Gun_Revolver|Gun_Revolver_Unique|Gun_SniperRifle_Unique|MeleeWeapon_Axe|MeleeWeapon_BreachAxe|MeleeWeapon_Club|MeleeWeapon_Gladius|MeleeWeapon_Ikwa|MeleeWeapon_Knife|MeleeWeapon_LongSword|MeleeWeapon_Mace|MeleeWeapon_MonoSword|MeleeWeapon_MonoSwordBladelink|MeleeWeapon_PlasmaSword|MeleeWeapon_PlasmaSwordBladelink|MeleeWeapon_Spear|Pila|", concat("|", defName, "|"))]/comps/li[@Class="NewRatkin.CompProperties_WeaponGripType"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[contains("|Bow_Great_Unique|Gun_AssaultRifle_Unique|Gun_Autopistol|Gun_BeamRepeater_Unique|Gun_BoltActionRifle_Unique|Gun_ChainShotgun_Unique|Gun_ChargeLance_Unique|Gun_ChargeRifle_Unique|Gun_HeavySMG_Unique|Gun_HellcatRifle_Unique|Gun_LMG_Unique|Gun_MachinePistol|Gun_Minigun_Unique|Gun_Revolver|Gun_Revolver_Unique|Gun_SniperRifle_Unique|MeleeWeapon_Axe|MeleeWeapon_BreachAxe|MeleeWeapon_Club|MeleeWeapon_Gladius|MeleeWeapon_Ikwa|MeleeWeapon_Knife|MeleeWeapon_LongSword|MeleeWeapon_Mace|MeleeWeapon_MonoSword|MeleeWeapon_MonoSwordBladelink|MeleeWeapon_PlasmaSword|MeleeWeapon_PlasmaSwordBladelink|MeleeWeapon_Spear|Pila|", concat("|", defName, "|"))]/comps/li[@Class="NewRatkin.CompProperties_WeaponGripType"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class="StockGenerator_BuyTradeTag" and (tag="RK_Apparel" or tag="RK_TradeTag_All" or tag="RK_TradeTag_Armor" or tag="RK_TradeTag_ArmorHighTech")]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/TraderKindDef/stockGenerators/li[@Class="StockGenerator_BuyTradeTag" and (tag="RK_Apparel" or tag="RK_TradeTag_All" or tag="RK_TradeTag_Armor" or tag="RK_TradeTag_ArmorHighTech")]</xpath>
+        </match>
+      </li>
+		<!--11. Operation recipes deduplication and restrictions-->
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/*/recipes/li[text()="RK_Recipe_InstallFakeEar" or text()="RK_Recipe_InstallFakeTail" or text()="RK_Recipe_InstallBionicTail" or text()="RK_Recipe_InstallArchotechTail"]</xpath>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/*/recipes/li[text()="RK_Recipe_InstallFakeEar" or text()="RK_Recipe_InstallFakeTail" or text()="RK_Recipe_InstallBionicTail" or text()="RK_Recipe_InstallArchotechTail"]</xpath>
+			</match>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]/recipeUsers</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers Inherit="False">
+						<li>Ratkin</li>
+					</recipeUsers>
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]</xpath>
+				<value>
+					<recipeUsers Inherit="False">
+						<li>Ratkin</li>
+					</recipeUsers>
+				</value>
+			</nomatch>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"][not(recipeUsers)]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"][not(recipeUsers)]</xpath>
+				<value>
+					<recipeUsers>
+						<li>Ratkin</li>
+					</recipeUsers>
+				</value>
+			</match>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]/recipeUsers[not(li="Ratkin")]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]/recipeUsers[not(li="Ratkin")]</xpath>
+				<value>
+					<li>Ratkin</li>
+				</value>
+			</match>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"][not(recipeUsers)]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"][not(recipeUsers)]</xpath>
+				<value>
+					<recipeUsers>
+						<li>Ratkin</li>
+					</recipeUsers>
+				</value>
+			</match>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"]/recipeUsers[not(li="Ratkin")]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"]/recipeUsers[not(li="Ratkin")]</xpath>
+				<value>
+					<li>Ratkin</li>
+				</value>
+			</match>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"][not(recipeUsers)]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"][not(recipeUsers)]</xpath>
+				<value>
+					<recipeUsers>
+						<li>Ratkin</li>
+					</recipeUsers>
+				</value>
+			</match>
+		</li>
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"]/recipeUsers[not(li="Ratkin")]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"]/recipeUsers[not(li="Ratkin")]</xpath>
+				<value>
+					<li>Ratkin</li>
+				</value>
+			</match>
+		</li>
+		<!--12. BTextiles replace Cloth.-->
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingCategoryDef[defName="BTextiles"]</xpath>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter[thingDefs/li="Cloth"][not(categories)]</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter[thingDefs/li="Cloth"][not(categories)]</xpath>
+							<value>
+								<categories>
+									<li>BTextiles</li>
+								</categories>
+							</value>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter[thingDefs/li="Cloth"]/categories[not(li="BTextiles")]</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter[thingDefs/li="Cloth"]/categories[not(li="BTextiles")]</xpath>
+							<value>
+								<li>BTextiles</li>
+							</value>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter/thingDefs/li[text()="Cloth"]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter/thingDefs/li[text()="Cloth"]</xpath>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter/thingDefs[not(li)]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/ingredients/li/filter/thingDefs[not(li)]</xpath>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter[thingDefs/li="Cloth"][not(categories)]</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter[thingDefs/li="Cloth"][not(categories)]</xpath>
+							<value>
+								<categories>
+									<li>BTextiles</li>
+								</categories>
+							</value>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter[thingDefs/li="Cloth"]/categories[not(li="BTextiles")]</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter[thingDefs/li="Cloth"]/categories[not(li="BTextiles")]</xpath>
+							<value>
+								<li>BTextiles</li>
+							</value>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter/thingDefs/li[text()="Cloth"]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter/thingDefs/li[text()="Cloth"]</xpath>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter/thingDefs[not(li)]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase" or defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/fixedIngredientFilter/thingDefs[not(li)]</xpath>
+						</match>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/descriptionHyperlinks/ThingDef[text()="Cloth"]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar" or defName="RK_Recipe_InstallFakeTail"]/descriptionHyperlinks/ThingDef[text()="Cloth"]</xpath>
+						</match>
+					</li>
+				</operations>
+			</match>
+		</li>
+    </operations>
+  </Operation>
+</Patch>

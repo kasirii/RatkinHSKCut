@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Recipe_InstallArchotechTail.description>Установить архотек хвост раткина.</RK_Recipe_InstallArchotechTail.description>
+  <RK_Recipe_InstallArchotechTail.jobString>Устанавливает архотек хвост раткина.</RK_Recipe_InstallArchotechTail.jobString>
+  <RK_Recipe_InstallArchotechTail.label>установить архотек хвост раткина</RK_Recipe_InstallArchotechTail.label>
+  <RK_Recipe_InstallBionicTail.description>Установить бионический хвост раткина.</RK_Recipe_InstallBionicTail.description>
+  <RK_Recipe_InstallBionicTail.jobString>Устанавливает бионический хвост раткина.</RK_Recipe_InstallBionicTail.jobString>
+  <RK_Recipe_InstallBionicTail.label>установить бионический хвост раткина</RK_Recipe_InstallBionicTail.label>
+  <RK_Recipe_InstallFakeEar.description>Установить искусственное ухо раткина из текстиля.</RK_Recipe_InstallFakeEar.description>
+  <RK_Recipe_InstallFakeEar.jobString>Устанавливает искусственное ухо раткина.</RK_Recipe_InstallFakeEar.jobString>
+  <RK_Recipe_InstallFakeEar.label>установить искусственное ухо раткина</RK_Recipe_InstallFakeEar.label>
+  <RK_Recipe_InstallFakeTail.description>Установить искусственный хвост раткина из текстиля.</RK_Recipe_InstallFakeTail.description>
+  <RK_Recipe_InstallFakeTail.jobString>Устанавливает искусственный хвост раткина.</RK_Recipe_InstallFakeTail.jobString>
+  <RK_Recipe_InstallFakeTail.label>установить искусственный хвост раткина</RK_Recipe_InstallFakeTail.label>
+</LanguageData>

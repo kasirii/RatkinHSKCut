@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Backstory_CaravanLeader.description>{PAWN_nameDef} {PAWN_gender ? вырос : выросла} среди бродячих караванов. Путешествуя из деревни в деревню, {PAWN_pronoun} {PAWN_gender ? торговал : торговала} товарами и {PAWN_gender ? помогал : помогала} тем, кто хотел осесть, найти новый дом.</RK_Backstory_CaravanLeader.description>
+  <RK_Backstory_CaravanLeader.title>караванный торговец раткинов</RK_Backstory_CaravanLeader.title>
+  <RK_Backstory_CaravanLeader.titleFemale>караванная торговка раткинов</RK_Backstory_CaravanLeader.titleFemale>
+  <RK_Backstory_CaravanLeader.titleShort>караванный торговец</RK_Backstory_CaravanLeader.titleShort>
+  <RK_Backstory_CaravanLeader.titleShortFemale>караванная торговка</RK_Backstory_CaravanLeader.titleShortFemale>
+  <RK_Backstory_Gypsy.description>{PAWN_nameDef} {PAWN_gender ? зарабатывал : зарабатывала} на жизнь песнями и танцами, переезжая из деревни в деревню. Такое ремесло научило ладить с самыми разными людьми.</RK_Backstory_Gypsy.description>
+  <RK_Backstory_Gypsy.title>бродячий артист раткинов</RK_Backstory_Gypsy.title>
+  <RK_Backstory_Gypsy.titleFemale>бродячая артистка раткинов</RK_Backstory_Gypsy.titleFemale>
+  <RK_Backstory_Gypsy.titleShort>бродячий артист</RK_Backstory_Gypsy.titleShort>
+  <RK_Backstory_Gypsy.titleShortFemale>бродячая артистка</RK_Backstory_Gypsy.titleShortFemale>
+  <RK_Backstory_RefugeeSlave.description>{PAWN_nameDef} {PAWN_gender ? был рабом : была рабыней}, но {PAWN_gender ? сумел : сумела} бежать. Годы изнурительного труда научили выносливости и помогли выжить в бегах.</RK_Backstory_RefugeeSlave.description>
+  <RK_Backstory_RefugeeSlave.title>беглый раб раткинов</RK_Backstory_RefugeeSlave.title>
+  <RK_Backstory_RefugeeSlave.titleFemale>беглая рабыня раткинов</RK_Backstory_RefugeeSlave.titleFemale>
+  <RK_Backstory_RefugeeSlave.titleShort>беглый раб</RK_Backstory_RefugeeSlave.titleShort>
+  <RK_Backstory_RefugeeSlave.titleShortFemale>беглая рабыня</RK_Backstory_RefugeeSlave.titleShortFemale>
+  <RK_Backstory_WandererChild.description>{PAWN_nameDef} с детства {PAWN_gender ? жил : жила} без постоянного дома. Не имея возможности надолго остаться на одном месте, {PAWN_pronoun} {PAWN_gender ? научился : научилась} выживать в дороге.</RK_Backstory_WandererChild.description>
+  <RK_Backstory_WandererChild.title>бездомный ребёнок раткинов</RK_Backstory_WandererChild.title>
+  <RK_Backstory_WandererChild.titleFemale>бездомная девочка раткинов</RK_Backstory_WandererChild.titleFemale>
+  <RK_Backstory_WandererChild.titleShort>бездомный ребёнок</RK_Backstory_WandererChild.titleShort>
+  <RK_Backstory_WandererChild.titleShortFemale>бездомная девочка</RK_Backstory_WandererChild.titleShortFemale>
+  <RK_Backstory_WanderingMercenary.description>{PAWN_nameDef} {PAWN_gender ? переходил : переходила} с одного поля боя на другое, продавая свои боевые навыки. Эта жизнь научила многому, и {PAWN_pronoun} по-прежнему с готовностью ищет нового нанимателя.</RK_Backstory_WanderingMercenary.description>
+  <RK_Backstory_WanderingMercenary.title>бродячий наёмник раткинов</RK_Backstory_WanderingMercenary.title>
+  <RK_Backstory_WanderingMercenary.titleFemale>бродячая наёмница раткинов</RK_Backstory_WanderingMercenary.titleFemale>
+  <RK_Backstory_WanderingMercenary.titleShort>бродячий наёмник</RK_Backstory_WanderingMercenary.titleShort>
+  <RK_Backstory_WanderingMercenary.titleShortFemale>бродячая наёмница</RK_Backstory_WanderingMercenary.titleShortFemale>
+  <RK_Backstory_WanderingRefugee.description>{PAWN_nameDef} {PAWN_gender ? потерял : потеряла} дом на войне и {PAWN_gender ? пустился : пустилась} в скитания. За время странствий {PAWN_pronoun} {PAWN_gender ? освоил : освоила} несколько полезных уловок.</RK_Backstory_WanderingRefugee.description>
+  <RK_Backstory_WanderingRefugee.title>бродячий беженец раткинов</RK_Backstory_WanderingRefugee.title>
+  <RK_Backstory_WanderingRefugee.titleFemale>бродячая беженка раткинов</RK_Backstory_WanderingRefugee.titleFemale>
+  <RK_Backstory_WanderingRefugee.titleShort>бродячий беженец</RK_Backstory_WanderingRefugee.titleShort>
+  <RK_Backstory_WanderingRefugee.titleShortFemale>бродячая беженка</RK_Backstory_WanderingRefugee.titleShortFemale>
+  <RK_Unique_Kira_Adulthood.description>{PAWN_nameDef} — легендарный воин по прозвищу «Серый коготь». Это имя заслужено в бесчисленных схватках, когда приходилось в одиночку отражать набеги. Сородичи испытывают к этому воину и страх, и уважение.</RK_Unique_Kira_Adulthood.description>
+  <RK_Unique_Kira_Adulthood.title>серый коготь</RK_Unique_Kira_Adulthood.title>
+  <RK_Unique_Kira_Adulthood.titleFemale>серый коготь</RK_Unique_Kira_Adulthood.titleFemale>
+  <RK_Unique_Kira_Adulthood.titleShort>серый коготь</RK_Unique_Kira_Adulthood.titleShort>
+  <RK_Unique_Kira_Adulthood.titleShortFemale>серый коготь</RK_Unique_Kira_Adulthood.titleShortFemale>
+  <RK_Unique_Kira_Childhood.description>{PAWN_nameDef} {PAWN_gender ? остался единственным выжившим : осталась единственной выжившей} после обвала туннелей. В одиночестве {PAWN_pronoun} {PAWN_gender ? научился : научилась} находить дорогу во тьме и инстинктивно чувствовать опасность.</RK_Unique_Kira_Childhood.description>
+  <RK_Unique_Kira_Childhood.title>сирота туннелей</RK_Unique_Kira_Childhood.title>
+  <RK_Unique_Kira_Childhood.titleFemale>сирота туннелей</RK_Unique_Kira_Childhood.titleFemale>
+  <RK_Unique_Kira_Childhood.titleShort>сирота туннелей</RK_Unique_Kira_Childhood.titleShort>
+  <RK_Unique_Kira_Childhood.titleShortFemale>сирота туннелей</RK_Unique_Kira_Childhood.titleShortFemale>
+  <Ratkin_Agriculturist.description>{PAWN_nameDef} {PAWN_gender ? покинул : покинула} город, чтобы изучать способы улучшения земледелия раткинов. Когда-нибудь {PAWN_pronoun} надеется вернуться домой и применить свои знания на благо родного края.</Ratkin_Agriculturist.description>
+  <Ratkin_Agriculturist.title>агроном раткинов</Ratkin_Agriculturist.title>
+  <Ratkin_Agriculturist.titleFemale>агроном раткинов</Ratkin_Agriculturist.titleFemale>
+  <Ratkin_Agriculturist.titleShort>агроном</Ratkin_Agriculturist.titleShort>
+  <Ratkin_Agriculturist.titleShortFemale>агроном</Ratkin_Agriculturist.titleShortFemale>
+  <Ratkin_Ambassador.description>{PAWN_nameDef} {PAWN_gender ? служил : служила} дипломатом королевства раткинов. Дипломатический конфликт закончился потерей должности и изгнанием.</Ratkin_Ambassador.description>
+  <Ratkin_Ambassador.title>посол раткинов</Ratkin_Ambassador.title>
+  <Ratkin_Ambassador.titleFemale>посол раткинов</Ratkin_Ambassador.titleFemale>
+  <Ratkin_Ambassador.titleShort>посол</Ratkin_Ambassador.titleShort>
+  <Ratkin_Ambassador.titleShortFemale>посол</Ratkin_Ambassador.titleShortFemale>
+  <Ratkin_ArmySurgeon.description>{PAWN_nameDef} {PAWN_gender ? спасал : спасала} раненых раткинов прямо на поле боя. Даже мимолётная жизнь сородича заслуживала спасения. Однако со временем стало ясно, что эта работа ничего не меняет, и {PAWN_pronoun} {PAWN_gender ? ушёл : ушла}.</Ratkin_ArmySurgeon.description>
+  <Ratkin_ArmySurgeon.title>военный хирург раткинов</Ratkin_ArmySurgeon.title>
+  <Ratkin_ArmySurgeon.titleFemale>военный хирург раткинов</Ratkin_ArmySurgeon.titleFemale>
+  <Ratkin_ArmySurgeon.titleShort>военный хирург</Ratkin_ArmySurgeon.titleShort>
+  <Ratkin_ArmySurgeon.titleShortFemale>военный хирург</Ratkin_ArmySurgeon.titleShortFemale>
+  <Ratkin_Assistant.description>{PAWN_nameDef} {PAWN_gender ? помогал : помогала} людям в исследованиях, выполняя большие и малые поручения. При любой возможности {PAWN_pronoun} {PAWN_gender ? наблюдал : наблюдала} за работой учёных и понемногу {PAWN_gender ? учился : училась} их приёмам.</Ratkin_Assistant.description>
+  <Ratkin_Assistant.title>лаборант раткинов</Ratkin_Assistant.title>
+  <Ratkin_Assistant.titleFemale>лаборантка раткинов</Ratkin_Assistant.titleFemale>
+  <Ratkin_Assistant.titleShort>лаборант</Ratkin_Assistant.titleShort>
+  <Ratkin_Assistant.titleShortFemale>лаборантка</Ratkin_Assistant.titleShortFemale>
+  <Ratkin_Bastard.description>{PAWN_nameDef} — внебрачный ребёнок дворянина и проститутки. Попытка добиться права наследования раскрылась, и пришлось бежать, скрываясь от преследователей.</Ratkin_Bastard.description>
+  <Ratkin_Bastard.title>королевский бастард раткинов</Ratkin_Bastard.title>
+  <Ratkin_Bastard.titleFemale>королевский бастард раткинов</Ratkin_Bastard.titleFemale>
+  <Ratkin_Bastard.titleShort>королевский бастард</Ratkin_Bastard.titleShort>
+  <Ratkin_Bastard.titleShortFemale>королевский бастард</Ratkin_Bastard.titleShortFemale>
+  <Ratkin_Blacksmith.description>{PAWN_nameDef} {PAWN_gender ? ковал : ковала} оружие и инструменты. Чувствуя, что местные возможности исчерпаны, {PAWN_pronoun} {PAWN_gender ? покинул : покинула} дом в поисках более прочных материалов.</Ratkin_Blacksmith.description>
+  <Ratkin_Blacksmith.title>кузнец раткинов</Ratkin_Blacksmith.title>
+  <Ratkin_Blacksmith.titleFemale>кузнец раткинов</Ratkin_Blacksmith.titleFemale>
+  <Ratkin_Blacksmith.titleShort>кузнец</Ratkin_Blacksmith.titleShort>
+  <Ratkin_Blacksmith.titleShortFemale>кузнец</Ratkin_Blacksmith.titleShortFemale>
+  <Ratkin_Butcher.description>{PAWN_nameDef} {PAWN_gender ? зарабатывал : зарабатывала} на жизнь забоем животных и продажей мяса.</Ratkin_Butcher.description>
+  <Ratkin_Butcher.title>мясник раткинов</Ratkin_Butcher.title>
+  <Ratkin_Butcher.titleFemale>мясник раткинов</Ratkin_Butcher.titleFemale>
+  <Ratkin_Butcher.titleShort>мясник</Ratkin_Butcher.titleShort>
+  <Ratkin_Butcher.titleShortFemale>мясник</Ratkin_Butcher.titleShortFemale>
+  <Ratkin_CaravanMerchant.description>{PAWN_nameDef} {PAWN_gender ? водил : водила} торговые караваны. После набега, в котором было потеряно всё, {PAWN_pronoun} {PAWN_gender ? решил : решила} начать жизнь заново.</Ratkin_CaravanMerchant.description>
+  <Ratkin_CaravanMerchant.title>караванный торговец раткинов</Ratkin_CaravanMerchant.title>
+  <Ratkin_CaravanMerchant.titleFemale>караванная торговка раткинов</Ratkin_CaravanMerchant.titleFemale>
+  <Ratkin_CaravanMerchant.titleShort>караванный торговец</Ratkin_CaravanMerchant.titleShort>
+  <Ratkin_CaravanMerchant.titleShortFemale>караванная торговка</Ratkin_CaravanMerchant.titleShortFemale>
+  <Ratkin_Chef.description>{PAWN_nameDef} {PAWN_gender ? мечтал : мечтала} готовить лучшие блюда на свете. Эта мечта и привела к путешествию в поисках самых изысканных продуктов.</Ratkin_Chef.description>
+  <Ratkin_Chef.title>повар раткинов</Ratkin_Chef.title>
+  <Ratkin_Chef.titleFemale>повар раткинов</Ratkin_Chef.titleFemale>
+  <Ratkin_Chef.titleShort>повар</Ratkin_Chef.titleShort>
+  <Ratkin_Chef.titleShortFemale>повар</Ratkin_Chef.titleShortFemale>
+  <Ratkin_ChefStudent.description>{PAWN_nameDef} с ранних лет {PAWN_gender ? любил : любила} вкусно поесть и потому {PAWN_gender ? увлёкся : увлеклась} кулинарией. Еда была одной из главных радостей жизни, и {PAWN_pronoun} {PAWN_gender ? отправился : отправилась} искать новые вкусы.</Ratkin_ChefStudent.description>
+  <Ratkin_ChefStudent.title>ученик повара раткинов</Ratkin_ChefStudent.title>
+  <Ratkin_ChefStudent.titleFemale>ученица повара раткинов</Ratkin_ChefStudent.titleFemale>
+  <Ratkin_ChefStudent.titleShort>ученик повара</Ratkin_ChefStudent.titleShort>
+  <Ratkin_ChefStudent.titleShortFemale>ученица повара</Ratkin_ChefStudent.titleShortFemale>
+  <Ratkin_CityKid.description>{PAWN_nameDef} {PAWN_gender ? родился : родилась} в городе. Знакомство с городской жизнью помогло лучше других раткинов разобраться в технике и культуре.</Ratkin_CityKid.description>
+  <Ratkin_CityKid.title>городской ребёнок раткинов</Ratkin_CityKid.title>
+  <Ratkin_CityKid.titleFemale>городская девочка раткинов</Ratkin_CityKid.titleFemale>
+  <Ratkin_CityKid.titleShort>городской ребёнок</Ratkin_CityKid.titleShort>
+  <Ratkin_CityKid.titleShortFemale>городская девочка</Ratkin_CityKid.titleShortFemale>
+  <Ratkin_CityMaid.description>{PAWN_nameDef} {PAWN_gender ? служил : служила} в городском доме. Люди предпочитали нанимать в домашнюю прислугу только привлекательных раткинов, и {PAWN_pronoun} {PAWN_gender ? попал : попала} в их число.</Ratkin_CityMaid.description>
+  <Ratkin_CityMaid.title>городской слуга раткинов</Ratkin_CityMaid.title>
+  <Ratkin_CityMaid.titleFemale>городская служанка раткинов</Ratkin_CityMaid.titleFemale>
+  <Ratkin_CityMaid.titleShort>городской слуга</Ratkin_CityMaid.titleShort>
+  <Ratkin_CityMaid.titleShortFemale>городская служанка</Ratkin_CityMaid.titleShortFemale>
+  <Ratkin_CityMerchant.description>{PAWN_nameDef} {PAWN_gender ? торговал : торговала} на городском рынке. Умелые руки позволяли изготавливать и продавать самые разные товары.</Ratkin_CityMerchant.description>
+  <Ratkin_CityMerchant.title>городской торговец раткинов</Ratkin_CityMerchant.title>
+  <Ratkin_CityMerchant.titleFemale>городская торговка раткинов</Ratkin_CityMerchant.titleFemale>
+  <Ratkin_CityMerchant.titleShort>городской торговец</Ratkin_CityMerchant.titleShort>
+  <Ratkin_CityMerchant.titleShortFemale>городская торговка</Ratkin_CityMerchant.titleShortFemale>
+  <Ratkin_Civil.description>{PAWN_nameDef} {PAWN_gender ? жил : жила} в королевстве раткинов и {PAWN_gender ? зарабатывал : зарабатывала} на жизнь мелкими работами и случайными поручениями.</Ratkin_Civil.description>
+  <Ratkin_Civil.title>горожанин раткинов</Ratkin_Civil.title>
+  <Ratkin_Civil.titleFemale>горожанка раткинов</Ratkin_Civil.titleFemale>
+  <Ratkin_Civil.titleShort>горожанин</Ratkin_Civil.titleShort>
+  <Ratkin_Civil.titleShortFemale>горожанка</Ratkin_Civil.titleShortFemale>
+  <Ratkin_ConstructionWorker.description>{PAWN_nameDef} {PAWN_gender ? работал : работала} на стройках, главным образом прокладывая подземные туннели.</Ratkin_ConstructionWorker.description>
+  <Ratkin_ConstructionWorker.title>строитель раткинов</Ratkin_ConstructionWorker.title>
+  <Ratkin_ConstructionWorker.titleFemale>строитель раткинов</Ratkin_ConstructionWorker.titleFemale>
+  <Ratkin_ConstructionWorker.titleShort>строитель</Ratkin_ConstructionWorker.titleShort>
+  <Ratkin_ConstructionWorker.titleShortFemale>строитель</Ratkin_ConstructionWorker.titleShortFemale>
+  <Ratkin_CountryKid.description>В семье {PAWN_nameDef} земледелием занимались и родители, и дедушки с бабушками. По семейной традиции {PAWN_pronoun} тоже {PAWN_gender ? должен был стать фермером : должна была стать фермершей}.</Ratkin_CountryKid.description>
+  <Ratkin_CountryKid.title>сельский ребёнок раткинов</Ratkin_CountryKid.title>
+  <Ratkin_CountryKid.titleFemale>сельская девочка раткинов</Ratkin_CountryKid.titleFemale>
+  <Ratkin_CountryKid.titleShort>сельский ребёнок</Ratkin_CountryKid.titleShort>
+  <Ratkin_CountryKid.titleShortFemale>сельская девочка</Ratkin_CountryKid.titleShortFemale>
+  <Ratkin_Demoman.description>{PAWN_nameDef}, в отличие от большинства раткинов, {PAWN_gender ? был одержим : была одержима} взрывами. Эта страсть привела к добровольной службе в отряде коммандос.</Ratkin_Demoman.description>
+  <Ratkin_Demoman.title>подрывник раткинов</Ratkin_Demoman.title>
+  <Ratkin_Demoman.titleFemale>подрывница раткинов</Ratkin_Demoman.titleFemale>
+  <Ratkin_Demoman.titleShort>подрывник</Ratkin_Demoman.titleShort>
+  <Ratkin_Demoman.titleShortFemale>подрывница</Ratkin_Demoman.titleShortFemale>
+  <Ratkin_Doctor.description>{PAWN_nameDef} {PAWN_gender ? был : была} придворным врачом. После неудачной операции, стоившей жизни дворянину, пришлось отправиться в изгнание на окраину. В странствиях {PAWN_pronoun} {PAWN_gender ? совершенствовал : совершенствовала} своё мастерство, надеясь доказать, что трагедия произошла не по врачебной вине.</Ratkin_Doctor.description>
+  <Ratkin_Doctor.title>врач раткинов</Ratkin_Doctor.title>
+  <Ratkin_Doctor.titleFemale>врач раткинов</Ratkin_Doctor.titleFemale>
+  <Ratkin_Doctor.titleShort>врач</Ratkin_Doctor.titleShort>
+  <Ratkin_Doctor.titleShortFemale>врач</Ratkin_Doctor.titleShortFemale>
+  <Ratkin_Engineer.description>{PAWN_nameDef} {PAWN_gender ? изготавливал : изготавливала} точные механизмы. Свой талант {PAWN_pronoun} {PAWN_gender ? применил : применила} для восстановления старого механоида, не подозревая, какой бедой это обернётся.</Ratkin_Engineer.description>
+  <Ratkin_Engineer.title>инженер раткинов</Ratkin_Engineer.title>
+  <Ratkin_Engineer.titleFemale>инженер раткинов</Ratkin_Engineer.titleFemale>
+  <Ratkin_Engineer.titleShort>инженер</Ratkin_Engineer.titleShort>
+  <Ratkin_Engineer.titleShortFemale>инженер</Ratkin_Engineer.titleShortFemale>
+  <Ratkin_Explorer.description>{PAWN_nameDef} всегда {PAWN_gender ? стремился : стремилась} узнать больше об окружающем мире. {PAWN_pronoun} {PAWN_gender ? не намерен : не намерена} останавливаться, пока вся планетная система не будет исследована.</Ratkin_Explorer.description>
+  <Ratkin_Explorer.title>исследователь раткинов</Ratkin_Explorer.title>
+  <Ratkin_Explorer.titleFemale>исследовательница раткинов</Ratkin_Explorer.titleFemale>
+  <Ratkin_Explorer.titleShort>исследователь</Ratkin_Explorer.titleShort>
+  <Ratkin_Explorer.titleShortFemale>исследовательница</Ratkin_Explorer.titleShortFemale>
+  <Ratkin_Farmer.description>{PAWN_nameDef} {PAWN_gender ? работал : работала} на семейной ферме, продолжая дело родителей. Ожидалось, что следующее поколение семьи тоже займётся земледелием.</Ratkin_Farmer.description>
+  <Ratkin_Farmer.title>фермер раткинов</Ratkin_Farmer.title>
+  <Ratkin_Farmer.titleFemale>фермерша раткинов</Ratkin_Farmer.titleFemale>
+  <Ratkin_Farmer.titleShort>фермер</Ratkin_Farmer.titleShort>
+  <Ratkin_Farmer.titleShortFemale>фермерша</Ratkin_Farmer.titleShortFemale>
+  <Ratkin_GoldenSpoon.description>{PAWN_nameDef} {PAWN_gender ? родился : родилась} в богатой семье и с детства ни в чём не {PAWN_gender ? знал : знала} отказа. Окружённое заботой воспитание не дало ни кулинарных навыков, ни опыта столкновения с насилием.</Ratkin_GoldenSpoon.description>
+  <Ratkin_GoldenSpoon.title>баловень семьи раткинов</Ratkin_GoldenSpoon.title>
+  <Ratkin_GoldenSpoon.titleFemale>баловень семьи раткинов</Ratkin_GoldenSpoon.titleFemale>
+  <Ratkin_GoldenSpoon.titleShort>баловень семьи</Ratkin_GoldenSpoon.titleShort>
+  <Ratkin_GoldenSpoon.titleShortFemale>баловень семьи</Ratkin_GoldenSpoon.titleShortFemale>
+  <Ratkin_Guardener.description>{PAWN_nameDef} {PAWN_gender ? охранял : охраняла} сады королевства раткинов. Во время задания в чужих землях {PAWN_pronoun} {PAWN_gender ? отстал : отстала} от отряда и до сих пор надеется вернуться домой.</Ratkin_Guardener.description>
+  <Ratkin_Guardener.title>хранитель садов раткинов</Ratkin_Guardener.title>
+  <Ratkin_Guardener.titleFemale>хранительница садов раткинов</Ratkin_Guardener.titleFemale>
+  <Ratkin_Guardener.titleShort>хранитель садов</Ratkin_Guardener.titleShort>
+  <Ratkin_Guardener.titleShortFemale>хранительница садов</Ratkin_Guardener.titleShortFemale>
+  <Ratkin_GuardenerStudent.description>{PAWN_nameDef} {PAWN_gender ? учился : училась} на хранителя садов. В обществе раткинов защищать сады доверяют только лучшим, поэтому подготовка требовала неустанного труда.</Ratkin_GuardenerStudent.description>
+  <Ratkin_GuardenerStudent.title>ученик хранителя раткинов</Ratkin_GuardenerStudent.title>
+  <Ratkin_GuardenerStudent.titleFemale>ученица хранителя раткинов</Ratkin_GuardenerStudent.titleFemale>
+  <Ratkin_GuardenerStudent.titleShort>ученик хранителя</Ratkin_GuardenerStudent.titleShort>
+  <Ratkin_GuardenerStudent.titleShortFemale>ученица хранителя</Ratkin_GuardenerStudent.titleShortFemale>
+  <Ratkin_HandMaiden.description>{PAWN_nameDef} {PAWN_gender ? служил : служила} дворянину, выполняя мелкие поручения, а порой становясь глазами и ушами своего господина.</Ratkin_HandMaiden.description>
+  <Ratkin_HandMaiden.title>личный слуга раткинов</Ratkin_HandMaiden.title>
+  <Ratkin_HandMaiden.titleFemale>личная служанка раткинов</Ratkin_HandMaiden.titleFemale>
+  <Ratkin_HandMaiden.titleShort>личный слуга</Ratkin_HandMaiden.titleShort>
+  <Ratkin_HandMaiden.titleShortFemale>личная служанка</Ratkin_HandMaiden.titleShortFemale>
+  <Ratkin_HumanAssistant.description>{PAWN_nameDef} с детства {PAWN_gender ? помогал : помогала} своему хозяину в лаборатории. Когда тот погиб в несчастном случае, {PAWN_pronoun} {PAWN_gender ? воспользовался : воспользовалась} возможностью обрести свободу.</Ratkin_HumanAssistant.description>
+  <Ratkin_HumanAssistant.title>помощник человека раткинов</Ratkin_HumanAssistant.title>
+  <Ratkin_HumanAssistant.titleFemale>помощница человека раткинов</Ratkin_HumanAssistant.titleFemale>
+  <Ratkin_HumanAssistant.titleShort>помощник человека</Ratkin_HumanAssistant.titleShort>
+  <Ratkin_HumanAssistant.titleShortFemale>помощница человека</Ratkin_HumanAssistant.titleShortFemale>
+  <Ratkin_Hunter.description>{PAWN_nameDef} {PAWN_gender ? зарабатывал : зарабатывала} охотой на диких животных. В отличие от большинства раткинов, {PAWN_pronoun} {PAWN_gender ? обладал : обладала} острым зрением и {PAWN_gender ? замечал : замечала} движущуюся добычу издалека.</Ratkin_Hunter.description>
+  <Ratkin_Hunter.title>охотник раткинов</Ratkin_Hunter.title>
+  <Ratkin_Hunter.titleFemale>охотница раткинов</Ratkin_Hunter.titleFemale>
+  <Ratkin_Hunter.titleShort>охотник</Ratkin_Hunter.titleShort>
+  <Ratkin_Hunter.titleShortFemale>охотница</Ratkin_Hunter.titleShortFemale>
+  <Ratkin_Idol.description>{PAWN_nameDef} {PAWN_gender ? выступал : выступала} на эстраде и {PAWN_gender ? пользовался : пользовалась} любовью публики. Однажды во время поездки произошла авария, после которой {PAWN_pronoun} {PAWN_gender ? очнулся : очнулась} в незнакомом месте.</Ratkin_Idol.description>
+  <Ratkin_Idol.title>эстрадный кумир раткинов</Ratkin_Idol.title>
+  <Ratkin_Idol.titleFemale>эстрадный кумир раткинов</Ratkin_Idol.titleFemale>
+  <Ratkin_Idol.titleShort>эстрадный кумир</Ratkin_Idol.titleShort>
+  <Ratkin_Idol.titleShortFemale>эстрадный кумир</Ratkin_Idol.titleShortFemale>
+  <Ratkin_Kid.description>{PAWN_nameDef} {PAWN_gender ? рос : росла} в обычной семье и понемногу {PAWN_gender ? учился : училась}, наблюдая за работой родителей.
+
+Доступа к высшему образованию не было, поэтому специальных знаний получить не удалось.</Ratkin_Kid.description>
+  <Ratkin_Kid.title>обычный ребёнок раткинов</Ratkin_Kid.title>
+  <Ratkin_Kid.titleFemale>обычная девочка раткинов</Ratkin_Kid.titleFemale>
+  <Ratkin_Kid.titleShort>обычный ребёнок</Ratkin_Kid.titleShort>
+  <Ratkin_Kid.titleShortFemale>обычная девочка</Ratkin_Kid.titleShortFemale>
+  <Ratkin_Knight.description>{PAWN_nameDef} {PAWN_gender ? служил : служила} рыцарем королевства раткинов. Суровая подготовка будущих опор королевства сделала своё дело: {PAWN_pronoun} {PAWN_gender ? стал : стала} грозным воином.</Ratkin_Knight.description>
+  <Ratkin_Knight.title>рыцарь раткинов</Ratkin_Knight.title>
+  <Ratkin_Knight.titleFemale>рыцарь раткинов</Ratkin_Knight.titleFemale>
+  <Ratkin_Knight.titleShort>рыцарь</Ratkin_Knight.titleShort>
+  <Ratkin_Knight.titleShortFemale>рыцарь</Ratkin_Knight.titleShortFemale>
+  <Ratkin_KnightCommander.description>{PAWN_nameDef} {PAWN_gender ? был : была} одним из избранных рыцарей королевства раткинов. По старому обычаю преемника командора выбирают среди рыцарей сельского происхождения.</Ratkin_KnightCommander.description>
+  <Ratkin_KnightCommander.title>рыцарь-командор раткинов</Ratkin_KnightCommander.title>
+  <Ratkin_KnightCommander.titleFemale>рыцарь-командор раткинов</Ratkin_KnightCommander.titleFemale>
+  <Ratkin_KnightCommander.titleShort>рыцарь-командор</Ratkin_KnightCommander.titleShort>
+  <Ratkin_KnightCommander.titleShortFemale>рыцарь-командор</Ratkin_KnightCommander.titleShortFemale>
+  <Ratkin_LaboratoryRats.description>{PAWN_nameDef} {PAWN_gender ? родился : родилась} в человеческой лаборатории как объект генетических модификаций для экспериментальной военной программы. Стремление к свободе заставило терпеливо ждать возможности для побега.</Ratkin_LaboratoryRats.description>
+  <Ratkin_LaboratoryRats.title>лабораторный образец раткинов</Ratkin_LaboratoryRats.title>
+  <Ratkin_LaboratoryRats.titleFemale>лабораторный образец раткинов</Ratkin_LaboratoryRats.titleFemale>
+  <Ratkin_LaboratoryRats.titleShort>лабораторный образец</Ratkin_LaboratoryRats.titleShort>
+  <Ratkin_LaboratoryRats.titleShortFemale>лабораторный образец</Ratkin_LaboratoryRats.titleShortFemale>
+  <Ratkin_LandRat.description>{PAWN_nameDef} {PAWN_gender ? родился : родилась} во тьме подземелий. Годы жизни в пещерах научили хорошо копать, но, когда многие сородичи ушли на поверхность, {PAWN_pronoun} {PAWN_gender ? остался : осталась} внизу.</Ratkin_LandRat.description>
+  <Ratkin_LandRat.title>пещерный житель раткинов</Ratkin_LandRat.title>
+  <Ratkin_LandRat.titleFemale>пещерная жительница раткинов</Ratkin_LandRat.titleFemale>
+  <Ratkin_LandRat.titleShort>пещерный житель</Ratkin_LandRat.titleShort>
+  <Ratkin_LandRat.titleShortFemale>пещерная жительница</Ratkin_LandRat.titleShortFemale>
+  <Ratkin_Librarian.description>{PAWN_nameDef} {PAWN_gender ? работал : работала} в библиотеке и {PAWN_gender ? накопил : накопила} обширные знания. Увлечение книгами, однако, почти вытеснило навыки копания.</Ratkin_Librarian.description>
+  <Ratkin_Librarian.title>библиотекарь раткинов</Ratkin_Librarian.title>
+  <Ratkin_Librarian.titleFemale>библиотекарь раткинов</Ratkin_Librarian.titleFemale>
+  <Ratkin_Librarian.titleShort>библиотекарь</Ratkin_Librarian.titleShort>
+  <Ratkin_Librarian.titleShortFemale>библиотекарь</Ratkin_Librarian.titleShortFemale>
+  <Ratkin_LittleLibrarian.description>{PAWN_nameDef} {PAWN_gender ? рос : росла} среди книжных стопок: родители работали библиотекарями. Книги дали широкое образование, но испортили зрение настолько, что без очков стало трудно обходиться.</Ratkin_LittleLibrarian.description>
+  <Ratkin_LittleLibrarian.title>юный библиотекарь раткинов</Ratkin_LittleLibrarian.title>
+  <Ratkin_LittleLibrarian.titleFemale>юная библиотекарша раткинов</Ratkin_LittleLibrarian.titleFemale>
+  <Ratkin_LittleLibrarian.titleShort>юный библиотекарь</Ratkin_LittleLibrarian.titleShort>
+  <Ratkin_LittleLibrarian.titleShortFemale>юная библиотекарша</Ratkin_LittleLibrarian.titleShortFemale>
+  <Ratkin_MerchantKid.description>{PAWN_nameDef} {PAWN_gender ? родился : родилась} в торговом караване. Наблюдая за сделками родителей, {PAWN_pronoun} с ранних лет {PAWN_gender ? усвоил : усвоила} цену деньгам.</Ratkin_MerchantKid.description>
+  <Ratkin_MerchantKid.title>ребёнок торговцев раткинов</Ratkin_MerchantKid.title>
+  <Ratkin_MerchantKid.titleFemale>дочь торговцев раткинов</Ratkin_MerchantKid.titleFemale>
+  <Ratkin_MerchantKid.titleShort>ребёнок торговцев</Ratkin_MerchantKid.titleShort>
+  <Ratkin_MerchantKid.titleShortFemale>дочь торговцев</Ratkin_MerchantKid.titleShortFemale>
+  <Ratkin_Miner.description>{PAWN_nameDef} {PAWN_gender ? стал : стала} шахтёром, найдя применение своим способностям. Копать было легко, но тесные душные туннели всё чаще вызывали желание выбраться наружу.</Ratkin_Miner.description>
+  <Ratkin_Miner.title>шахтёр раткинов</Ratkin_Miner.title>
+  <Ratkin_Miner.titleFemale>шахтёр раткинов</Ratkin_Miner.titleFemale>
+  <Ratkin_Miner.titleShort>шахтёр</Ratkin_Miner.titleShort>
+  <Ratkin_Miner.titleShortFemale>шахтёр</Ratkin_Miner.titleShortFemale>
+  <Ratkin_Murderer.description>{PAWN_nameDef} {PAWN_gender ? утратил : утратила} рассудок и {PAWN_gender ? начал : начала} убивать. Маленькое тело помогало скрываться с места преступления до появления погони. Со временем убийства стали приносить удовольствие.</Ratkin_Murderer.description>
+  <Ratkin_Murderer.title>убийца раткинов</Ratkin_Murderer.title>
+  <Ratkin_Murderer.titleFemale>убийца раткинов</Ratkin_Murderer.titleFemale>
+  <Ratkin_Murderer.titleShort>убийца</Ratkin_Murderer.titleShort>
+  <Ratkin_Murderer.titleShortFemale>убийца</Ratkin_Murderer.titleShortFemale>
+  <Ratkin_Noble.description>{PAWN_nameDef} {PAWN_gender ? принадлежал : принадлежала} к знати королевства раткинов. Политические интриги привели к изгнанию, после которого {PAWN_pronoun} {PAWN_gender ? пустился : пустилась} в странствия, надеясь однажды вернуться.</Ratkin_Noble.description>
+  <Ratkin_Noble.title>дворянин раткинов</Ratkin_Noble.title>
+  <Ratkin_Noble.titleFemale>дворянка раткинов</Ratkin_Noble.titleFemale>
+  <Ratkin_Noble.titleShort>дворянин</Ratkin_Noble.titleShort>
+  <Ratkin_Noble.titleShortFemale>дворянка</Ratkin_Noble.titleShortFemale>
+  <Ratkin_OfficerChild.description>{PAWN_nameDef} {PAWN_gender ? родился : родилась} в семье офицера. Обучение стрельбе и искусству руководить с ранних лет развило природные задатки лидера, но вместе с тем привило высокомерие.</Ratkin_OfficerChild.description>
+  <Ratkin_OfficerChild.title>сын офицера раткинов</Ratkin_OfficerChild.title>
+  <Ratkin_OfficerChild.titleFemale>дочь офицера раткинов</Ratkin_OfficerChild.titleFemale>
+  <Ratkin_OfficerChild.titleShort>сын офицера</Ratkin_OfficerChild.titleShort>
+  <Ratkin_OfficerChild.titleShortFemale>дочь офицера</Ratkin_OfficerChild.titleShortFemale>
+  <Ratkin_Orphan.description>{PAWN_nameDef} {PAWN_gender ? остался : осталась} без родителей в раннем возрасте. Пришлось самостоятельно и на горьком опыте учиться выживанию.</Ratkin_Orphan.description>
+  <Ratkin_Orphan.title>сирота раткинов</Ratkin_Orphan.title>
+  <Ratkin_Orphan.titleFemale>сирота раткинов</Ratkin_Orphan.titleFemale>
+  <Ratkin_Orphan.titleShort>сирота</Ratkin_Orphan.titleShort>
+  <Ratkin_Orphan.titleShortFemale>сирота</Ratkin_Orphan.titleShortFemale>
+  <Ratkin_PettyTheft.description>{PAWN_nameDef} {PAWN_gender ? считал : считала} воровство всего лишь разновидностью заимствования. Однако частые кражи закончились поимкой и отправкой на рабский труд. Во время перевозки случился налёт, давший шанс на побег.</Ratkin_PettyTheft.description>
+  <Ratkin_PettyTheft.title>мелкий вор раткинов</Ratkin_PettyTheft.title>
+  <Ratkin_PettyTheft.titleFemale>мелкая воровка раткинов</Ratkin_PettyTheft.titleFemale>
+  <Ratkin_PettyTheft.titleShort>мелкий вор</Ratkin_PettyTheft.titleShort>
+  <Ratkin_PettyTheft.titleShortFemale>мелкая воровка</Ratkin_PettyTheft.titleShortFemale>
+  <Ratkin_RatkinHunter.description>{PAWN_nameDef} {PAWN_gender ? ловил : ловила} беглых раткинов. Но однажды во время погони за юным беглецом {PAWN_pronoun} вдруг {PAWN_gender ? осознал : осознала}, чем занимается. Чувство вины заставило оставить это ремесло.</Ratkin_RatkinHunter.description>
+  <Ratkin_RatkinHunter.title>ловец беглых рабов раткинов</Ratkin_RatkinHunter.title>
+  <Ratkin_RatkinHunter.titleFemale>ловец беглых рабов раткинов</Ratkin_RatkinHunter.titleFemale>
+  <Ratkin_RatkinHunter.titleShort>ловец беглых рабов</Ratkin_RatkinHunter.titleShort>
+  <Ratkin_RatkinHunter.titleShortFemale>ловец беглых рабов</Ratkin_RatkinHunter.titleShortFemale>
+  <Ratkin_Rich.description>{PAWN_nameDef} {PAWN_gender ? обладал : обладала} редким талантом наживаться на чужой доверчивости. В конце концов обман раскрылся, и пришлось бежать.</Ratkin_Rich.description>
+  <Ratkin_Rich.title>денежный воротила раткинов</Ratkin_Rich.title>
+  <Ratkin_Rich.titleFemale>денежный воротила раткинов</Ratkin_Rich.titleFemale>
+  <Ratkin_Rich.titleShort>денежный воротила</Ratkin_Rich.titleShort>
+  <Ratkin_Rich.titleShortFemale>денежный воротила</Ratkin_Rich.titleShortFemale>
+  <Ratkin_RomanyKid.description>{PAWN_nameDef} {PAWN_gender ? рос : росла} в дороге, переходя с места на место. Такая жизнь дала разносторонние навыки, но почти не оставила возможности завести друзей.</Ratkin_RomanyKid.description>
+  <Ratkin_RomanyKid.title>бродячий ребёнок раткинов</Ratkin_RomanyKid.title>
+  <Ratkin_RomanyKid.titleFemale>бродячая девочка раткинов</Ratkin_RomanyKid.titleFemale>
+  <Ratkin_RomanyKid.titleShort>бродячий ребёнок</Ratkin_RomanyKid.titleShort>
+  <Ratkin_RomanyKid.titleShortFemale>бродячая девочка</Ratkin_RomanyKid.titleShortFemale>
+  <Ratkin_Scientist.description>{PAWN_nameDef} {PAWN_gender ? занимался : занималась} наукой вместе с людьми. Исследования настолько увлекли, что здоровье и зрение постепенно пришли в упадок.</Ratkin_Scientist.description>
+  <Ratkin_Scientist.title>учёный раткинов</Ratkin_Scientist.title>
+  <Ratkin_Scientist.titleFemale>учёная раткинов</Ratkin_Scientist.titleFemale>
+  <Ratkin_Scientist.titleShort>учёный</Ratkin_Scientist.titleShort>
+  <Ratkin_Scientist.titleShortFemale>учёная</Ratkin_Scientist.titleShortFemale>
+  <Ratkin_ServentChild.description>{PAWN_nameDef} {PAWN_gender ? родился : родилась} в семье прислуги. По закону дети должны были унаследовать занятие родителей, но {PAWN_pronoun} {PAWN_gender ? сбежал : сбежала}, чтобы изменить собственную судьбу.</Ratkin_ServentChild.description>
+  <Ratkin_ServentChild.title>ребёнок слуг раткинов</Ratkin_ServentChild.title>
+  <Ratkin_ServentChild.titleFemale>дочь слуг раткинов</Ratkin_ServentChild.titleFemale>
+  <Ratkin_ServentChild.titleShort>ребёнок слуг</Ratkin_ServentChild.titleShort>
+  <Ratkin_ServentChild.titleShortFemale>дочь слуг</Ratkin_ServentChild.titleShortFemale>
+  <Ratkin_Shepherd.description>{PAWN_nameDef} {PAWN_gender ? держал : держала} ранчо с множеством животных. После падения заражённого корабля на скотный двор от прежней жизни остались лишь воспоминания.</Ratkin_Shepherd.description>
+  <Ratkin_Shepherd.title>скотовод раткинов</Ratkin_Shepherd.title>
+  <Ratkin_Shepherd.titleFemale>скотовод раткинов</Ratkin_Shepherd.titleFemale>
+  <Ratkin_Shepherd.titleShort>скотовод</Ratkin_Shepherd.titleShort>
+  <Ratkin_Shepherd.titleShortFemale>скотовод</Ratkin_Shepherd.titleShortFemale>
+  <Ratkin_ShepherdBoy.description>{PAWN_nameDef} {PAWN_gender ? рос : росла} на ферме среди разнообразного скота. С животными сложилась особая связь: {PAWN_pronoun} даже {PAWN_gender ? считал : считала} их своими друзьями.</Ratkin_ShepherdBoy.description>
+  <Ratkin_ShepherdBoy.title>пастушок раткинов</Ratkin_ShepherdBoy.title>
+  <Ratkin_ShepherdBoy.titleFemale>пастушка раткинов</Ratkin_ShepherdBoy.titleFemale>
+  <Ratkin_ShepherdBoy.titleShort>пастушок</Ratkin_ShepherdBoy.titleShort>
+  <Ratkin_ShepherdBoy.titleShortFemale>пастушка</Ratkin_ShepherdBoy.titleShortFemale>
+  <Ratkin_Shooter.description>{PAWN_nameDef} {PAWN_gender ? обладал : обладала} необычайно острым для раткина зрением. Это преимущество привело к добровольной службе в армии, где {PAWN_pronoun} {PAWN_gender ? стал : стала} превосходным стрелком.</Ratkin_Shooter.description>
+  <Ratkin_Shooter.title>меткий стрелок раткинов</Ratkin_Shooter.title>
+  <Ratkin_Shooter.titleFemale>меткий стрелок раткинов</Ratkin_Shooter.titleFemale>
+  <Ratkin_Shooter.titleShort>меткий стрелок</Ratkin_Shooter.titleShort>
+  <Ratkin_Shooter.titleShortFemale>меткий стрелок</Ratkin_Shooter.titleShortFemale>
+  <Ratkin_Sister.description>{PAWN_nameDef} {PAWN_gender ? проводил : проводила} обряды и {PAWN_gender ? исполнял : исполняла} религиозные обязанности в обществе раткинов. Поездка на церемонию закончилась нападением, после которого едва удалось спастись.</Ratkin_Sister.description>
+  <Ratkin_Sister.title>служитель веры раткинов</Ratkin_Sister.title>
+  <Ratkin_Sister.titleFemale>служительница веры раткинов</Ratkin_Sister.titleFemale>
+  <Ratkin_Sister.titleShort>служитель веры</Ratkin_Sister.titleShort>
+  <Ratkin_Sister.titleShortFemale>служительница веры</Ratkin_Sister.titleShortFemale>
+  <Ratkin_SlaveKid.description>{PAWN_nameDef} не помнит, как на теле появилось рабское клеймо. После бесконечной изнурительной работы {PAWN_pronoun} {PAWN_gender ? сумел : сумела} вырваться на свободу.</Ratkin_SlaveKid.description>
+  <Ratkin_SlaveKid.title>ребёнок-раб раткинов</Ratkin_SlaveKid.title>
+  <Ratkin_SlaveKid.titleFemale>девочка-рабыня раткинов</Ratkin_SlaveKid.titleFemale>
+  <Ratkin_SlaveKid.titleShort>ребёнок-раб</Ratkin_SlaveKid.titleShort>
+  <Ratkin_SlaveKid.titleShortFemale>девочка-рабыня</Ratkin_SlaveKid.titleShortFemale>
+  <Ratkin_Soldier.description>{PAWN_nameDef} {PAWN_gender ? служил : служила} солдатом в человеческом городе. Обучение среди людей дало боевые навыки, нехарактерные для других раткинов. После задания, на котором {PAWN_pronoun} {PAWN_gender ? был брошен умирать : была брошена умирать}, пришлось искать новый дом.</Ratkin_Soldier.description>
+  <Ratkin_Soldier.title>солдат раткинов</Ratkin_Soldier.title>
+  <Ratkin_Soldier.titleFemale>солдат раткинов</Ratkin_Soldier.titleFemale>
+  <Ratkin_Soldier.titleShort>солдат</Ratkin_Soldier.titleShort>
+  <Ratkin_Soldier.titleShortFemale>солдат</Ratkin_Soldier.titleShortFemale>
+  <Ratkin_Student.description>{PAWN_nameDef} {PAWN_gender ? рос : росла} в небогатой семье, которая всё же могла позволить себе обучение ребёнка. {PAWN_pronoun} {PAWN_gender ? успевал : успевала} в учёбе, хотя успехи в физической подготовке оставляли желать лучшего.</Ratkin_Student.description>
+  <Ratkin_Student.title>ученик раткинов</Ratkin_Student.title>
+  <Ratkin_Student.titleFemale>ученица раткинов</Ratkin_Student.titleFemale>
+  <Ratkin_Student.titleShort>ученик</Ratkin_Student.titleShort>
+  <Ratkin_Student.titleShortFemale>ученица</Ratkin_Student.titleShortFemale>
+  <Ratkin_Subject.description>{PAWN_nameDef} {PAWN_gender ? перенёс : перенесла} бесчисленные эксперименты в неволе. Опыты сделали организм сильнее. Когда несчастный случай оставил дверь открытой, {PAWN_pronoun} {PAWN_gender ? сбежал : сбежала} и больше не {PAWN_gender ? оглядывался : оглядывалась}.</Ratkin_Subject.description>
+  <Ratkin_Subject.title>подопытный раткинов</Ratkin_Subject.title>
+  <Ratkin_Subject.titleFemale>подопытная раткинов</Ratkin_Subject.titleFemale>
+  <Ratkin_Subject.titleShort>подопытный</Ratkin_Subject.titleShort>
+  <Ratkin_Subject.titleShortFemale>подопытная</Ratkin_Subject.titleShortFemale>
+  <Ratkin_Successor.description>{PAWN_nameDef} с рождения {PAWN_gender ? считался наследником : считалась наследницей} знатного рода. Когда некогда славная семья пришла в упадок, пришлось уйти, чтобы уберечь её от дальнейших бед.</Ratkin_Successor.description>
+  <Ratkin_Successor.title>наследник раткинов</Ratkin_Successor.title>
+  <Ratkin_Successor.titleFemale>наследница раткинов</Ratkin_Successor.titleFemale>
+  <Ratkin_Successor.titleShort>наследник</Ratkin_Successor.titleShort>
+  <Ratkin_Successor.titleShortFemale>наследница</Ratkin_Successor.titleShortFemale>
+  <Ratkin_Teacher.description>{PAWN_nameDef} {PAWN_gender ? учил : учила} детей в родном краю. Когда в деревне больше не осталось учеников, {PAWN_pronoun} {PAWN_gender ? отправился : отправилась} искать место, где пригодятся эти знания.</Ratkin_Teacher.description>
+  <Ratkin_Teacher.title>учитель раткинов</Ratkin_Teacher.title>
+  <Ratkin_Teacher.titleFemale>учительница раткинов</Ratkin_Teacher.titleFemale>
+  <Ratkin_Teacher.titleShort>учитель</Ratkin_Teacher.titleShort>
+  <Ratkin_Teacher.titleShortFemale>учительница</Ratkin_Teacher.titleShortFemale>
+  <Ratkin_Thief.description>{PAWN_nameDef} {PAWN_gender ? крал : крала} еду, чтобы не умереть с голоду. Стоило слухам и подозрениям настичь, как приходилось снова менять город.</Ratkin_Thief.description>
+  <Ratkin_Thief.title>вор раткинов</Ratkin_Thief.title>
+  <Ratkin_Thief.titleFemale>воровка раткинов</Ratkin_Thief.titleFemale>
+  <Ratkin_Thief.titleShort>вор</Ratkin_Thief.titleShort>
+  <Ratkin_Thief.titleShortFemale>воровка</Ratkin_Thief.titleShortFemale>
+  <Ratkin_Vagabond.description>{PAWN_nameDef} {PAWN_gender ? скитался : скиталась} без определённой цели. О прежней жизни почти ничего не известно, но дорожной мудрости вполне хватало, чтобы сводить концы с концами.</Ratkin_Vagabond.description>
+  <Ratkin_Vagabond.title>бродяга раткинов</Ratkin_Vagabond.title>
+  <Ratkin_Vagabond.titleFemale>бродяга раткинов</Ratkin_Vagabond.titleFemale>
+  <Ratkin_Vagabond.titleShort>бродяга</Ratkin_Vagabond.titleShort>
+  <Ratkin_Vagabond.titleShortFemale>бродяга</Ratkin_Vagabond.titleShortFemale>
+  <Ratkin_Wanderer.description>{PAWN_nameDef} {PAWN_gender ? бродил : бродила} по миру без постоянного пристанища. Спокойная жизнь среди ухоженных грядок казалась лишь далёкой мечтой.</Ratkin_Wanderer.description>
+  <Ratkin_Wanderer.title>странник раткинов</Ratkin_Wanderer.title>
+  <Ratkin_Wanderer.titleFemale>странница раткинов</Ratkin_Wanderer.titleFemale>
+  <Ratkin_Wanderer.titleShort>странник</Ratkin_Wanderer.titleShort>
+  <Ratkin_Wanderer.titleShortFemale>странница</Ratkin_Wanderer.titleShortFemale>
+  <Ratkin_WildChild.description>{PAWN_nameDef} {PAWN_gender ? вырос : выросла} вдали от цивилизации. Суровая дикая природа закалила тело, но не дала возможности получить образование.</Ratkin_WildChild.description>
+  <Ratkin_WildChild.title>дитя дикой природы раткинов</Ratkin_WildChild.title>
+  <Ratkin_WildChild.titleFemale>дитя дикой природы раткинов</Ratkin_WildChild.titleFemale>
+  <Ratkin_WildChild.titleShort>дитя дикой природы</Ratkin_WildChild.titleShort>
+  <Ratkin_WildChild.titleShortFemale>дитя дикой природы</Ratkin_WildChild.titleShortFemale>
+</LanguageData>

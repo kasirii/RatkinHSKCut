@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Stat_DeflectAngle.description>Угол перед персонажем, в пределах которого щит способен блокировать атаки. Например, угол 90° означает по 45° с каждой стороны.</RK_Stat_DeflectAngle.description>
+  <RK_Stat_DeflectAngle.formatString>{0}°</RK_Stat_DeflectAngle.formatString>
+  <RK_Stat_DeflectAngle.label>угол прикрытия щитом</RK_Stat_DeflectAngle.label>
+  <RK_Stat_RangeCoolDown.description>Сокращает паузу между выстрелами. Используется эффектом раскрутки стволов оружия RatHolic.</RK_Stat_RangeCoolDown.description>
+  <RK_Stat_RangeCoolDown.formatString>{0} с</RK_Stat_RangeCoolDown.formatString>
+  <RK_Stat_RangeCoolDown.label>сокращение паузы между выстрелами</RK_Stat_RangeCoolDown.label>
+  <RK_Stat_RangeCoolDownMultiplier.description>Изменяет длительность паузы между выстрелами множителем. Используется вместе с другими коэффициентами при раскрутке стволов оружия RatHolic.</RK_Stat_RangeCoolDownMultiplier.description>
+  <RK_Stat_RangeCoolDownMultiplier.formatString>{0}×</RK_Stat_RangeCoolDownMultiplier.formatString>
+  <RK_Stat_RangeCoolDownMultiplier.label>множитель паузы между выстрелами</RK_Stat_RangeCoolDownMultiplier.label>
+  <RK_Stat_ShieldBlockChance.description>Вероятность попытки заблокировать атаку щитом.
+
+При успешном блоке затем определяется, пробьёт ли атака щит.
+
+Зависит от навыка ближнего боя, манипуляции и зрения.</RK_Stat_ShieldBlockChance.description>
+  <RK_Stat_ShieldBlockChance.label>вероятность блока щитом</RK_Stat_ShieldBlockChance.label>
+  <RK_Stat_ShieldStuffBase.label>броня щита: материал</RK_Stat_ShieldStuffBase.label>
+  <RK_Stat_Shield_Blunt.description>Защита этого щита от соответствующего типа урона: удары кулаков, дробящего оружия и падающих камней.
+
+При атаке бронепробитие оружия вычитается из показателя брони щита. Оставшееся значение сравнивается с одним случайным числом.
+
+Если случайное число меньше оставшегося значения брони, урон полностью блокируется. Иначе блок не даёт эффекта.
+
+Например, при 90% брони и 10% бронепробития остаётся 80% брони: вероятность блока составляет примерно 80%.</RK_Stat_Shield_Blunt.description>
+  <RK_Stat_Shield_Blunt.label>броня щита: дробящий урон</RK_Stat_Shield_Blunt.label>
+  <RK_Stat_Shield_Heat.description>Защита этого щита от соответствующего типа урона: ожоги, огонь и другие термические воздействия.
+
+При атаке бронепробитие оружия вычитается из показателя брони щита. Оставшееся значение сравнивается с одним случайным числом.
+
+Если случайное число меньше оставшегося значения брони, урон полностью блокируется. Иначе блок не даёт эффекта.
+
+Например, при 90% брони и 10% бронепробития остаётся 80% брони: вероятность блока составляет примерно 80%.</RK_Stat_Shield_Heat.description>
+  <RK_Stat_Shield_Heat.label>броня щита: термический урон</RK_Stat_Shield_Heat.label>
+  <RK_Stat_Shield_Sharp.description>Защита этого щита от соответствующего типа урона: пули, порезы, взрывы и укусы животных.
+
+При атаке бронепробитие оружия вычитается из показателя брони щита. Оставшееся значение сравнивается с одним случайным числом.
+
+Если случайное число меньше оставшегося значения брони, урон полностью блокируется. Иначе блок не даёт эффекта.
+
+Например, при 90% брони и 10% бронепробития остаётся 80% брони: вероятность блока составляет примерно 80%.</RK_Stat_Shield_Sharp.description>
+  <RK_Stat_Shield_Sharp.label>броня щита: Проникающий урон</RK_Stat_Shield_Sharp.label>
+</LanguageData>

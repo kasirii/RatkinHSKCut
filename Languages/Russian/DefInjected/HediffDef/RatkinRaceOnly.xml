@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Hediff_ArchotechTail.description>Установленный архотек хвост раткина. Он отслеживает положение тела и мельчайшие движения, поддерживая безупречное равновесие. На ощупь хвост напоминает живую плоть, а повредить его труднее, чем пласталь. Полученные повреждения со временем восстанавливаются. Принцип его работы остаётся загадкой.</RK_Hediff_ArchotechTail.description>
+  <RK_Hediff_ArchotechTail.label>архотек хвост раткина</RK_Hediff_ArchotechTail.label>
+  <RK_Hediff_ArchotechTail.labelNoun>архотек хвост раткина</RK_Hediff_ArchotechTail.labelNoun>
+  <RK_Hediff_BionicTail.description>Совершенный искусственный хвост раткина. Небольшой ИИ отслеживает движения владельца и управляет хвостом, помогая сохранять равновесие.</RK_Hediff_BionicTail.description>
+  <RK_Hediff_BionicTail.label>бионический хвост раткина</RK_Hediff_BionicTail.label>
+  <RK_Hediff_BionicTail.labelNoun>бионический хвост раткина</RK_Hediff_BionicTail.labelNoun>
+  <RK_Hediff_FakeEar.description>Искусственное ухо раткина из текстиля. Частично восстанавливает слух.</RK_Hediff_FakeEar.description>
+  <RK_Hediff_FakeEar.label>искусственное ухо раткина</RK_Hediff_FakeEar.label>
+  <RK_Hediff_FakeEar.labelNoun>искусственное ухо раткина</RK_Hediff_FakeEar.labelNoun>
+  <RK_Hediff_FakeTail.description>Искусственный хвост раткина. Это скорее противовес, имитирующий помощь настоящего хвоста в поддержании равновесия.</RK_Hediff_FakeTail.description>
+  <RK_Hediff_FakeTail.label>искусственный хвост раткина</RK_Hediff_FakeTail.label>
+  <RK_Hediff_FakeTail.labelNoun>искусственный хвост раткина</RK_Hediff_FakeTail.labelNoun>
+  <RK_Hediff_LanceChargeExhaustion.description>Истощение после стремительного рывка с копьём. Скорость передвижения снижена; небольшой отдых поможет восстановиться.</RK_Hediff_LanceChargeExhaustion.description>
+  <RK_Hediff_LanceChargeExhaustion.label>истощение после рывка</RK_Hediff_LanceChargeExhaustion.label>
+  <RK_Hediff_LanceChargeFocus.description>Боевая сосредоточенность после рывка. Повышает вероятность попадания в ближнем бою, но снижает способность уклоняться.</RK_Hediff_LanceChargeFocus.description>
+  <RK_Hediff_LanceChargeFocus.label>боевая сосредоточенность</RK_Hediff_LanceChargeFocus.label>
+  <RK_Hediff_LanceChargeMomentum.description>Сохранившийся после рывка импульс увеличивает урон первой атаки в ближнем бою на 25%. После удара эффект исчезает.</RK_Hediff_LanceChargeMomentum.description>
+  <RK_Hediff_LanceChargeMomentum.label>импульс рывка</RK_Hediff_LanceChargeMomentum.label>
+  <RK_Hediff_MoraleBoosterBuffDefault.description>Воодушевление улучшает боевые способности этого персонажа.</RK_Hediff_MoraleBoosterBuffDefault.description>
+  <RK_Hediff_MoraleBoosterBuffDefault.label>воодушевление</RK_Hediff_MoraleBoosterBuffDefault.label>
+  <RK_Hediff_MoraleBoosterBuffStrong.description>Сильное воодушевление значительно улучшает боевые способности этого персонажа.</RK_Hediff_MoraleBoosterBuffStrong.description>
+  <RK_Hediff_MoraleBoosterBuffStrong.label>воодушевление</RK_Hediff_MoraleBoosterBuffStrong.label>
+  <RK_Hediff_MoraleBoosterBuffWeak.description>Слабое воодушевление немного улучшает боевые способности этого персонажа.</RK_Hediff_MoraleBoosterBuffWeak.description>
+  <RK_Hediff_MoraleBoosterBuffWeak.label>воодушевление</RK_Hediff_MoraleBoosterBuffWeak.label>
+  <RK_Hediff_MoraleBoosterCaster.description>Этот персонаж воодушевляет находящихся рядом союзников. Все в пределах действия получают постоянный бонус к боевым способностям.</RK_Hediff_MoraleBoosterCaster.description>
+  <RK_Hediff_MoraleBoosterCaster.label>воодушевляющий клич</RK_Hediff_MoraleBoosterCaster.label>
+  <RK_Hediff_RatHolicGun.description>Используется оружие RatHolic.</RK_Hediff_RatHolicGun.description>
+  <RK_Hediff_RatHolicGun.label>инерция вращения</RK_Hediff_RatHolicGun.label>
+  <RK_Hediff_RatHolicGunSpooling.description>Стволы набирают обороты, постепенно увеличивая скорострельность оружия.</RK_Hediff_RatHolicGunSpooling.description>
+  <RK_Hediff_RatHolicGunSpooling.label>раскрутка стволов</RK_Hediff_RatHolicGunSpooling.label>
+  <RK_Hediff_RatHolicGunSpoolingAim.description>Инерция вращающихся стволов сокращает время повторного наведения на цель.</RK_Hediff_RatHolicGunSpoolingAim.description>
+  <RK_Hediff_RatHolicGunSpoolingAim.label>удержание цели</RK_Hediff_RatHolicGunSpoolingAim.label>
+  <RK_Hediff_Torn.comps.0.labelSolidTendedWell>срослось</RK_Hediff_Torn.comps.0.labelSolidTendedWell>
+  <RK_Hediff_Torn.comps.0.labelTendedWell>перевязано</RK_Hediff_Torn.comps.0.labelTendedWell>
+  <RK_Hediff_Torn.comps.0.labelTendedWellInner>зашито</RK_Hediff_Torn.comps.0.labelTendedWellInner>
+  <RK_Hediff_Torn.comps.2.permanentLabel>рваный шрам</RK_Hediff_Torn.comps.2.permanentLabel>
+  <RK_Hediff_Torn.description>Рана от разрыва тканей.</RK_Hediff_Torn.description>
+  <RK_Hediff_Torn.injuryProps.destroyedLabel>разорвано</RK_Hediff_Torn.injuryProps.destroyedLabel>
+  <RK_Hediff_Torn.injuryProps.destroyedOutLabel>оторвано</RK_Hediff_Torn.injuryProps.destroyedOutLabel>
+  <RK_Hediff_Torn.label>разрыв</RK_Hediff_Torn.label>
+  <RK_Hediff_Torn.labelNoun>рваная рана</RK_Hediff_Torn.labelNoun>
+</LanguageData>

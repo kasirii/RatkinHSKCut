@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_Apparel.label>одежда раткинов</RK_Apparel.label>
+  <RK_ApparelArmor.label>броня раткинов</RK_ApparelArmor.label>
+  <RK_ApparelNoble.label>наряды знати раткинов</RK_ApparelNoble.label>
+  <RK_ArmorHeadgear.label>бронешлемы раткинов</RK_ArmorHeadgear.label>
+  <RK_Headgear.label>головные уборы раткинов</RK_Headgear.label>
+  <RK_HeadgearNoble.label>головные уборы знати раткинов</RK_HeadgearNoble.label>
+  <RK_ThingCategory_Ammo.label>болты для баллисты</RK_ThingCategory_Ammo.label>
+  <RK_ThingCategory_Melee.label>холодное оружие раткинов</RK_ThingCategory_Melee.label>
+  <RK_ThingCategory_Range.label>дальнобойное оружие раткинов</RK_ThingCategory_Range.label>
+  <RK_ThingCategory_Util.label>снаряжение раткинов</RK_ThingCategory_Util.label>
+</LanguageData>

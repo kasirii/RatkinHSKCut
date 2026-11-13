@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RatkinRaceOnly>
+  <!-- To enable the mechanic, remove the relevant `li` tags
+       The `def` items and their dependencies are listed separately in `Patches/RatkinRaceOnly.xml`-->
+  <disabledPatches>
+    <!-- BFR: AP/HE ammunition selector button-->
+    <li>NewRatkin.BFRGizmoPatch</li>
+
+    <!-- Prototype Pulse Rifle: fire mode selector button-->
+    <li>NewRatkin.PulseRifleGizmoPatch</li>
+
+    <!-- Lance: removal of the buff after an attack-->
+    <li>NewRatkin.LanceChargeMomentumPatch</li>
+
+    <!-- Shields: defining defence and compatibility with weapons based on grip type-->
+    <li>NewRatkin.ShieldPatch</li>
+    <li>NewRatkin.EquipmentUtility_CanEquip_Patch</li>
+
+    <!-- Priests: handlers for pawn generation and state-->
+    <li>NewRatkin.PriestPatch</li>
+
+    <!-- Wandering caravans: leaving the map, capture and the trade menu-->
+    <li>NewRatkin.Pawn_ExitMap_Patch</li>
+    <li>NewRatkin.Faction_NotifyMemberCaptured_WanderingCaravan_Patch</li>
+    <li>NewRatkin.FloatMenuOptionProvider_Trade_Patch</li>
+
+    <!-- Interface: hotkey and switching between information cards-->
+    <li>NewRatkin.Patch_InfoCard_OpenHotkey</li>
+    <li>NewRatkin.Patch_InfoCard_HotSwap</li>
+
+    <!-- General patches: destruction of clothing and handling of injury additions-->
+    <li>NewRatkin.DestroyGearOnDropPatch</li>
+    <li>NewRatkin.Hediff_InjuryPatch</li>
+
+    <!-- SYS: rendering of the weapon on the back and the scabbard-->
+    <li>SYS.DrawEquipment_WeaponBackPatch</li>
+  </disabledPatches>
+</RatkinRaceOnly>

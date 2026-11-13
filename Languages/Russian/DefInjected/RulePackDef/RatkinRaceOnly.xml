@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.0>r_name(p=2)-&gt;[empire] [ofThing]</NamerFaction_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.1>r_name(p=2)-&gt;[empire] [ofThing]</NamerFaction_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.10>ofThing-&gt;арахиса</NamerFaction_RatkinKingdom.rulePack.rulesStrings.10>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.11>ofThing-&gt;железных раткинов</NamerFaction_RatkinKingdom.rulePack.rulesStrings.11>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.2>r_name-&gt;[empire] величия</NamerFaction_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.3>r_name-&gt;Железные раткины</NamerFaction_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.4>r_name-&gt;[empire] Раткинии</NamerFaction_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.5>empire(p=3)-&gt;королевство</NamerFaction_RatkinKingdom.rulePack.rulesStrings.5>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.6>empire-&gt;империя</NamerFaction_RatkinKingdom.rulePack.rulesStrings.6>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.7>ofThing(p=3)-&gt;[WordImperial]</NamerFaction_RatkinKingdom.rulePack.rulesStrings.7>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.8>ofThing-&gt;садовников</NamerFaction_RatkinKingdom.rulePack.rulesStrings.8>
+  <NamerFaction_RatkinKingdom.rulePack.rulesStrings.9>ofThing-&gt;подсолнухов</NamerFaction_RatkinKingdom.rulePack.rulesStrings.9>
+  <NamerPerson_RatkinKingdom.rulePack.rulesStrings.0>r_name(p=4)-&gt;[RK_FirstName] [RK_LastName]</NamerPerson_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerPerson_RatkinKingdom.rulePack.rulesStrings.1>r_name(p=2)-&gt;[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]</NamerPerson_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerPerson_RatkinKingdom.rulePack.rulesStrings.2>r_name(p=1)-&gt;[RK_First_ElfStyle] [RK_Noun_Prefix_Flower]ти</NamerPerson_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.0>r_name-&gt;[townname_wordgen]</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.1>r_name-&gt;[townname_fixed]</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.10>townend-&gt;ликс</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.10>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.11>townend-&gt;лин</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.11>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.12>townend-&gt;лиан</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.12>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.13>townend-&gt;фрум</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.13>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.14>townend-&gt;фор</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.14>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.15>townend-&gt;теор</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.15>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.16>townend-&gt;опль</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.16>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.17>townend-&gt;опиум</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.17>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.18>townend-&gt;ор</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.18>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.19>townend-&gt;этор</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.19>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.2>townname_wordgen-&gt;[WordImperial]</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.20>townend-&gt;эум</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.20>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.21>townend-&gt;этиум</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.21>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.22>townend-&gt;ам</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.22>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.23>townend-&gt;эум</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.23>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.3>townname_wordgen-&gt;[WordImperial][townend]</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.4>townend(p=3)-&gt;иум</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.5>townend(p=3)-&gt;иор</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.5>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.6>townend(p=3)-&gt;полис</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.6>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.7>townend-&gt;нор</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.7>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.8>townend-&gt;лан</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.8>
+  <NamerSettlement_RatkinKingdom.rulePack.rulesStrings.9>townend-&gt;лакс</NamerSettlement_RatkinKingdom.rulePack.rulesStrings.9>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.0>damaged_inf(p=4)-&gt;обстрелять</RK_Maneuver_Shell.rulePack.rulesStrings.0>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.1>damaged_inf(deflected!=True)-&gt;обстрелять</RK_Maneuver_Shell.rulePack.rulesStrings.1>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.10>destroyed_past-&gt;обуглено</RK_Maneuver_Shell.rulePack.rulesStrings.10>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.11>destroyed_past-&gt;стёрто с лица земли</RK_Maneuver_Shell.rulePack.rulesStrings.11>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.12>destroyed_past-&gt;уничтожено</RK_Maneuver_Shell.rulePack.rulesStrings.12>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.13>destroyed_past-&gt;взорвано</RK_Maneuver_Shell.rulePack.rulesStrings.13>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.14>destroyed_past-&gt;раздроблено</RK_Maneuver_Shell.rulePack.rulesStrings.14>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.15>destroyed_past-&gt;раздавлено</RK_Maneuver_Shell.rulePack.rulesStrings.15>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.16>destroyed_present-&gt;обращается в пепел</RK_Maneuver_Shell.rulePack.rulesStrings.16>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.17>destroyed_present-&gt;испепеляется</RK_Maneuver_Shell.rulePack.rulesStrings.17>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.18>destroyed_present-&gt;обугливается</RK_Maneuver_Shell.rulePack.rulesStrings.18>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.19>destroyed_present-&gt;стирается с лица земли</RK_Maneuver_Shell.rulePack.rulesStrings.19>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.2>damaged_inf-&gt;обстрелять</RK_Maneuver_Shell.rulePack.rulesStrings.2>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.20>destroyed_present-&gt;уничтожается</RK_Maneuver_Shell.rulePack.rulesStrings.20>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.21>destroyed_present-&gt;взрывается</RK_Maneuver_Shell.rulePack.rulesStrings.21>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.3>damaged_past(p=4)-&gt;обстреляно</RK_Maneuver_Shell.rulePack.rulesStrings.3>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.4>damaged_past(deflected!=True)-&gt;обстреляно</RK_Maneuver_Shell.rulePack.rulesStrings.4>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.5>damaged_past-&gt;обстреляно</RK_Maneuver_Shell.rulePack.rulesStrings.5>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.6>damaged_present-&gt;под обстрелом</RK_Maneuver_Shell.rulePack.rulesStrings.6>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.7>damaged_present(deflected!=True)-&gt;под обстрелом</RK_Maneuver_Shell.rulePack.rulesStrings.7>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.8>destroyed_past-&gt;обращено в пепел</RK_Maneuver_Shell.rulePack.rulesStrings.8>
+  <RK_Maneuver_Shell.rulePack.rulesStrings.9>destroyed_past-&gt;испепелено</RK_Maneuver_Shell.rulePack.rulesStrings.9>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.0>RK_FirstName-&gt;[RK_Noun_Prefix_Flower]</RatkinKingdomNameUtility.rulePack.rulesStrings.0>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.1>RK_FirstName-&gt;[RK_First_ElfStyle]</RatkinKingdomNameUtility.rulePack.rulesStrings.1>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.2>RK_LastName(p=3)-&gt;[RK_Noun_Prefix_Nut]</RatkinKingdomNameUtility.rulePack.rulesStrings.2>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.3>RK_LastName(p=2)-&gt;[RK_Noun_Prefix_Iron][RK_Noun_Postfix_Ironlike]</RatkinKingdomNameUtility.rulePack.rulesStrings.3>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.4>RK_LastName-&gt;[RK_Noun_Postfix_BodyPart]короны</RatkinKingdomNameUtility.rulePack.rulesStrings.4>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.5>RK_LastName-&gt;[RK_Noun_Postfix_BodyPart]чащи</RatkinKingdomNameUtility.rulePack.rulesStrings.5>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.6>RK_LastName-&gt;[RK_Noun_Prefix_Nature][RK_Noun_Postfix_Mover]</RatkinKingdomNameUtility.rulePack.rulesStrings.6>
+  <RatkinKingdomNameUtility.rulePack.rulesStrings.7>RK_LastName-&gt;[RK_Last_Single]</RatkinKingdomNameUtility.rulePack.rulesStrings.7>
+</LanguageData>
