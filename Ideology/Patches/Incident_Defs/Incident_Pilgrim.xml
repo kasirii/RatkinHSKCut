@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/IncidentDef[defName="GiveQuest_ReliquaryPilgrims_Ratkin"]</xpath>
+  </Operation>
+</Patch>

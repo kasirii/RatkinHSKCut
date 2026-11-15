@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="RK_HeavyShield"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="RK_TowerShield"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="RK_WoodenShield"]</xpath>
+  </Operation>
+</Patch>

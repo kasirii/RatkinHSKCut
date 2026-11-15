@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/apparelList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/weaponList</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
+    <value>
+      <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeEar"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeTail"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallBionicTail"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallArchotechTail"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGenerator</xpath>
+    <value>
+      <nameGenerator>RK_RaceOnly_PersonNamer</nameGenerator>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGeneratorFemale</xpath>
+    <value>
+      <nameGeneratorFemale>RK_RaceOnly_PersonNamer</nameGeneratorFemale>
+    </value>
+  </Operation>
+</Patch>

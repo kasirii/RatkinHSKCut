@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="RK_PawnKind_NoblePilgrim"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="RK_PawnKind_Pilgrim"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="RK_PawnKind_Priest"]</xpath>
+  </Operation>
+</Patch>

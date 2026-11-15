@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ResearchProjectDef/tags/li[text()="RK_ResearchTag_IndustrialBasic"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ResearchProjectDef/tags/li[text()="RK_ResearchTag_MedievalBasic"]</xpath>
+  </Operation>
+</Patch>

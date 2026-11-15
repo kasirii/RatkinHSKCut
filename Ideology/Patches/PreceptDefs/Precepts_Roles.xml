@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PreceptDef/roleApparelRequirements/li[requirement/requiredDefs/li[contains("|RK_FlatColorCoat|RK_FrillOnepiece|RK_HairCorsage|RK_RibbonHairBand|RK_RoyalCrown|RK_RoyalRobe|RK_SistersDerss|RK_SistersVeil|RK_WhiteCoat|", concat("|", normalize-space(.), "|"))] and not(requirement/requiredDefs/li[not(contains("|RK_FlatColorCoat|RK_FrillOnepiece|RK_HairCorsage|RK_RibbonHairBand|RK_RoyalCrown|RK_RoyalRobe|RK_SistersDerss|RK_SistersVeil|RK_WhiteCoat|", concat("|", normalize-space(.), "|")))])]</xpath>
+  </Operation>
+</Patch>

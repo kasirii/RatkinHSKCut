@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/JobDef[defName="RK_Job_ShieldFaceDirection"]</xpath>
+  </Operation>
+</Patch>

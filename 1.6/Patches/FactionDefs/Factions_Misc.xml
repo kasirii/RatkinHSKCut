@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/FactionDef[defName="RK_Faction_Caravan"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/FactionDef[defName="RK_Faction_Pilgrims"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/FactionDef[defName="Rakinia"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/FactionDef[@Name="RatkinFactionBase"]</xpath>
+  </Operation>
+</Patch>

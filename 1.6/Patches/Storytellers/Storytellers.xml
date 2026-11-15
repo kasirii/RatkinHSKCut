@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/StorytellerDef[defName="RK_Storyteller_RottyMilden"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/IncidentDef[defName="RK_Incident_PriestJoin"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/IncidentDef[defName="RK_Incident_VagabondJoin"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/QuestScriptDef[defName="RK_QuestScript_PriestJoin"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/StorytellerDef/comps/li[@Class="StorytellerCompProperties_RK_PriestJoin"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/StorytellerDef/comps/li[@Class="NewRatkin.StorytellerCompProperties_WanderingCaravan"]</xpath>
+  </Operation>
+</Patch>

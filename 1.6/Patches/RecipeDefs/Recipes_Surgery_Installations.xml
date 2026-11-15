@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]</xpath>
+    <value>
+      <recipeUsers Inherit="False">
+        <li>Ratkin</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]</xpath>
+    <value>
+      <recipeUsers>
+        <li>Ratkin</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"]</xpath>
+    <value>
+      <recipeUsers>
+        <li>Ratkin</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"]</xpath>
+    <value>
+      <recipeUsers>
+        <li>Ratkin</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase"]/ingredients/li/filter/thingDefs</xpath>
+		<value>
+			<categories>
+				<li>BTextiles</li>
+			</categories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<categories>
+				<li>BTextiles</li>
+			</categories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]/descriptionHyperlinks/ThingDef[text()="Cloth"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]/descriptionHyperlinks/ThingDef[text()="Cloth"]</xpath>
+	</Operation>
+</Patch>

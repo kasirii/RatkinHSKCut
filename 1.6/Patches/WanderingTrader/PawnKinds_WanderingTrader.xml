@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="RK_PawnKind_CaravanGuard"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="RK_PawnKind_CaravanLeader"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="RK_PawnKind_Nomad"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="RK_PawnKind_Wanderer"]</xpath>
+  </Operation>
+</Patch>

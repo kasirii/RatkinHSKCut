@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CultureDef[defName="RK_Culture_Virtuard"]/pawnNameMaker</xpath>
+    <value>
+      <pawnNameMaker>RK_RaceOnly_PersonNamer</pawnNameMaker>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/CultureDef[defName="RK_Culture_Virtuard"]/pawnNameMakerFemale</xpath>
+    <value>
+      <pawnNameMakerFemale>RK_RaceOnly_PersonNamer</pawnNameMakerFemale>
+    </value>
+  </Operation>
+</Patch>
