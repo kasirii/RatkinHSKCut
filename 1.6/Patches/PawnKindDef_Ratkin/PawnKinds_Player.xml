@@ -306,7 +306,7 @@
 					<li>MedievalRanged</li>
 				</weaponTags>
 				<apparelTags>
-					<li>Shield_Medieval</li>
+					<li>MedievalShield</li>
 				</apparelTags>
 				<specificApparelRequirements>
 					<li>
@@ -375,7 +375,7 @@
 					<li>MedievalRanged</li>
 				</weaponTags>
 				<apparelTags>
-					<li>Shield_Medieval</li>
+					<li>MedievalShield</li>
 					<li>MedievalKnightly</li>
 				</apparelTags>
 				<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
