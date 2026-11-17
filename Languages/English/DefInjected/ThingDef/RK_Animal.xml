@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RK_KingHamster.label>king hamster</RK_KingHamster.label>
+  <RK_KingHamster.description>A giant, herd-living herbivore descended from hamsters and well adapted to both cold and warm climates. An enraged king hamster is dangerous, but once tamed it is a gentle animal that can carry loads. Nobody knows why king hamsters grew so large. They may be the legacy of early genetic engineering experiments.</RK_KingHamster.description>
+  <RK_Leather_KingHamster.label>king hamster fur</RK_Leather_KingHamster.label>
+  <RK_Leather_KingHamster.description>The thick, soft, beige pelt of a king hamster. Its excellent breathability helps regulate body temperature in hot climates.</RK_Leather_KingHamster.description>
+  <RK_Wool_KingHamster.label>king hamster wool</RK_Wool_KingHamster.label>
+  <RK_Wool_KingHamster.description>Soft, lightweight wool with excellent insulating properties. Clothing made from this wool is well suited to working in polar climates.</RK_Wool_KingHamster.description>
+  <RK_KingHamster.tools.0.label>head</RK_KingHamster.tools.0.label>
+  <RK_KingHamster.tools.1.label>left paw</RK_KingHamster.tools.1.label>
+  <RK_KingHamster.tools.2.label>right paw</RK_KingHamster.tools.2.label>
+  <RK_KingHamster.tools.1.labelNoLocation>paw</RK_KingHamster.tools.1.labelNoLocation>
+  <RK_KingHamster.tools.2.labelNoLocation>paw</RK_KingHamster.tools.2.labelNoLocation>
+</LanguageData>

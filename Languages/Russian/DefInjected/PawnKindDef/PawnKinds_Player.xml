@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RatkinCombatant.label>воин-раткин</RatkinCombatant.label>
+  <RatkinCombatant.labelPlural>воины-раткины</RatkinCombatant.labelPlural>
+  <RatkinCombatant.labelMale>воин-раткин</RatkinCombatant.labelMale>
+  <RatkinCombatant.labelMalePlural>воины-раткины</RatkinCombatant.labelMalePlural>
+  <RatkinCombatant.labelFemale>воительница-раткин</RatkinCombatant.labelFemale>
+  <RatkinCombatant.labelFemalePlural>воительницы-раткины</RatkinCombatant.labelFemalePlural>
+  <RatkinDefender.label>защитник-раткин</RatkinDefender.label>
+  <RatkinDefender.labelPlural>защитники-раткины</RatkinDefender.labelPlural>
+  <RatkinDefender.labelMale>защитник-раткин</RatkinDefender.labelMale>
+  <RatkinDefender.labelMalePlural>защитники-раткины</RatkinDefender.labelMalePlural>
+  <RatkinDefender.labelFemale>защитница-раткин</RatkinDefender.labelFemale>
+  <RatkinDefender.labelFemalePlural>защитницы-раткины</RatkinDefender.labelFemalePlural>
+  <RatkinKnight.label>рыцарь-раткин</RatkinKnight.label>
+  <RatkinKnight.labelPlural>рыцари-раткины</RatkinKnight.labelPlural>
+  <RatkinKnight.labelMale>рыцарь-раткин</RatkinKnight.labelMale>
+  <RatkinKnight.labelMalePlural>рыцари-раткины</RatkinKnight.labelMalePlural>
+  <RatkinKnight.labelFemale>рыцарь-раткин</RatkinKnight.labelFemale>
+  <RatkinKnight.labelFemalePlural>рыцари-раткины</RatkinKnight.labelFemalePlural>
+  <RatkinKnightCommander.label>командир рыцарей раткинов</RatkinKnightCommander.label>
+  <RatkinKnightCommander.labelPlural>командиры рыцарей раткинов</RatkinKnightCommander.labelPlural>
+  <RatkinKnightCommander.labelMale>командир рыцарей раткинов</RatkinKnightCommander.labelMale>
+  <RatkinKnightCommander.labelMalePlural>командиры рыцарей раткинов</RatkinKnightCommander.labelMalePlural>
+  <RatkinKnightCommander.labelFemale>командир рыцарей раткинов</RatkinKnightCommander.labelFemale>
+  <RatkinKnightCommander.labelFemalePlural>командиры рыцарей раткинов</RatkinKnightCommander.labelFemalePlural>
+  <RatkinMerchant.label>торговец-раткин</RatkinMerchant.label>
+  <RatkinMerchant.labelPlural>торговцы-раткины</RatkinMerchant.labelPlural>
+  <RatkinMerchant.labelMale>торговец-раткин</RatkinMerchant.labelMale>
+  <RatkinMerchant.labelMalePlural>торговцы-раткины</RatkinMerchant.labelMalePlural>
+  <RatkinMerchant.labelFemale>торговка-раткин</RatkinMerchant.labelFemale>
+  <RatkinMerchant.labelFemalePlural>торговки-раткины</RatkinMerchant.labelFemalePlural>
+  <RatkinNoble.label>дворянин-раткин</RatkinNoble.label>
+  <RatkinNoble.labelPlural>дворяне-раткины</RatkinNoble.labelPlural>
+  <RatkinNoble.labelMale>дворянин-раткин</RatkinNoble.labelMale>
+  <RatkinNoble.labelMalePlural>дворяне-раткины</RatkinNoble.labelMalePlural>
+  <RatkinNoble.labelFemale>дворянка-раткин</RatkinNoble.labelFemale>
+  <RatkinNoble.labelFemalePlural>дворянки-раткины</RatkinNoble.labelFemalePlural>
+  <RatkinPriest.label>жрец-раткин</RatkinPriest.label>
+  <RatkinPriest.labelPlural>жрецы-раткины</RatkinPriest.labelPlural>
+  <RatkinPriest.labelMale>жрец-раткин</RatkinPriest.labelMale>
+  <RatkinPriest.labelMalePlural>жрецы-раткины</RatkinPriest.labelMalePlural>
+  <RatkinPriest.labelFemale>жрица-раткин</RatkinPriest.labelFemale>
+  <RatkinPriest.labelFemalePlural>жрицы-раткины</RatkinPriest.labelFemalePlural>
+  <RatkinServant.label>слуга-раткин</RatkinServant.label>
+  <RatkinServant.labelPlural>слуги-раткины</RatkinServant.labelPlural>
+  <RatkinServant.labelMale>слуга-раткин</RatkinServant.labelMale>
+  <RatkinServant.labelMalePlural>слуги-раткины</RatkinServant.labelMalePlural>
+  <RatkinServant.labelFemale>служанка-раткин</RatkinServant.labelFemale>
+  <RatkinServant.labelFemalePlural>служанки-раткины</RatkinServant.labelFemalePlural>
+</LanguageData>

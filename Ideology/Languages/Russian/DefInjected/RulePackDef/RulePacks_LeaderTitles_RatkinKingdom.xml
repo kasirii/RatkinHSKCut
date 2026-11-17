@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.0>memeLeaderNoun(priority=1)-&gt;[cultureLeaderNoun]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.0>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.1>cultureLeaderTitle-&gt;[cultureLeaderNoun] [cultureLeaderAdjective]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.1>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.10>cultureLeaderNoun(p=8)-&gt;король</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.10>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.11>cultureLeaderNoun(p=6)-&gt;королева</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.11>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.12>cultureLeaderNoun(p=5)-&gt;герцог</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.12>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.13>cultureLeaderNoun(p=5)-&gt;герцогиня</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.13>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.14>cultureLeaderNoun(p=4)-&gt;граф</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.14>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.15>cultureLeaderNoun(p=4)-&gt;графиня</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.15>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.16>cultureLeaderNoun(p=3)-&gt;барон</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.16>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.17>cultureLeaderNoun(p=3)-&gt;баронесса</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.17>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.18>cultureLeaderNoun(p=2)-&gt;рыцарь</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.18>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.19>cultureLeaderNoun(p=2)-&gt;лорд</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.19>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.2>cultureLeaderTitle(p=3)-&gt;[cultureLeaderNoun]</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.2>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.20>cultureLeaderNoun(p=2)-&gt;леди</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.20>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.21>cultureLeaderNoun(p=1)-&gt;эрл</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.21>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.22>cultureLeaderNoun(p=1)-&gt;маркиз</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.22>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.3>cultureLeaderAdjective-&gt;высшего круга</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.3>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.4>cultureLeaderAdjective-&gt;великой державы</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.4>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.5>cultureLeaderAdjective-&gt;благородного дома</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.5>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.6>cultureLeaderAdjective-&gt;королевского рода</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.6>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.7>cultureLeaderAdjective-&gt;великого круга</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.7>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.8>cultureLeaderAdjective-&gt;первого круга</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.8>
+  <LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.9>cultureLeaderAdjective-&gt;первого совета</LeaderTitleMaker_RatkinKingdom.rulePack.rulesStrings.9>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.0>god(p=3)-&gt;бог чести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.0>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.1>god(p=3, gender==Female)-&gt;богиня чести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.1>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.2>god(p=2)-&gt;бог рыцарства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.2>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.3>god(p=2, gender==Female)-&gt;богиня рыцарства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.3>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.4>god(p=2)-&gt;бог доблести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.4>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.5>god(p=2, gender==Female)-&gt;богиня доблести</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.5>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.6>god(p=1)-&gt;бог благородства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.6>
+  <DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.7>god(p=1, gender==Female)-&gt;богиня благородства</DeityTypeMaker_RatkinKingdom.rulePack.rulesStrings.7>
+</LanguageData>
