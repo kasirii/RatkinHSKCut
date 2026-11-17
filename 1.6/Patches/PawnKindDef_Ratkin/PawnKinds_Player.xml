@@ -3,12 +3,12 @@
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RK_PawnKind_StandardBearer"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinCombatant"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinDefender"]</xpath>
-  </Operation>
+  </Operation>-->
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinDemonMan"]</xpath>
   </Operation>
@@ -21,36 +21,36 @@
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinEliteSoldier"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinKnight"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinKnightCommander"]</xpath>
-  </Operation>
+  </Operation>-->
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinMercenary"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinMercenaryLight"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinMerchant"]</xpath>
-  </Operation>
+  </Operation>-->
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinMurderer"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinNoble"]</xpath>
-  </Operation>
+  </Operation>-->
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinPettyThief"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinPriest"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinServant"]</xpath>
-  </Operation>
+  </Operation>-->
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinSoldier"]</xpath>
   </Operation>
@@ -60,52 +60,449 @@
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="RatkinVanguard"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[@Name="RKCombatantBase"]</xpath>
-  </Operation>
+  </Operation>-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]</xpath>
+		<value>
+			<PawnKindDef Name="RKBasePawnKind" ParentName="BasePlayerPawnKind"  Abstract="true">
+				<race>Ratkin</race>
+				<defaultFactionType>Rakinia</defaultFactionType>
+				<combatPower>70</combatPower>
+				<minGenerationAge>13</minGenerationAge>
+				<maxGenerationAge>35</maxGenerationAge>
+				<apparelTags Inherit="false">
+					<li>Medieval</li>
+				</apparelTags>
+				<apparelRequired Inherit="false"/>
+				<apparelMoney>
+					<min>400</min>
+					<max>1200</max>
+				</apparelMoney>
+				<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+				<weaponTags Inherit="false"/>
+				<invFoodDef>GrilledCheese</invFoodDef>
+				<invNutrition>2</invNutrition>
+				<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+				<initialResistanceRange>0~3</initialResistanceRange>
+				<initialWillRange>0~3</initialWillRange>
+				<xenotypeSet MayRequire="Ludeon.RimWorld.Biotech" Inherit="false">
+					<xenotypeChances>
+						<RK_XenoType_Ratkin>1</RK_XenoType_Ratkin>
+					</xenotypeChances>
+				</xenotypeSet>
+				<useFactionXenotypes>false</useFactionXenotypes>
+				<forceNormalGearQuality>false</forceNormalGearQuality>
+			</PawnKindDef>
+		</value>
+	</Operation>
+	
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/PawnKindDef[defName="RatkinColonist"]</xpath>
     <value>
-      <PawnKindDef ParentName="BasePlayerPawnKind">
+      <PawnKindDef ParentName="RKBasePawnKind">
         <defName>RatkinColonist</defName>
         <label>ratkin colonist</label>
-        <race>Ratkin</race>
-        <defaultFactionType>PlayerColony</defaultFactionType>
-        <combatPower>20</combatPower>
-        <minGenerationAge>13</minGenerationAge>
-        <maxGenerationAge>35</maxGenerationAge>
-        <backstoryFiltersOverride Inherit="false">
-          <li>
-            <categories>
-              <li>RatkinStory</li>
-            </categories>
-          </li>
-        </backstoryFiltersOverride>
-        <apparelTags Inherit="false">
-          <li>IndustrialBasic</li>
-          <li>Outlander</li>
-        </apparelTags>
-        <apparelRequired Inherit="false"/>
-        <apparelMoney>120</apparelMoney>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <weaponTags Inherit="false"/>
-        <invFoodDef>Pemmican</invFoodDef>
-        <invNutrition>2</invNutrition>
-        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-        <initialResistanceRange>0~10</initialResistanceRange>
-        <initialWillRange>5~10</initialWillRange>
-        <xenotypeSet MayRequire="Ludeon.RimWorld.Biotech">
-          <xenotypeChances>
-            <RK_XenoType_Ratkin>99999</RK_XenoType_Ratkin>
-            <Baseliner>0</Baseliner>
-            <Sanguophage>0</Sanguophage>
-          </xenotypeChances>
-        </xenotypeSet>
-        <useFactionXenotypes>false</useFactionXenotypes>
+		  <defaultFactionType>PlayerColony</defaultFactionType>
+		  <backstoryFiltersOverride>
+			  <li>
+				  <categories>
+					  <li>RatkinStory</li>
+				  </categories>
+			  </li>
+		  </backstoryFiltersOverride>
       </PawnKindDef>
     </value>
   </Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinNoble"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKBasePawnKind">
+				<defName>RatkinNoble</defName>
+				<label>ratkin noble</label>
+				<combatPower>80</combatPower>
+				<isFighter>false</isFighter>
+				<factionLeader>true</factionLeader>
+				<backstoryFiltersOverride>
+					<li>
+						<categories>
+							<li>RatkinNoble</li>
+						</categories>
+					</li>
+				</backstoryFiltersOverride>
+				<itemQuality>Good</itemQuality>
+				<apparelMoney>
+					<min>800</min>
+					<max>3500</max>
+				</apparelMoney>
+				<specificApparelRequirements>
+					<li>
+						<bodyPartGroup>Torso</bodyPartGroup>
+						<apparelLayer>OnSkin</apparelLayer>
+					</li>
+				</specificApparelRequirements>
+				<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+				<inventoryOptions>
+					<skipChance>0.5</skipChance>
+					<subOptionsChooseOne>
+						<li>
+							<choiceChance>95</choiceChance>
+							<thingDef>Silver</thingDef>
+							<countRange>
+								<min>500</min>
+								<max>800</max>
+							</countRange>
+						</li>
+						<li>
+							<choiceChance>5</choiceChance>
+							<thingDef>Silver</thingDef>
+							<countRange>
+								<min>1000</min>
+								<max>3500</max>
+							</countRange>
+						</li>
+					</subOptionsChooseOne>
+				</inventoryOptions>
+				<trader>true</trader>
+			</PawnKindDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinServant"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKBasePawnKind">
+				<defName>RatkinServant</defName>
+				<label>ratkin servant</label>
+				<backstoryFiltersOverride>
+					<li>
+						<categories>
+							<li>RatkinServant</li>
+						</categories>
+					</li>
+				</backstoryFiltersOverride>
+				<apparelMoney>
+					<min>560</min>
+					<max>1200</max>
+				</apparelMoney>
+				<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+			</PawnKindDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinPriest"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKBasePawnKind">
+			<defName>RatkinPriest</defName>
+			<label>ratkin Priest</label>
+			<isFighter>false</isFighter>
+			<combatPower>60</combatPower>
+			<factionLeader>true</factionLeader>
+			<minGenerationAge>21</minGenerationAge>
+			<backstoryFiltersOverride>
+				<li>
+					<categories>
+						<li>RatkinPriest</li>
+					</categories>
+				</li>
+			</backstoryFiltersOverride>
+			<apparelMoney>
+				<min>800</min>
+				<max>3000</max>
+			</apparelMoney>
+				<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+			</PawnKindDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="RKCombatantBase"]</xpath>
+		<value>
+			<PawnKindDef Name="RKCombatantBase" ParentName="RKBasePawnKind" Abstract="true">
+				<isFighter>true</isFighter>
+			</PawnKindDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinMerchant"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKCombatantBase">
+				<defName>RatkinMerchant</defName>
+				<label>ratkin Merchant</label>
+				<combatPower>125</combatPower>
+				<backstoryFiltersOverride>
+					<li>
+						<categories>
+							<li>RatkinMerchant</li>
+						</categories>
+					</li>
+				</backstoryFiltersOverride>
+				<apparelMoney>
+					<min>800</min>
+					<max>2000</max>
+				</apparelMoney>
+				<weaponMoney>
+					<min>3000</min>
+					<max>3500</max>
+				</weaponMoney>
+				<weaponTags>
+					<li>MedievalMelee</li>
+					<li>MedievalRanged</li>
+				</weaponTags>
+				<specificApparelRequirements>
+					<li>
+						<bodyPartGroup>Torso</bodyPartGroup>
+						<apparelLayer>OnSkin</apparelLayer>
+					</li>
+				</specificApparelRequirements>
+				<trader>true</trader>
+				<modExtensions>
+					<li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+							<min>8</min>
+							<max>11</max>
+						</primaryMagazineCount>
+					</li>
+				</modExtensions>
+			</PawnKindDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinCombatant"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKCombatantBase">
+				<defName>RatkinCombatant</defName>
+				<label>ratkin combatant</label>
+				<combatPower>160</combatPower>
+				<backstoryFiltersOverride>
+					<li>
+						<categories>
+							<li>RatkinCombatant</li>
+						</categories>
+					</li>
+				</backstoryFiltersOverride>
+				<gearHealthRange>
+					<min>0.3</min>
+					<max>0.9</max>
+				</gearHealthRange>
+				<apparelMoney>
+					<min>800</min>
+					<max>2000</max>
+				</apparelMoney>
+				<weaponMoney>
+					<min>1200</min>
+					<max>2000</max>
+				</weaponMoney>
+				<weaponTags>
+					<li>MedievalMelee</li>
+					<li>MedievalRanged</li>
+				</weaponTags>
+				<apparelTags>
+					<li>Shield_Medieval</li>
+				</apparelTags>
+				<specificApparelRequirements>
+					<li>
+						<bodyPartGroup>Torso</bodyPartGroup>
+						<apparelLayer>OnSkin</apparelLayer>
+					</li>
+				</specificApparelRequirements>
+				<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+				<modExtensions>
+					<li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+							<min>35</min>
+							<max>50</max>
+						</primaryMagazineCount>
+						<sidearms>
+							<li>
+								<generateChance>0.15</generateChance>
+								<sidearmMoney>
+									<min>0</min>
+									<max>50</max>
+								</sidearmMoney>
+								<weaponTags>
+									<li>Norbhammar</li>
+								</weaponTags>
+								<magazineCount>
+									<min>2</min>
+									<max>4</max>
+								</magazineCount>
+							</li>
+						</sidearms>
+					</li>
+				</modExtensions>
+			</PawnKindDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinDefender"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKCombatantBase">
+				<defName>RatkinDefender</defName>
+				<label>ratkin defender</label>
+				<combatPower>185</combatPower>
+				<minGenerationAge>21</minGenerationAge>
+				<backstoryFiltersOverride>
+					<li>
+						<categories>
+							<li>RatkinDefender</li>
+						</categories>
+					</li>
+				</backstoryFiltersOverride>
+				<gearHealthRange>
+					<min>0.6</min>
+					<max>1</max>
+				</gearHealthRange>
+				<apparelMoney>
+					<min>1500</min>
+					<max>3000</max>
+				</apparelMoney>
+				<weaponMoney>
+					<min>1000</min>
+					<max>2500</max>
+				</weaponMoney>
+				<weaponTags>
+					<li>MedievalMelee</li>
+					<li>MedievalRanged</li>
+				</weaponTags>
+				<apparelTags>
+					<li>Shield_Medieval</li>
+					<li>MedievalKnightly</li>
+				</apparelTags>
+				<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+				<skills>
+					<li>
+						<skill>Melee</skill>
+						<range>8~12</range>
+					</li>
+				</skills>
+				<modExtensions>
+					<li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+							<min>35</min>
+							<max>50</max>
+						</primaryMagazineCount>
+						<sidearms>
+							<li>
+								<generateChance>0.15</generateChance>
+								<sidearmMoney>
+									<min>0</min>
+									<max>50</max>
+								</sidearmMoney>
+								<weaponTags>
+									<li>Norbhammar</li>
+								</weaponTags>
+								<magazineCount>
+									<min>2</min>
+									<max>4</max>
+								</magazineCount>
+							</li>
+						</sidearms>
+					</li>
+				</modExtensions>
+			</PawnKindDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinKnight"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKCombatantBase">
+				<defName>RatkinKnight</defName>
+				<label>ratkin knight</label>
+				<combatPower>200</combatPower>
+				<itemQuality>Good</itemQuality>
+				<minGenerationAge>24</minGenerationAge>
+				<backstoryFiltersOverride>
+					<li>
+						<categories>
+							<li>RatkinKnight</li>
+						</categories>
+					</li>
+				</backstoryFiltersOverride>
+				<gearHealthRange>
+					<min>0.9</min>
+					<max>2</max>
+				</gearHealthRange>
+				<apparelMoney>
+					<min>4500</min>
+					<max>6000</max>
+				</apparelMoney>
+				<weaponMoney>
+					<min>2000</min>
+					<max>3500</max>
+				</weaponMoney>
+				<weaponTags>
+					<li>MedievalMelee2H</li>
+				</weaponTags>
+				<apparelTags>
+					<li>MedievalKnightly</li>
+				</apparelTags>
+				<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+				<skills>
+					<li>
+						<skill>Melee</skill>
+						<range>8~13</range>
+					</li>
+				</skills>
+			</PawnKindDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="RatkinKnightCommander"]</xpath>
+		<value>
+			<PawnKindDef ParentName="RKCombatantBase">
+				<defName>RatkinKnightCommander</defName>
+				<label>ratkin knight commander</label>
+				<combatPower>300</combatPower>
+				<factionLeader>true</factionLeader>
+				<itemQuality>Excellent</itemQuality>
+				<minGenerationAge>21</minGenerationAge>
+				<maxPerGroup>1</maxPerGroup>
+				<backstoryFiltersOverride>
+					<li>
+						<categories>
+							<li>RatkinKnightCommander</li>
+						</categories>
+					</li>
+				</backstoryFiltersOverride>
+				<gearHealthRange>
+					<min>1</min>
+					<max>3</max>
+				</gearHealthRange>
+				<apparelMoney>
+					<min>6500</min>
+					<max>8000</max>
+				</apparelMoney>
+				<weaponMoney>
+					<min>2000</min>
+					<max>4500</max>
+				</weaponMoney>
+				<weaponTags>
+					<li>MedievalMelee2H</li>
+				</weaponTags>
+				<apparelTags>
+					<li>MedievalKnightly</li>
+				</apparelTags>
+				<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+				<apparelColor>(254,254,254)</apparelColor>
+				<skills>
+					<li>
+						<skill>Melee</skill>
+						<range>12~16</range>
+					</li>
+				</skills>
+			</PawnKindDef>
+		</value>
+	</Operation>
 </Patch>

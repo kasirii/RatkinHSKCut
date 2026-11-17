@@ -6,10 +6,125 @@
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/FactionDef[defName="RK_Faction_Pilgrims"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/FactionDef[defName="Rakinia"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/FactionDef[@Name="RatkinFactionBase"]</xpath>
-  </Operation>
+  </Operation>-->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/FactionDef[@Name="RatkinFactionBase"]</xpath>
+		<value Merge="true">
+			<techLevel>Medieval</techLevel>
+			<caravanTraderKinds Merge="false">
+				<li>RK_TraderKind_KingdomBulkGoods</li>
+				<li>RK_TraderKind_KingdomCombatSupplier</li>
+				<li>RK_TraderKind_KingdomDressMerchant</li>
+			</caravanTraderKinds>
+			<disallowedMemes>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			</disallowedMemes>
+			<disallowedPrecepts>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			</disallowedPrecepts>
+			<allowedArrivalTemperatureRange>-35~40</allowedArrivalTemperatureRange>
+			<raidCommonalityFromPointsCurve Merge="false">
+				<points>
+					<li>(200, 3)</li>
+					<li>(2000, 1.2)</li>
+					<li>(4000, 0.8)</li>
+					<li>(5000, 0.5)</li>
+					<li>(7000, 0.6)</li>
+					<li>(10000, 0.3)</li>
+					<li>(15000, 0.05)</li>
+				</points>
+			</raidCommonalityFromPointsCurve>
+			<maxPawnCostPerTotalPointsCurve Merge="false">
+				<points>
+					<li>(0, 120)</li>
+					<li>(2000, 240)</li>
+					<li>(100000, 10000)</li>
+				</points>
+			</maxPawnCostPerTotalPointsCurve>
+			<pawnGroupMakers Merge="false">
+				<li>
+					<kindDef>Combat</kindDef>
+					<commonality>100</commonality>
+					<options>
+						<RatkinCombatant>20</RatkinCombatant>
+						<RatkinDefender>5</RatkinDefender>
+						<RatkinKnight>1</RatkinKnight>
+						<RatkinKnightCommander>5</RatkinKnightCommander>
+					</options>
+				</li>
+				<li>
+					<kindDef>Combat</kindDef>
+					<disallowedStrategies>
+						<li>Siege</li>
+					</disallowedStrategies>
+					<commonality>20</commonality>
+					<options>
+						<RatkinKnight>30</RatkinKnight>
+						<RatkinKnightCommander>5</RatkinKnightCommander>
+					</options>
+				</li>
+				<li>
+					<kindDef>Peaceful</kindDef>
+					<options>
+						<RatkinNoble>10</RatkinNoble>
+						<RatkinColonist>20</RatkinColonist>
+						<RatkinServant>15</RatkinServant>
+						<RatkinDefender>10</RatkinDefender>
+						<RatkinKnight>10</RatkinKnight>
+						<RatkinPriest>10</RatkinPriest>
+					
+				</options>
+				</li>
+				<li>
+					<kindDef>Trader</kindDef>
+					<traders>
+						<RatkinMerchant>15</RatkinMerchant>
+						<RatkinNoble>8</RatkinNoble>
+					</traders>
+					<carriers>
+						<Ratkin_KingHamster>6</Ratkin_KingHamster>
+					</carriers>
+					<guards>
+						<RatkinCombatant>10</RatkinCombatant>
+						<RatkinDefender>10</RatkinDefender>
+					
+				</guards>
+				</li>
+				<li>
+					<kindDef>Settlement</kindDef>
+					<options>
+						<RatkinNoble>3</RatkinNoble>
+						<RatkinColonist>6</RatkinColonist>
+						<RatkinServant>8</RatkinServant>
+						<RatkinCombatant>5</RatkinCombatant>
+						<RatkinDefender>8</RatkinDefender>
+						<RatkinPriest>3</RatkinPriest>
+					
+				</options>
+				</li>
+			</pawnGroupMakers>
+			<apparelStuffFilter Merge="false">
+				<thingDefs>
+					<li>RK_Leather_KingHamster</li>
+					<li>RK_Wool_KingHamster</li>
+					<li>DevilstrandCloth</li>
+					<li>Bronze</li>
+					<li>Steel</li>
+				</thingDefs>
+			</apparelStuffFilter>
+			<xenotypeSet>
+				<xenotypeChances Merge="false">
+					<RK_XenoType_Ratkin MayRequire="Ludeon.RimWorld.Biotech">1</RK_XenoType_Ratkin>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+	</Operation>
 </Patch>
