@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-  <Operation Class="PatchOperationRemove">
+  <!--<Operation Class="PatchOperationRemove">
     <xpath>Defs/ThingDef[defName="RK_KingHamster"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
@@ -11,5 +11,98 @@
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/PawnKindDef[defName="Ratkin_KingHamster"]</xpath>
-  </Operation>
+  </Operation>-->
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_KingHamster"]</xpath>
+		<value>
+			<statBases Merge="true">
+				<Mass>75</Mass>
+				<ComfyTemperatureMin>-45</ComfyTemperatureMin>
+				<ComfyTemperatureMax>50</ComfyTemperatureMax>
+				<MeatAmount>50</MeatAmount>
+				<CarryWeight>155</CarryWeight>
+				<CarryBulk>140</CarryBulk>
+				<GermResistance>0.15</GermResistance>
+				<GermContainment>0.1</GermContainment>
+				<FilthRate>12</FilthRate>
+			</statBases>
+			<race Merge="true">
+				<leatherDef>RK_Leather_KingHamster</leatherDef>
+				<useMeatFrom>Elephant</useMeatFrom>
+			</race>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Leather_KingHamster"]</xpath>
+		<value Merge="true">
+			<statBases>
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3.4</MarketValue>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>1.02</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.125</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+				<Bulk>0.01</Bulk>
+			</statBases>
+			<stuffProps>
+				<statFactors>
+					<MaxHitPoints>1.25</MaxHitPoints>
+					<Beauty>1.5</Beauty>
+					<MarketValue>0.7</MarketValue>
+					<WorkToMake>1.3</WorkToMake>
+					<WorkToBuild>1.3</WorkToBuild>
+					<BedRestEffectiveness>1.2</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+			<stackLimit>300</stackLimit>
+			<thingCategories Inherit="false">
+				<li>BTextiles</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/ThingDef[defName="RK_Wool_KingHamster"]</xpath>
+		<value Merge="true">
+			<statBases>
+				<MaxHitPoints>100</MaxHitPoints>
+				<MarketValue>3.4</MarketValue>
+				<Flammability>1.8</Flammability>
+				<DeteriorationRate>0</DeteriorationRate>
+				<StuffPower_Armor_Blunt>1.12</StuffPower_Armor_Blunt>
+				<StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+				<StuffPower_Armor_Heat>0.125</StuffPower_Armor_Heat>
+				<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+				<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+				<Mass>0.02</Mass>
+				<Bulk>0.02</Bulk>
+			</statBases>
+			<stuffProps>
+				<categories>
+					<li>Fabric</li>
+				</categories>
+				<color>(236,198,170)</color>
+				<statFactors>
+					<MaxHitPoints>1.25</MaxHitPoints>
+					<Beauty>1.25</Beauty>
+					<Flammability>0.9</Flammability>
+					<MarketValue>0.7</MarketValue>
+					<WorkToMake>1.15</WorkToMake>
+					<WorkToBuild>1.15</WorkToBuild>
+					<BedRestEffectiveness>1.3</BedRestEffectiveness>
+					<ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
+					<Mass>0.5</Mass>
+				</statFactors>
+			</stuffProps>
+			<stackLimit>300</stackLimit>
+			<thingCategories Inherit="false">
+				<li>BTextiles</li>
+			</thingCategories>
+		</value>
+	</Operation>
 </Patch>

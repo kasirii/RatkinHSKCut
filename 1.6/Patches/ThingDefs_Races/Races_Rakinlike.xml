@@ -24,7 +24,19 @@
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallArchotechTail"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/leatherDef</xpath>
+		<value>
+			<leatherDef>Leather_Human</leatherDef>	
+	    </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race</xpath>
+		<value>
+			<useMeatFrom>Human</useMeatFrom>
+		</value>
+	</Operation>
+  <!--<Operation Class="PatchOperationReplace">
     <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGenerator</xpath>
     <value>
       <nameGenerator>RK_RaceOnly_PersonNamer</nameGenerator>
@@ -35,5 +47,5 @@
     <value>
       <nameGeneratorFemale>RK_RaceOnly_PersonNamer</nameGeneratorFemale>
     </value>
-  </Operation>
+  </Operation>-->
 </Patch>

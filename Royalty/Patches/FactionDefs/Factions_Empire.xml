@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept/li[text()="RK_PlayerFaction"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
+	<Operation Class="PatchOperationRemove">
     <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept/li[text()="Rakinia"]</xpath>
   </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept/li[text()="RK_Faction_Caravan"]</xpath>
-  </Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept/li[text()="RK_PlayerFaction"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept/li[text()="RK_Faction_Caravan"]</xpath>
+	</Operation>
 </Patch>
