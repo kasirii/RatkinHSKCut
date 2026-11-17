@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.0>festivalName(p=3)-&gt;[chivalryFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.0>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.1>festivalName(p=2)-&gt;[royalFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.1>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.10>royalFestival-&gt;придворная ярмарка</NamerFestival_RatkinKingdom.rulePack.rulesStrings.10>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.11>knightFestival-&gt;рыцарский турнир</NamerFestival_RatkinKingdom.rulePack.rulesStrings.11>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.12>knightFestival-&gt;рыцарский праздник</NamerFestival_RatkinKingdom.rulePack.rulesStrings.12>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.13>knightFestival-&gt;турнирное торжество</NamerFestival_RatkinKingdom.rulePack.rulesStrings.13>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.14>knightFestival-&gt;ярмарка рыцарских поединков</NamerFestival_RatkinKingdom.rulePack.rulesStrings.14>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.2>festivalName(p=1)-&gt;[knightFestival]</NamerFestival_RatkinKingdom.rulePack.rulesStrings.2>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.3>chivalryFestival-&gt;праздник рыцарства</NamerFestival_RatkinKingdom.rulePack.rulesStrings.3>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.4>chivalryFestival-&gt;торжество рыцарства</NamerFestival_RatkinKingdom.rulePack.rulesStrings.4>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.5>chivalryFestival-&gt;праздник чести</NamerFestival_RatkinKingdom.rulePack.rulesStrings.5>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.6>chivalryFestival-&gt;юбилей доблести</NamerFestival_RatkinKingdom.rulePack.rulesStrings.6>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.7>royalFestival-&gt;королевский праздник</NamerFestival_RatkinKingdom.rulePack.rulesStrings.7>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.8>royalFestival-&gt;торжество короны</NamerFestival_RatkinKingdom.rulePack.rulesStrings.8>
+  <NamerFestival_RatkinKingdom.rulePack.rulesStrings.9>royalFestival-&gt;дворянское гулянье</NamerFestival_RatkinKingdom.rulePack.rulesStrings.9>
+</LanguageData>
