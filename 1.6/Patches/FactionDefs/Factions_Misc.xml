@@ -55,7 +55,7 @@
 					<commonality>100</commonality>
 					<options>
 						<RatkinCombatant>20</RatkinCombatant>
-						<RatkinDefender>5</RatkinDefender>
+						<RatkinDefender>20</RatkinDefender>
 						<RatkinKnight>1</RatkinKnight>
 						<RatkinKnightCommander>5</RatkinKnightCommander>
 					</options>

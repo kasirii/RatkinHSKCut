@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/apparelList</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/weaponList</xpath>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
-    <value>
-      <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeEar"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeTail"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallBionicTail"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallArchotechTail"]</xpath>
-  </Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/apparelList</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/weaponList</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
+		<value>
+			<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeEar"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeTail"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallBionicTail"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallArchotechTail"]</xpath>
+	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/leatherDef</xpath>
 		<value>
-			<leatherDef>Leather_Human</leatherDef>	
-	    </value>
+			<leatherDef>Leather_Human</leatherDef>
+		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race</xpath>
@@ -36,16 +36,90 @@
 			<useMeatFrom>Human</useMeatFrom>
 		</value>
 	</Operation>
-  <!--<Operation Class="PatchOperationReplace">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGenerator</xpath>
-    <value>
-      <nameGenerator>RK_RaceOnly_PersonNamer</nameGenerator>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/nameGeneratorFemale</xpath>
-    <value>
-      <nameGeneratorFemale>RK_RaceOnly_PersonNamer</nameGeneratorFemale>
-    </value>
-  </Operation>-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/tools</xpath>
+		<value>
+			<tools Inherit="False">
+				<li Class="CombatExtended.ToolCE">
+					<label>teeth</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>10</power>
+					<cooldownTime>1.4</cooldownTime>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Bite</def>
+								<amount>12</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>0.5</armorPenetrationSharp>
+					<armorPenetrationBlunt>2</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.5</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Scratch</def>
+								<amount>7</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>0.5</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>1.2</cooldownTime>
+					<chanceFactor>0.5</chanceFactor>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>1.7</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.5</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Scratch</def>
+								<amount>7</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>0.5</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>1.2</cooldownTime>
+					<chanceFactor>0.5</chanceFactor>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>1.7</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
 </Patch>

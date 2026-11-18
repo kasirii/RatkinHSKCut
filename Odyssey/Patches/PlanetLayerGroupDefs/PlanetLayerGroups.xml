@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Layered Atmosphere and Orbit</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/LayeredAtmosphereOrbit.PlanetLayerGroupDef[defName="LAO_Atmosphere"]
+            /modExtensions/li[@Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension"]
+            /BlacklistIncidentDef/li[.="RatkinTunnel_Guerrilla"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/LayeredAtmosphereOrbit.PlanetLayerGroupDef[defName="LAO_Atmosphere"]
+            /modExtensions/li[@Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension"]
+            /BlacklistIncidentDef/li[.="RatkinFollowUpTroops"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/LayeredAtmosphereOrbit.PlanetLayerGroupDef[defName="LAO_Atmosphere"]
+            /modExtensions/li[@Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension"]
+            /BlacklistIncidentDef/li[.="GiveQuest_ReliquaryPilgrims_Ratkin"]</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

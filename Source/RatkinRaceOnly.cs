@@ -13,16 +13,10 @@ namespace RatkinRaceOnly
     {
         public RaceOnlyMod(ModContentPack content) : base(content)
         {
-            foreach (ModContentPack mod in LoadedModManager.RunningModsListForReading)
+            foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
-                if (!string.Equals(mod.PackageId, "Solaris.RatkinRaceMod", StringComparison.OrdinalIgnoreCase)) continue;
-                foreach (Assembly assembly in mod.assemblies.loadedAssemblies)
-                {
-                    string name = assembly.GetName().Name;
-                    if (name == "NewRatkin") ContentPatches.NewRatkin = assembly;
-                    if (name == "SYS") ContentPatches.Sys = assembly;
-                }
-                break;
+                string name = assembly.GetName().Name;
+                if (name == "NewRatkin" || name == "SYS") ContentPatches.Sources.Add(assembly);
             }
 
             ContentPatches.LoadSettings(Path.Combine(content.RootDir, "Runtime.xml"));
@@ -30,14 +24,12 @@ namespace RatkinRaceOnly
             ContentPatches.Install(harmony);
             harmony.Patch(AccessTools.Method(typeof(DefOfHelper), "BindDefsFor"),
                 prefix: new HarmonyMethod(typeof(DefOfPatch), nameof(DefOfPatch.Prefix)));
-            Log.Message("[Ratkin Race Only] Content patch filters installed; HAR compatibility retained.");
         }
     }
 
     public static class ContentPatches
     {
-        internal static Assembly NewRatkin;
-        internal static Assembly Sys;
+        internal static readonly HashSet<Assembly> Sources = new HashSet<Assembly>();
         private static readonly HashSet<string> blocked = new HashSet<string>(StringComparer.Ordinal);
 
         internal static void LoadSettings(string path)
@@ -51,7 +43,7 @@ namespace RatkinRaceOnly
 
         internal static bool IsSource(Type type)
         {
-            return type != null && (type.Assembly == NewRatkin || type.Assembly == Sys);
+            return type != null && Sources.Contains(type.Assembly);
         }
 
         private static bool Disabled(Type type)

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear" and customLabel="left ear"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>HSK_LeftEar</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear" and customLabel="right ear"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>HSK_RightEar</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="RK_BodyPart_Tail"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>HSK_Tail</li>
+      </groups>
+    </value>
+  </Operation>
+</Patch>

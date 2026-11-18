@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]</xpath>
+    <value>
+      <appliedOnFixedBodyParts Merge="true">
+        <li>HSK_BodyPart_Tailbone</li>
+      </appliedOnFixedBodyParts>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"]</xpath>
+    <value>
+      <appliedOnFixedBodyParts Merge="true">
+        <li>HSK_BodyPart_Tailbone</li>
+      </appliedOnFixedBodyParts>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"]</xpath>
+    <value>
+      <appliedOnFixedBodyParts Merge="true">
+        <li>HSK_BodyPart_Tailbone</li>
+      </appliedOnFixedBodyParts>
+    </value>
+  </Operation>
+</Patch>

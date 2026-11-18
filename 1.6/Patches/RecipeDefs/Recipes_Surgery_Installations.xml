@@ -54,4 +54,28 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]/descriptionHyperlinks/ThingDef[text()="Cloth"]</xpath>
 	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]</xpath>
+		<value>
+			<appliedOnFixedBodyParts Merge="true">
+				<li>OTail</li>
+			</appliedOnFixedBodyParts>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"]</xpath>
+		<value>
+			<appliedOnFixedBodyParts Merge="true">
+				<li>OTail</li>
+			</appliedOnFixedBodyParts>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"]</xpath>
+		<value>
+			<appliedOnFixedBodyParts Merge="true">
+				<li>OTail</li>
+			</appliedOnFixedBodyParts>
+		</value>
+	</Operation>
 </Patch>

@@ -7,9 +7,9 @@
 	</supportedVersions>
 	<packageId>Kasiri.ratkin.raceonly</packageId>
 	<description>
-		Race-only patch for Workshop NewRatkinPlus 1.6.
-		Keeps the race and RatkinColonist. 
-		Removes racial equipment, buildings, food, factions, scenarios, storytellers, traders and other original pawn kinds.
+		HSK patch for Workshop NewRatkinPlus 1.6.
+		Keeps the Ratkin race, essential pawn kinds, factions and traders.
+		Removes racial equipment, buildings, food, scenarios and storytellers.
 	</description>
 	<modDependencies>
 		<li>
@@ -20,5 +20,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>Solaris.RatkinRaceModHSK</li>
+		<li>skyarkhangel.HSK.DLC</li>
+		<li>MrHydralisk.LayeredAtmosphereOrbit</li>
 	</loadAfter>
 </ModMetaData>

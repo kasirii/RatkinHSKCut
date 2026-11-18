@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <!-- Natural armor coverage. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Jaw"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Nose"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>Nose</li>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <!-- Left and right limbs. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Shoulder" and customLabel="left shoulder"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>LeftShoulder</li>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Shoulder" and customLabel="right shoulder"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>RightShoulder</li>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Shoulder"]/parts/li[def="Arm" and customLabel="left arm"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>LeftArm</li>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Shoulder"]/parts/li[def="Arm" and customLabel="right arm"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>RightArm</li>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Shoulder"]/parts/li[def="Arm"]/parts/li[def="Hand" and customLabel="left hand"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>LeftHand</li>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Shoulder"]/parts/li[def="Arm"]/parts/li[def="Hand" and customLabel="right hand"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>RightHand</li>
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Shoulder"]/parts/li[def="Arm"]/parts/li[def="Hand"]/parts/li[def="Finger"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <!-- Lower limbs. -->
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Leg"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Leg"]/parts/li[def="Foot"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+  <Operation Class="SK.PatchOperationReplaceExtended">
+    <xpath>Defs/BodyDef[defName="RK_Body_Ratkin"]/corePart/parts/li[def="Leg"]/parts/li[def="Foot"]/parts/li[def="Toe"]</xpath>
+    <value>
+      <groups Merge="true">
+        <li>CoveredByNaturalArmor</li>
+      </groups>
+    </value>
+  </Operation>
+</Patch>
