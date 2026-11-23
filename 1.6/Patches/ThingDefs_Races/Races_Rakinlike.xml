@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseHumanlikePawn</value>
+	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/apparelList</xpath>
 	</Operation>

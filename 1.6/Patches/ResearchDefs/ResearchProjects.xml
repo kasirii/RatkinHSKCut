@@ -1,72 +1,75 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_AdvancedApparel"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_Agriculture"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_AngryRatProject"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_Carpentry"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_CrusaderArmor"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_DragonFlame"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_FoodPreservation"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_Fortification"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_FunctionalApparel"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_GearMechanics"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_Metallurgy"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_NobleApparel"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_ObservationAndSurveying"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_OrbitalEquipment"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_RatkinEngineering"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_Sample"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_SeparationMechanics"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_Smithing"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_SwordAndShield"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectDef[defName="RK_Research_Tailoring"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchTabDef[defName="RK_ResearchTab_Default"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectTagDef[defName="RK_ResearchTag_IndustrialBasic"]</xpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ResearchProjectTagDef[defName="RK_ResearchTag_MedievalBasic"]</xpath>
-  </Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_AdvancedApparel"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Agriculture"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_AngryRatProject"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Carpentry"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_CrusaderArmor"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_DragonFlame"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_FoodPreservation"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Fortification"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_FunctionalApparel"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_GearMechanics"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Metallurgy"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_NobleApparel"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_ObservationAndSurveying"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_OrbitalEquipment"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_RatkinEngineering"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Sample"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_SeparationMechanics"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Smithing"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_SwordAndShield"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[defName="RK_Research_Tailoring"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[@Name="RK_ResearchAttr_Base"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchTabDef[defName="RK_ResearchTab_Default"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectTagDef[defName="RK_ResearchTag_IndustrialBasic"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectTagDef[defName="RK_ResearchTag_MedievalBasic"]</xpath>
+	</Operation>
 </Patch>

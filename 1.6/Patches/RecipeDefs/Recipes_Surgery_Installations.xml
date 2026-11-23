@@ -1,37 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]</xpath>
-    <value>
-      <recipeUsers Inherit="False">
-        <li>Ratkin</li>
-      </recipeUsers>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]</xpath>
-    <value>
-      <recipeUsers>
-        <li>Ratkin</li>
-      </recipeUsers>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"]</xpath>
-    <value>
-      <recipeUsers>
-        <li>Ratkin</li>
-      </recipeUsers>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/RecipeDef[defName="RK_Recipe_InstallArchotechTail"]</xpath>
-    <value>
-      <recipeUsers>
-        <li>Ratkin</li>
-      </recipeUsers>
-    </value>
-  </Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeEar"]</xpath>
+		<value>
+			<recipeUsers Inherit="False">
+				<li>Ratkin</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]</xpath>
+		<value>
+			<recipeUsers Inherit="False">
+				<li>Ratkin</li>
+			</recipeUsers>
+			<appliedOnFixedBodyParts Inherit="False">
+				<li>RK_BodyPart_Tail</li>
+			</appliedOnFixedBodyParts>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[@Name="SurgeryInstallClothPartBase"]/ingredients/li/filter/thingDefs</xpath>
 		<value>
@@ -53,14 +40,6 @@
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]/descriptionHyperlinks/ThingDef[text()="Cloth"]</xpath>
-	</Operation>
-	<Operation Class="SK.PatchOperationReplaceExtended">
-		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallFakeTail"]</xpath>
-		<value>
-			<appliedOnFixedBodyParts Merge="true">
-				<li>OTail</li>
-			</appliedOnFixedBodyParts>
-		</value>
 	</Operation>
 	<Operation Class="SK.PatchOperationReplaceExtended">
 		<xpath>Defs/RecipeDef[defName="RK_Recipe_InstallBionicTail"]</xpath>
