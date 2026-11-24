@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_LargeEars"]</xpath>
+		<value>
+			<capMods>
+				<li>
+					<capacity>Hearing</capacity>
+					<offset>0.1</offset>
+				</li>
+			</capMods>
+			<statOffsets>
+				<SocialImpact>0.05</SocialImpact>
+			</statOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_ThinTail"]</xpath>
+		<value>
+			<capMods>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.05</offset>
+				</li>
+			</capMods>
+			<biostatCpx>0</biostatCpx>
+		</value>
+	</Operation>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/GeneDef[defName="RK_Gene_FragilePain"]</xpath>
+		<value>
+			<exclusionTags>
+				<li>Pain</li>
+			</exclusionTags>
+		</value>
+	</Operation>
+</Patch>

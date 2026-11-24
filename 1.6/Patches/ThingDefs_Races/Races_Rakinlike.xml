@@ -5,45 +5,78 @@
 		<attribute>ParentName</attribute>
 		<value>BaseHumanlikePawn</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/apparelList</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction/weaponList</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/raceRestriction</xpath>
+
+	<Operation Class="SK.PatchOperationReplaceExtended">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]</xpath>
 		<value>
-			<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeEar"]</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeTail"]</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallBionicTail"]</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallArchotechTail"]</xpath>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race/leatherDef</xpath>
-		<value>
-			<leatherDef>Leather_Human</leatherDef>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/race</xpath>
-		<value>
-			<useMeatFrom>Human</useMeatFrom>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/tools</xpath>
-		<value>
+			<statBases Merge="true">
+				<Mass>50</Mass>
+				<Flammability>1.1</Flammability>
+				<ComfyTemperatureMax>31</ComfyTemperatureMax>
+				<ComfyTemperatureMin>6</ComfyTemperatureMin>
+				<ImmunityGainSpeed>1.07</ImmunityGainSpeed>
+				<CarryingCapacity>56</CarryingCapacity>
+				<PainShockThreshold>0.7</PainShockThreshold>
+				<ToxicResistance>0.25</ToxicResistance>
+				<SmokeSensitivity>0.85</SmokeSensitivity>
+				<EatingSpeed>1.1</EatingSpeed>
+				<MeatAmount>35</MeatAmount>
+				<LeatherAmount>30</LeatherAmount>
+				<MeleeDodgeChance>1.15</MeleeDodgeChance>
+				<MeleeCritChance>0.9</MeleeCritChance>
+				<MeleeParryChance>0.95</MeleeParryChance>
+				<AimingDelayFactor>1.18</AimingDelayFactor>
+				<NightVisionEfficiency>0.25</NightVisionEfficiency>
+				<NegotiationAbility>0.85</NegotiationAbility>
+				<SocialImpact>1.07</SocialImpact>
+				<MiningSpeed>1.1</MiningSpeed>
+				<MiningYield>1.05</MiningYield>
+				<CollectingSpeed>1.15</CollectingSpeed>
+				<GeneralLaborSpeed>1.15</GeneralLaborSpeed>
+				<CleaningSpeed>1.15</CleaningSpeed>
+				<SmoothingSpeed>1.1</SmoothingSpeed>
+				<PlantWorkSpeed>1.1</PlantWorkSpeed>
+				<PlantHarvestYield>1.05</PlantHarvestYield>
+				<HuntingStealth>1.15</HuntingStealth>
+				<SmithingSpeed>0.95</SmithingSpeed>
+				<ElectronicCraftingSpeed>0.9</ElectronicCraftingSpeed>
+				<ConstructionSpeed>0.9</ConstructionSpeed>
+				<ResearchSpeed>0.8</ResearchSpeed>
+				<GermResistance>0.1</GermResistance>
+				<GermContainment>0.05</GermContainment>
+			</statBases>
+			<race Merge="true">
+				<leatherDef>Leather_Human</leatherDef>
+				<useMeatFrom>Human</useMeatFrom>
+				<baseHungerRate>0.9</baseHungerRate>
+			</race>
+			<alienRace IgnoreIfNoMatchingField="True" Merge="true">
+				<raceRestriction Merge="false">
+					<whiteXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+						<li MayRequire="Ludeon.RimWorld.Biotech">RK_XenoType_Ratkin</li>
+					</whiteXenotypeList>
+					<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+				</raceRestriction>
+				<thoughtSettings>
+					<cannotReceiveThoughts>
+						<li>EnvironmentDark</li>
+						<li>NeedOutdoors</li>
+						<li>AteRawFood</li>
+					</cannotReceiveThoughts>
+				</thoughtSettings>
+			</alienRace>
+			<modExtensions Merge="true">
+				<li Class="CombatExtended.RacePropertiesExtensionCE">
+					<bodyShape>Humanoid</bodyShape>
+				</li>
+			</modExtensions>
+			<recipes Merge="true">
+				<li>InstallClothTail</li>
+				<li>InstallPlasteelClaws</li>
+				<li>InstallBionicTail</li>
+				<li>InstallCyberneticTail</li>
+				<li>InstallOrassanTail</li>
+			</recipes>
 			<tools Inherit="False">
 				<li Class="CombatExtended.ToolCE">
 					<label>teeth</label>
@@ -65,23 +98,23 @@
 					<armorPenetrationBlunt>2</armorPenetrationBlunt>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>left fist</label>
+					<label>left claws</label>
 					<capacities>
 						<li>Scratch</li>
 					</capacities>
-					<power>5</power>
-					<cooldownTime>1.5</cooldownTime>
-					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<power>9</power>
+					<cooldownTime>1.15</cooldownTime>
+					<linkedBodyPartsGroup>LeftHandClawsGroup</linkedBodyPartsGroup>
 					<surpriseAttack>
 						<extraMeleeDamages>
 							<li>
 								<def>Scratch</def>
-								<amount>7</amount>
+								<amount>4</amount>
 							</li>
 						</extraMeleeDamages>
 					</surpriseAttack>
-					<armorPenetrationSharp>0.5</armorPenetrationSharp>
-					<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+					<armorPenetrationSharp>1.5</armorPenetrationSharp>
+					<armorPenetrationBlunt>0</armorPenetrationBlunt>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>left fist</label>
@@ -95,23 +128,23 @@
 					<armorPenetrationBlunt>1.7</armorPenetrationBlunt>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>right fist</label>
+					<label>right claws</label>
 					<capacities>
 						<li>Scratch</li>
 					</capacities>
-					<power>5</power>
-					<cooldownTime>1.5</cooldownTime>
-					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<power>9</power>
+					<cooldownTime>1.15</cooldownTime>
+					<linkedBodyPartsGroup>RightHandClawsGroup</linkedBodyPartsGroup>
 					<surpriseAttack>
 						<extraMeleeDamages>
 							<li>
 								<def>Scratch</def>
-								<amount>7</amount>
+								<amount>4</amount>
 							</li>
 						</extraMeleeDamages>
 					</surpriseAttack>
-					<armorPenetrationSharp>0.5</armorPenetrationSharp>
-					<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+					<armorPenetrationSharp>1.5</armorPenetrationSharp>
+					<armorPenetrationBlunt>0</armorPenetrationBlunt>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>right fist</label>
@@ -123,8 +156,33 @@
 					<chanceFactor>0.5</chanceFactor>
 					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 					<armorPenetrationBlunt>1.7</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2.75</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<chanceFactor>0.15</chanceFactor>
+					<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				</li>
 			</tools>
 		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeEar"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallFakeTail"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallBionicTail"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/recipes/li[text()="RK_Recipe_InstallArchotechTail"]</xpath>
 	</Operation>
 </Patch>

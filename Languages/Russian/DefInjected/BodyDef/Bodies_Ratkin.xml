@@ -10,22 +10,24 @@
   <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.0.customLabel>левая плечевая кость</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.0.customLabel>
   <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.1.customLabel>левая лучевая кость</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.1.customLabel>
   <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.customLabel>левая кисть</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.customLabel>
-  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>мизинец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>
-  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>безымянный палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>
-  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>средний палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>
-  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>указательный палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>
-  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>большой палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>
+	<RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>левые когти</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.0.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>мизинец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>безымянный палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>средний палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.3.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>указательный палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.4.customLabel>
+  <RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.5.customLabel>большой палец левой руки</RK_Body_Ratkin.corePart.parts.12.parts.1.parts.2.parts.5.customLabel>
   <RK_Body_Ratkin.corePart.parts.13.customLabel>правое плечо</RK_Body_Ratkin.corePart.parts.13.customLabel>
   <RK_Body_Ratkin.corePart.parts.13.parts.0.customLabel>правая ключица</RK_Body_Ratkin.corePart.parts.13.parts.0.customLabel>
   <RK_Body_Ratkin.corePart.parts.13.parts.1.customLabel>правая рука</RK_Body_Ratkin.corePart.parts.13.parts.1.customLabel>
   <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.0.customLabel>правая плечевая кость</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.0.customLabel>
   <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.1.customLabel>правая лучевая кость</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.1.customLabel>
   <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.customLabel>правая кисть</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.customLabel>
-  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>мизинец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
-  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>безымянный палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
-  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>средний палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
-  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>указательный палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
-  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>большой палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+	<RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>правые когти</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
+	<RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>мизинец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>безымянный палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>средний палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>указательный палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+  <RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.5.customLabel>большой палец правой руки</RK_Body_Ratkin.corePart.parts.13.parts.1.parts.2.parts.5.customLabel>
   <RK_Body_Ratkin.corePart.parts.15.customLabel>хвост</RK_Body_Ratkin.corePart.parts.15.customLabel>
   <RK_Body_Ratkin.corePart.parts.16.customLabel>левая нога</RK_Body_Ratkin.corePart.parts.16.customLabel>
   <RK_Body_Ratkin.corePart.parts.16.parts.0.customLabel>левая бедренная кость</RK_Body_Ratkin.corePart.parts.16.parts.0.customLabel>
